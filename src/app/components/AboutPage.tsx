@@ -156,8 +156,8 @@ export function AboutPage() {
                 style={{ aspectRatio: '3/4', boxShadow: '0 32px 80px rgba(102,64,119,0.15)' }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=1067&fit=crop&auto=format"
-                  alt="Christine Lin 設計師個人照"
+                  src="/images/works/about/design photo.webp"
+                  alt="Christine 設計師個人照"
                   className="w-full h-full object-cover"
                 />
               </div>
