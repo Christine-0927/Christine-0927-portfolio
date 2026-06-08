@@ -156,7 +156,7 @@ export function AboutPage() {
                 style={{ aspectRatio: '3/4', boxShadow: '0 32px 80px rgba(102,64,119,0.15)' }}
               >
                 <img
-                  src="images/about/designphoto.webp"
+                  src="images/about/designphoto.jpg"
                   alt="Christine 設計師個人照"
                   className="w-full h-full object-cover"
                 />
