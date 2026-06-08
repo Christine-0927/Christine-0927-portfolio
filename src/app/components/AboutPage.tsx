@@ -4,14 +4,13 @@ import { ScrollReveal } from './ScrollReveal';
 const skills = [
   'Photoshop', 'Illustrator', 'Premiere Pro', 'After Effects',
   'Figma', 'Substance Painter', 'Blender', 'Autodesk Maya',
-  'InDesign', 'Procreate', 'Cinema 4D', 'Sketch',
 ];
 
 const timeline = [
   {
     period: '2025 — 2026',
     role: '網頁設計師',
-    company: '博菲廣告社',
+    company: '立大資訊網路股份有限公司',
     desc: '負責網站介面設計與 App UI 視覺規劃，參與多項產品介面優化與設計製作流程，強化跨平台一致性與使用體驗設計能力。',
     type: 'work',
   },
