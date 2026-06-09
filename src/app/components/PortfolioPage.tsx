@@ -135,11 +135,11 @@ export function PortfolioPage() {
                 {/* Info */}
                 <div className="p-5">
                   <h3
-                    style={{ fontSize: '17px', fontWeight: 700, color: '#212121', marginBottom: '4px', lineHeight: 1.4 }}
+                    style={{ fontSize: '18px', fontWeight: 700, color: '#212121', marginBottom: '4px', lineHeight: 1.5 }}
                   >
                     {work.title}
                   </h3>
-                  <p style={{ fontSize: '12px', color: '#8B7A8B' }}>
+                  <p style={{ fontSize: '14px', color: '#8B7A8B' }}>
                     {work.client}
                   </p>
                   <div className="flex flex-wrap gap-1.5 mt-4">
