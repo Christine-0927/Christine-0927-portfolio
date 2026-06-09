@@ -21,7 +21,7 @@ export const works: Work[] = [
     subtitle: '3D Animated Short Film-Sweet BonBons',
     category: '3D 創作',
     description: '為精品咖啡品牌「山霧咖啡」設計完整品牌識別系統，包含 Logo 設計、品牌色彩規範、名片、包裝及各式行銷物料。設計靈感取自台灣高山雲霧繚繞的意境，以柔和的線條與自然色調傳達品牌的溫度與質感。',
-       coverImage: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&h=600&fit=crop&auto=format',
+       coverImage: '/images/works/3D/Sweet BonBons-1.webp',
     images: [
       'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1200&h=800&fit=crop&auto=format',
       'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&h=800&fit=crop&auto=format',
