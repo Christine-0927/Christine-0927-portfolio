@@ -33,7 +33,7 @@ export const works: Work[] = [
       '/images/works/3D/Sweet BonBons-5.webp',
       '/images/works/3D/Sweet BonBons-6.webp',
     ],
-    hasVideo: false,
+    hasVideo: true,
   },
   {
     id: 'health-app',
