@@ -140,18 +140,9 @@ export function PortfolioPage() {
                     {work.title}
                   </h3>
                   <p style={{ fontSize: '12px', color: '#8B7A8B' }}>
-                    {work.year} · {work.client}
+                    {work.client}
                   </p>
                   <div className="flex flex-wrap gap-1.5 mt-4">
-                    {work.tags.slice(0, 3).map(tag => (
-                      <span
-                        key={tag}
-                        className="px-2.5 py-1 rounded-full"
-                        style={{ background: 'rgba(176,123,179,0.1)', color: '#B07BB3', fontSize: '11px' }}
-                      >
-                        {tag}
-                      </span>
-                    ))}
                   </div>
                 </div>
               </Link>
