@@ -17,13 +17,11 @@ export interface Work {
 export const works: Work[] = [
   {
     id: 'coffee-brand',
-    title: '3D動畫短片-Sweet BonBons',
+    title: 'Sweet BonBons',
     subtitle: '3D animated short film-Sweet BonBons',
     category: '3D 創作',
-    year: ' ',
-    client: ' ',
+    client: '3D 動畫短片',
     description: '為精品咖啡品牌「山霧咖啡」設計完整品牌識別系統，包含 Logo 設計、品牌色彩規範、名片、包裝及各式行銷物料。設計靈感取自台灣高山雲霧繚繞的意境，以柔和的線條與自然色調傳達品牌的溫度與質感。',
-    tags: ['品牌識別', 'Logo 設計', '包裝設計', '印刷品設計'],
     coverImage: '/images/works/3D/Sweet BonBons-1.webp',
     images: [
       'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1200&h=800&fit=crop&auto=format',
