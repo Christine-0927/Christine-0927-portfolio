@@ -16,7 +16,7 @@ export interface Work {
 
 export const works: Work[] = [
   {
-    id: 'coffee-brand',
+    id: 'Sweet BonBons',
     title: 'Sweet BonBons',
     subtitle: '3D animated short film-Sweet BonBons',
     category: '3D 創作',
