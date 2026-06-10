@@ -56,7 +56,7 @@ function FeaturedWorksCarousel() {
             <h2
               style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 300, color: '#212121', lineHeight: 1.25 }}
             >
-              精選<span style={{ fontWeight: 700, color: '#664077' }}>作品集</span>
+              <span style={{ fontWeight: 400, color: '#664077' }}>精選作品集</span>
             </h2>
           </div>
 
@@ -461,7 +461,7 @@ export function HomePage() {
                 <h2
                   style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 300, color: '#212121', lineHeight: 1.25 }}
                 >
-                  我的<span style={{ fontWeight: 700, color: '#664077' }}>服務項目</span>
+                  <span style={{ fontWeight: 400, color: '#664077' }}>我的服務項目</span>
                 </h2>
                 <Link
                   to="/services"
