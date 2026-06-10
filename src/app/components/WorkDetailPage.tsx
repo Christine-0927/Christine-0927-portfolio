@@ -94,7 +94,7 @@ export function WorkDetailPage() {
                 {work.title}
               </h1>
               <p style={{ fontSize: '18px', color: '#B07BB3', marginBottom: '20px' }}>{work.subtitle}</p>
-              <p style={{ fontSize: '16px', color: '#555555', lineHeight: 1.9, fontWeight: 300 }}>
+              <p style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 300 }}>
                 {work.description}
               </p>
             </ScrollReveal>
@@ -109,7 +109,7 @@ export function WorkDetailPage() {
                 boxShadow: '0 4px 24px rgba(176,123,179,0.08)',
               }}
             >
-              <h3 style={{ fontSize: '13px', color: '#8B7A8B', marginBottom: '16px', letterSpacing: '0.1em' }}>
+              <h3 style={{ fontSize: '13px', color: '#B07BB3', marginBottom: '16px', letterSpacing: '0.1em' }}>
                 PROJECT INFO
               </h3>
               {[
@@ -120,12 +120,12 @@ export function WorkDetailPage() {
                   className="flex justify-between py-3"
                   style={{ borderBottom: '1px solid rgba(176,123,179,0.1)' }}
                 >
-                  <span style={{ fontSize: '13px', color: '#8B7A8B' }}>{label}</span>
+                  <span style={{ fontSize: '13px', color: '#B07BB3' }}>{label}</span>
                   <span style={{ fontSize: '13px', color: '#212121', fontWeight: 500 }}>{value}</span>
                 </div>
               ))}
               <div className="mt-4">
-                <p style={{ fontSize: '12px', color: '#8B7A8B', marginBottom: '10px', letterSpacing: '0.08em' }}>
+                <p style={{ fontSize: '12px', color: '#B07BB3', marginBottom: '10px', letterSpacing: '0.08em' }}>
                   使用工具
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -178,7 +178,7 @@ export function WorkDetailPage() {
             <img
               src={work.images[galleryIndex]}
               alt={`${work.title} - 圖 ${galleryIndex + 1}`}
-              className="w-auto h-auto max-w-full"
+              className="max-w-full max-h-full object-contain"
             />
 
             {/* Prev/Next buttons */}
@@ -285,9 +285,6 @@ export function WorkDetailPage() {
                 </>
               ) : (
                 <div className="w-full h-full flex items-center justify-center">
-                  <p style={{ color: '#fff', fontSize: '16px', opacity: 0.7 }}>
-                    （影片播放器展示位置）
-                  </p>
                 </div>
               )}
             </div>
