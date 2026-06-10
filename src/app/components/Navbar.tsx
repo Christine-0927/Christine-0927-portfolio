@@ -55,7 +55,7 @@ export function Navbar() {
                 className="relative flex items-center justify-center h-full"
                 style={{
                   textDecoration: 'none',
-                  fontSize: '14px',
+                  fontSize: '16px',
                   letterSpacing: '0.06em',
                   fontWeight: active ? 500 : 400,
                   color: active ? '#B07BB3' : '#212121',
