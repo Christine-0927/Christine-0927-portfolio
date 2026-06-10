@@ -63,12 +63,10 @@ export function Navbar() {
               >
                 {label}
                 <span
-                  className="absolute bottom-0 left-0 h-[4px] rounded-full transition-all duration-300 ease-out"
+                  className="absolute left-0 bottom-0 h-[2px] w-full block origin-center transition-transform duration-300 ease-out"
                   style={{
                     background: '#B07BB3',
                     transform: active ? 'scaleX(1)' : 'scaleX(0)',
-                    transformOrigin: 'center',
-                    transition: 'transform 300ms ease-out'
                   }}
                 />
               </Link>
