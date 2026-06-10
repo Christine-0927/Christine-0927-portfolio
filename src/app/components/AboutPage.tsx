@@ -75,7 +75,7 @@ export function AboutPage() {
           <h1
             style={{ fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.15 }}
           >
-            關於<span style={{ fontWeight: 700, color: '#664077' }}>我</span>
+            <span style={{ fontWeight: 600, color: '#212121' }}>關於我</span>
           </h1>
         </ScrollReveal>
       </section>
@@ -187,7 +187,7 @@ export function AboutPage() {
               className="mb-12"
               style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.25 }}
             >
-              設計<span style={{ fontWeight: 700, color: '#664077' }}>技能</span>
+              <span style={{ fontWeight: 600, color: '#212121' }}>設計技能</span>
             </h2>
           </ScrollReveal>
 
@@ -234,7 +234,7 @@ export function AboutPage() {
             className="mb-16"
             style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.25 }}
           >
-            學歷與<span style={{ fontWeight: 700, color: '#664077' }}>工作經歷</span>
+            <span style={{ fontWeight: 600, color: '#212121' }}>學歷與工作經歷</span>
           </h2>
         </ScrollReveal>
 
@@ -316,7 +316,7 @@ export function AboutPage() {
               className="mb-12"
               style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.25 }}
             >
-              獎項與<span style={{ fontWeight: 700, color: '#664077' }}>認證</span>
+              <span style={{ fontWeight: 600, color: '#212121' }}>獎項與認證</span>
             </h2>
           </ScrollReveal>
 
