@@ -70,7 +70,7 @@ export function ContactPage() {
           <h1
             style={{ fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.15 }}
           >
-            聯絡<span style={{ fontWeight: 700, color: '#664077' }}>我</span>
+            <span style={{ fontWeight: 700, color: '#664077' }}>聯絡我</span>
           </h1>
         </ScrollReveal>
       </section>
