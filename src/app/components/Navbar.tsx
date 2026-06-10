@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const navLinks = [
   { to: '/about', label: '關於我' },
@@ -59,14 +60,14 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-10">
+        <nav className="hidden md:flex items-center gap-10 h-full">
           {navLinks.map(({ to, label }) => {
             const active = pathname === to || pathname.startsWith(to + '/');
             return (
               <Link
                 key={to}
                 to={to}
-                className="relative transition-colors duration-300"
+                className="relative flex items-center h-full"
                 style={{
                   textDecoration: 'none',
                   fontSize: '14px',
@@ -77,7 +78,7 @@ export function Navbar() {
               >
                 {label}
                 <span
-                  className="absolute -bottom-1 left-0 h-px transition-all duration-300"
+                  className="absolute bottom-0 left-0 h-[2px] transition-all duration-300"
                   style={{
                     width: active ? '100%' : '0%',
                     background: '#B07BB3',
