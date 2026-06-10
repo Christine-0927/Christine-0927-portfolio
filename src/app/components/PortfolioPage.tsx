@@ -23,7 +23,7 @@ export function PortfolioPage() {
           <h1
             style={{ fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.15 }}
           >
-            精選<span style={{ fontWeight: 700, color: '#664077' }}>作品集</span>
+            <span style={{ fontWeight: 700, color: '#664077' }}>精選作品集</span>
           </h1>
         </ScrollReveal>
       </section>
@@ -139,9 +139,6 @@ export function PortfolioPage() {
                   >
                     {work.title}
                   </h3>
-                  <p style={{ fontSize: '14px', color: '#8B7A8B' }}>
-                    {work.client}
-                  </p>
                   <div className="flex flex-wrap gap-1.5 mt-4">
                   </div>
                 </div>
