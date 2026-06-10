@@ -36,22 +36,12 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-18 flex items-center justify-between py-5">
         {/* Logo */}
-        <Link
-          to="/"
-          className="flex items-center gap-3 group no-underline"
-          style={{ textDecoration: 'none' }}
-        >
+        <Link to="/">
           <img
-            src={logo}
+            src="/images/christine-logo.svg"
             alt="Christine"
             className="h-10 w-auto transition-all duration-300 group-hover:opacity-80"
           />
-        </Link>
-          <div
-            className="w-9 h-9 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
-            style={{ background: 'linear-gradient(135deg, #B07BB3, #664077)' }}
-          >
-          </div>
         </Link>
 
         {/* Desktop Nav */}
