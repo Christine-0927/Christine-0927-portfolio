@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from '/images/christine-logo.svg';
+import logo from 'public/images/christine-logo.svg';
 
 const navLinks = [
   { to: '/about', label: '關於我' },
@@ -43,7 +43,7 @@ export function Navbar() {
         >
           <img
             src={logo}
-            alt="Christine Lin"
+            alt="Christine"
             className="h-10 w-auto transition-all duration-300 group-hover:opacity-80"
           />
         </Link>
@@ -51,18 +51,7 @@ export function Navbar() {
             className="w-9 h-9 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
             style={{ background: 'linear-gradient(135deg, #B07BB3, #664077)' }}
           >
-            <span style={{ color: '#fff', fontSize: '14px', fontWeight: 700 }}>C</span>
           </div>
-          <span
-            style={{
-              color: '#212121',
-              letterSpacing: '0.12em',
-              fontWeight: 500,
-              fontSize: '15px',
-            }}
-          >
-            Christine Lin
-          </span>
         </Link>
 
         {/* Desktop Nav */}
