@@ -55,12 +55,11 @@ export function WorkDetailPage() {
             style={{ aspectRatio: '16/9', boxShadow: '0 32px 80px rgba(102,64,119,0.18)' }}
           >
             <img
-              src={work.images[galleryIndex] || work.coverImage}
+              src={work.coverImage}
               alt={work.title}
               className="w-full h-full object-cover"
             />
             <div
-              className="absolute inset-0"
               style={{ background: 'linear-gradient(to top, rgba(30,10,40,0.6) 0%, transparent 50%)' }}
             />
 
