@@ -38,7 +38,7 @@ export function Navbar() {
         {/* Logo */}
         <Link
           to="/"
-          className="group no-underline"
+          className="flex items-center gap-3 group no-underline"
           style={{ textDecoration: 'none' }}
         >
           <img
