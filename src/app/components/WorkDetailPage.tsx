@@ -278,9 +278,6 @@ export function WorkDetailPage() {
                     >
                       <Play size={28} color="#fff" fill="#fff" style={{ marginLeft: '4px' }} />
                     </div>
-                    <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '14px', letterSpacing: '0.1em' }}>
-                      播放影片展示
-                    </p>
                   </div>
                 </>
               ) : (
