@@ -89,7 +89,7 @@ export function WorkDetailPage() {
             <ScrollReveal>
               <h1
                 className="mb-3"
-                style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 300, color: '#212121', lineHeight: 1.2 }}
+                style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: '#212121', lineHeight: 1.2 }}
               >
                 {work.title}
               </h1>
@@ -113,8 +113,6 @@ export function WorkDetailPage() {
                 PROJECT INFO
               </h3>
               {[
-                { label: '年份', value: work.year },
-                { label: '客戶', value: work.client },
                 { label: '類別', value: work.category },
               ].map(({ label, value }) => (
                 <div
@@ -164,7 +162,8 @@ export function WorkDetailPage() {
               className="mb-10"
               style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', fontWeight: 300, color: '#212121' }}
             >
-              作品<span style={{ fontWeight: 700, color: '#664077' }}>圖集</span>
+
+              <span style={{ fontWeight: 300, color: '#664077' }}>作品圖集</span>
             </h2>
           </ScrollReveal>
 
@@ -253,7 +252,7 @@ export function WorkDetailPage() {
               className="mb-10"
               style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', fontWeight: 300, color: '#212121' }}
             >
-              影片<span style={{ fontWeight: 700, color: '#664077' }}>展示</span>
+              <span style={{ fontWeight: 300, color: '#664077' }}>影片展示</span>
             </h2>
 
             <div
@@ -268,7 +267,7 @@ export function WorkDetailPage() {
               {!showVideo ? (
                 <>
                   <img
-                    src={work.coverImage}
+                    src={work.videoUrl}
                     alt={work.title}
                     className="absolute inset-0 w-full h-full object-cover opacity-40"
                   />
