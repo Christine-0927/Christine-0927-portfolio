@@ -56,7 +56,7 @@ export function Navbar() {
                 style={{
                   textDecoration: 'none',
                   fontSize: '16px',
-                  letterSpacing: '0.06em',
+                  letterSpacing: '0.02em',
                   fontWeight: active ? 500 : 400,
                   color: active ? '#B07BB3' : '#212121',
                 }}
