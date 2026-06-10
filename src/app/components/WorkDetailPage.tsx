@@ -93,8 +93,8 @@ export function WorkDetailPage() {
               >
                 {work.title}
               </h1>
-              <p style={{ fontSize: '17px', color: '#8B7A8B', marginBottom: '20px' }}>{work.subtitle}</p>
-              <p style={{ fontSize: '16px', color: '#5A5A5A', lineHeight: 1.9, fontWeight: 300 }}>
+              <p style={{ fontSize: '18px', color: '#B07BB3', marginBottom: '20px' }}>{work.subtitle}</p>
+              <p style={{ fontSize: '16px', color: '#555555', lineHeight: 1.9, fontWeight: 300 }}>
                 {work.description}
               </p>
             </ScrollReveal>
@@ -163,7 +163,7 @@ export function WorkDetailPage() {
               style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', fontWeight: 300, color: '#212121' }}
             >
 
-              <span style={{ fontWeight: 600, color: '#212121' }}>作品圖集</span>
+              <span style={{ fontWeight: 400, color: '#664077' }}>作品圖集</span>
             </h2>
           </ScrollReveal>
 
@@ -252,7 +252,7 @@ export function WorkDetailPage() {
               className="mb-10"
               style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', fontWeight: 300, color: '#212121' }}
             >
-              <span style={{ fontWeight: 600, color: '#212121' }}>影片展示</span>
+              <span style={{ fontWeight: 400, color: '#664077' }}>影片展示</span>
             </h2>
 
             <div
