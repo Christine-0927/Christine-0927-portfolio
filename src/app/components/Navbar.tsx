@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from '../assets/logo.png';
+import logo from '/images/christine-logo.svg';
 
 const navLinks = [
   { to: '/about', label: '關於我' },
@@ -38,9 +38,15 @@ export function Navbar() {
         {/* Logo */}
         <Link
           to="/"
-          className="flex items-center gap-3 group no-underline"
+          className="group no-underline"
           style={{ textDecoration: 'none' }}
         >
+          <img
+            src={logo}
+            alt="Christine Lin"
+            className="h-10 w-auto transition-all duration-300 group-hover:opacity-80"
+          />
+        </Link>
           <div
             className="w-9 h-9 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
             style={{ background: 'linear-gradient(135deg, #B07BB3, #664077)' }}
