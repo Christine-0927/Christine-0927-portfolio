@@ -34,6 +34,8 @@ export const works: Work[] = [
       '/images/works/3D/Sweet BonBons-6.webp',
     ],
     hasVideo: true,
+    videoUrl:
+      'https://www.youtube.com/embed/JZzQGwNhPHc?si=nBGIRRqAtJ69Ucsj'
   },
   {
     id: 'health-app',
