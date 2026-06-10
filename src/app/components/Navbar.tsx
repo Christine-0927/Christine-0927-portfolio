@@ -34,7 +34,7 @@ export function Navbar() {
         borderBottom: scrolled ? '1px solid rgba(176,123,179,0.12)' : '1px solid transparent',
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-18 flex items-center justify-between py-5">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-18 flex items-center justify-between">
         {/* Logo */}
         <Link to="/">
           <img
@@ -45,14 +45,14 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-10 h-full">
+        <nav className="hidden md:flex items-stretch gap-10 h-full">
           {navLinks.map(({ to, label }) => {
             const active = pathname === to || pathname.startsWith(to + '/');
             return (
               <Link
                 key={to}
                 to={to}
-                className="relative flex items-center h-full"
+                className="relative flex items-center justify-center h-full"
                 style={{
                   textDecoration: 'none',
                   fontSize: '14px',
