@@ -6,7 +6,7 @@ const navLinks = [
   { to: '/about', label: '關於我' },
   { to: '/services', label: '服務項目' },
   { to: '/portfolio', label: '精選作品' },
-  { to: '/contact', label: '聯絡我' },
+  { to: '/contact', label: '聯絡方式' },
 ];
 
 export function Navbar() {
