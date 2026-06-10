@@ -16,6 +16,21 @@ export interface Work {
 
 export const works: Work[] = [
   {
+    id: 'logo-sfrb',
+    title: 'Logo 設計-閒雜魚飯糰',
+    subtitle: 'Logo design-',
+    category: '平面設計',
+    year: '',
+    client: '',
+    description: '為健康科技新創公司設計直覺且溫暖的健康管理應用程式介面，透過資料視覺化與人性化互動設計，讓用戶輕鬆追蹤日常健康數據。專案涵蓋使用者研究、資訊架構、線框圖、高擬真度原型設計及設計規範文件。',
+    tags: ['UI 設計', 'UX 研究', '原型設計', 'Figma'],
+    coverImage: '/images/works/Graphic/Logo-SFRB.webp',
+    images: [
+      '/images/works/Graphic/Logo-SFRB.webp',
+    ],
+    hasVideo: false,
+  },
+  {
     id: '3d-SweetBonBons',
     title: '3D 動畫短片-Sweet BonBons',
     subtitle: '3D animated short film-Sweet BonBons',
