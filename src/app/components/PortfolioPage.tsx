@@ -98,9 +98,6 @@ export function PortfolioPage() {
                     src={work.coverImage}
                     alt={work.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108"
-                    style={{ filter: 'grayscale(40%)', transition: 'transform 0.7s ease, filter 0.5s ease' }}
-                    onMouseEnter={e => { (e.currentTarget as HTMLImageElement).style.filter = 'grayscale(0%)'; }}
-                    onMouseLeave={e => { (e.currentTarget as HTMLImageElement).style.filter = 'grayscale(40%)'; }}
                   />
 
                   {/* Overlay on hover */}
