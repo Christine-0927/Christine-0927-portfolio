@@ -169,13 +169,16 @@ export function WorkDetailPage() {
 
           {/* Main large image */}
           <div
-            className="relative rounded-2xl overflow-hidden mb-4"
-            style={{ aspectRatio: '16/9', boxShadow: '0 16px 60px rgba(102,64,119,0.14)' }}
+            className="rounded-2xl overflow-hidden mb-4 flex justify-center"
+            style={{
+              background: '#F5F5F5',
+              boxShadow: '0 16px 60px rgba(102,64,119,0.14)'
+            }}
           >
             <img
               src={work.images[galleryIndex]}
               alt={`${work.title} - 圖 ${galleryIndex + 1}`}
-              className="w-full h-full object-cover"
+              className="w-auto h-auto max-w-full"
             />
 
             {/* Prev/Next buttons */}
