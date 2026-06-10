@@ -105,7 +105,7 @@ export function ServicesPage() {
             <h1
               style={{ fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.15 }}
             >
-              服務<span style={{ fontWeight: 700, color: '#664077' }}>項目</span>
+              <span style={{ fontWeight: 700, color: '#664077' }}>服務項目</span>
             </h1>
             <p
               className="max-w-md"
