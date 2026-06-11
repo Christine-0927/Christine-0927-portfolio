@@ -68,12 +68,12 @@ export function AboutPage() {
         <ScrollReveal>
           <p
             className="mb-4 tracking-widest uppercase"
-            style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.25em' }}
+            style={{ fontSize: '12px', color: '#B07BB3', letterSpacing: '0.2em' }}
           >
             About Me
           </p>
           <h1
-            style={{ fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.15 }}
+            style={{ fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
           >
             <span style={{ fontWeight: 600, color: '#664077' }}>關於我</span>
           </h1>
@@ -88,7 +88,7 @@ export function AboutPage() {
             <div>
               <h2
                 className="mb-2"
-                style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 700, color: '#212121' }}
+                style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 600, color: '#212121' }}
               >
                 邱玉欣 Christine
               </h2>
@@ -100,15 +100,15 @@ export function AboutPage() {
                 Visual Designer & Creative Thinker
               </p>
 
-              <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 300 }}>
+              <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
                 你好，我是 Christine。<br />
                 熱愛設計、影像與創作，專注於視覺設計與數位媒體領域。
               </p>
-              <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 300 }}>
+              <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
                 具備平面設計、品牌視覺、UI/UX 與 3D 視覺創作經驗，<br />           
                 擅長整合資訊與視覺語言，創造兼具美感與實用性的成果。
               </p>
-              <p className="mb-10" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 300 }}>
+              <p className="mb-10" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
                 我相信設計不只是創造美感，更是解決問題與傳遞訊息的過程。<br />
                 期待透過設計，為每個品牌與專案創造獨特的價值。
               </p>
@@ -125,11 +125,11 @@ export function AboutPage() {
                       className="w-9 h-9 rounded-full flex items-center justify-center shrink-0"
                       style={{ background: 'rgba(176,123,179,0.12)' }}
                     >
-                      <Icon size={15} color="#B07BB3" />
+                      <Icon size={16} color="#B07BB3" />
                     </div>
                     <div>
-                      <p style={{ fontSize: '11px', color: '#8B7A8B', letterSpacing: '0.06em' }}>{label}</p>
-                      <p style={{ fontSize: '14px', color: '#212121', fontWeight: 500 }}>{text}</p>
+                      <p style={{ fontSize: '12px', color: '#664027', letterSpacing: '0.06em' }}>{label}</p>
+                      <p style={{ fontSize: '16px', color: '#212121', fontWeight: 500 }}>{text}</p>
                     </div>
                   </div>
                 ))}
@@ -168,13 +168,13 @@ export function AboutPage() {
           <ScrollReveal>
             <p
               className="mb-3 tracking-widest uppercase"
-              style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.25em' }}
+              style={{ fontSize: '12px', color: '#B07BB3', letterSpacing: '0.2em' }}
             >
               Skills
             </p>
             <h2
               className="mb-12"
-              style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.25 }}
+              style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
             >
               <span style={{ fontWeight: 600, color: '#664077' }}>設計技能</span>
             </h2>
@@ -189,9 +189,9 @@ export function AboutPage() {
                       background: '#FFFFFF',
                       color: '#664077',
                       border: '1px solid rgba(176,123,179,0.2)',
-                      fontSize: '14px',
+                      fontSize: '16px',
                       fontWeight: 500,
-                      boxShadow: '0 2px 12px rgba(176,123,179,0.08)',
+                      boxShadow: '0 2px 12px rgba(176,123,179,0.12)',
                   }}
                   onMouseEnter={e => {
                     (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)';
@@ -219,13 +219,13 @@ export function AboutPage() {
         <ScrollReveal>
           <p
             className="mb-3 tracking-widest uppercase"
-            style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.25em' }}
+            style={{ fontSize: '12px', color: '#B07BB3', letterSpacing: '0.2em' }}
           >
             Experience & Education
           </p>
           <h2
             className="mb-16"
-            style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.25 }}
+            style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
           >
             <span style={{ fontWeight: 600, color: '#664077' }}>學歷與工作經歷</span>
           </h2>
@@ -269,18 +269,18 @@ export function AboutPage() {
                       style={{
                         background: item.type === 'work' ? 'rgba(176,123,179,0.12)' : 'rgba(248,214,217,0.5)',
                         color: item.type === 'work' ? '#B07BB3' : '#664077',
-                        fontSize: '11px',
+                        fontSize: '12px',
                         letterSpacing: '0.08em',
                       }}
                     >
                       {item.type === 'work' ? '工作經歷' : '學歷'}
                     </span>
                     <p style={{ fontSize: '12px', color: '#8B7A8B', marginBottom: '4px' }}>{item.period}</p>
-                    <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#212121', marginBottom: '4px' }}>
+                    <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#212121', marginBottom: '4px' }}>
                       {item.role}
                     </h3>
                     <p style={{ fontSize: '14px', color: '#B07BB3', marginBottom: '10px' }}>{item.company}</p>
-                    <p style={{ fontSize: '14px', color: '#5A5A5A', lineHeight: 1.8, fontWeight: 300 }}>{item.desc}</p>
+                    <p style={{ fontSize: '14px', color: '#474747', lineHeight: 1.8, fontWeight: 400 }}>{item.desc}</p>
                   </div>
 
                   {/* Spacer for opposite side */}
@@ -301,13 +301,13 @@ export function AboutPage() {
           <ScrollReveal>
             <p
               className="mb-3 tracking-widest uppercase"
-              style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.25em' }}
+              style={{ fontSize: '12px', color: '#B07BB3', letterSpacing: '0.2em' }}
             >
               Certifications
             </p>
             <h2
               className="mb-12"
-              style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.25 }}
+              style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
             >
               <span style={{ fontWeight: 600, color: '#664077' }}>專業認證</span>
             </h2>
@@ -333,8 +333,8 @@ export function AboutPage() {
 
                   <div className="flex flex-col">
                     <div>
-                      <p style={{ fontSize: '11px', color: '#B07BB3', marginBottom: '2px' }}>{cert.year}</p>
-                      <h3 style={{ fontSize: '15px', fontWeight: 700, color: '#212121', lineHeight: 1.3, marginBottom: '4px' }}>
+                      <p style={{ fontSize: '12px', color: '#B07BB3', marginBottom: '2px' }}>{cert.year}</p>
+                      <h3 style={{ fontSize: '16px', fontWeight: 600, color: '#212121', lineHeight: 1.3, marginBottom: '4px' }}>
                         {cert.title}
                       </h3>
                     </div>
