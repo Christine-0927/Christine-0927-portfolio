@@ -96,20 +96,20 @@ export function AboutPage() {
                 className="mb-8"
                 style={{ fontSize: '16px', color: '#B07BB3', letterSpacing: '0.08em' }}
               >
-                視覺設計師 & 創意工作者 <br>
+                視覺設計師 & 創意工作者 <br />
                 Visual Designer & Creative Thinker
               </p>
 
               <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 300 }}>
-                你好，我是 Christine。<br>
+                你好，我是 Christine。<br />
                 熱愛設計、影像與創作，專注於視覺設計與數位媒體領域。
               </p>
               <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 300 }}>
-                具備平面設計、品牌視覺、UI/UX 與 3D 視覺創作經驗，<br>            
+                具備平面設計、品牌視覺、UI/UX 與 3D 視覺創作經驗，<br />           
                 擅長整合資訊與視覺語言，創造兼具美感與實用性的成果。
               </p>
               <p className="mb-10" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 300 }}>
-                我相信設計不只是創造美感，更是解決問題與傳遞訊息的過程。<br>
+                我相信設計不只是創造美感，更是解決問題與傳遞訊息的過程。<br />
                 期待透過設計，為每個品牌與專案創造獨特的價值。
               </p>
 
@@ -317,7 +317,7 @@ export function AboutPage() {
             {certifications.map((cert, i) => (
               <ScrollReveal key={i} delay={i * 60}>
                 <div
-                  className="p-6 rounded-2xl flex gap-4 h-32 transition-all duration-300 hover:-translate-y-1"
+                  className="p-6 rounded-2xl flex gap-4 min-h-[140px] transition-all duration-300 hover:-translate-y-1"
                   style={{
                     background: '#fff',
                     border: '1px solid rgba(176,123,179,0.12)',
