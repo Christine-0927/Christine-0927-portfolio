@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { Line, Mail, ExternalLink } from 'lucide-react';
+import { Mail, ExternalLink } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -44,7 +44,6 @@ export function Footer() {
           {/* Social */}
           <div className="flex gap-3">
             {[
-              { icon: Line, label: 'Line', href: '#' },
               { icon: Mail, label: 'Email', href: 'mailto:c2170337@gmail.com' },
               { icon: ExternalLink, label: 'contact', href: '#' },
             ].map(({ icon: Icon, label, href }) => (
