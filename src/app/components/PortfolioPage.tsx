@@ -21,7 +21,7 @@ export function PortfolioPage() {
             Portfolio
           </p>
           <h1
-            style={{ fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
+            style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
           >
             <span style={{ fontWeight: 600, color: '#664077' }}>精選作品集</span>
           </h1>
