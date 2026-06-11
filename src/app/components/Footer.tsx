@@ -33,7 +33,7 @@ export function Footer() {
               <Link
                 key={to}
                 to={to}
-                style={{ textDecoration: 'none', fontSize: '14px', color: '#333333' }}
+                style={{ textDecoration: 'none', fontSize: '16px', color: '#474747' }}
                 className="hover:text-primary transition-colors duration-200"
               >
                 {label}
@@ -64,10 +64,10 @@ export function Footer() {
           className="mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3"
           style={{ borderTop: '1px solid rgba(176,123,179,0.1)' }}
         >
-          <p style={{ fontSize: '12px', color: '#8B7A8B' }}>
+          <p style={{ fontSize: '14px', color: '#8B7A8B' }}>
             © Christine. All Rights Reserved.
           </p>
-          <p style={{ fontSize: '12px', color: '#8B7A8B' }}>
+          <p style={{ fontSize: '14px', color: '#8B7A8B' }}>
             設計 · 創作 · 品牌
           </p>
         </div>
