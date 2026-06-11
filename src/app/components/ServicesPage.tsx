@@ -234,7 +234,7 @@ export function ServicesPage() {
               className="mb-16"
               style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 300, color: '#212121' }}
             >
-              合作<span style={{ fontWeight: 700, color: '#664077' }}>流程</span>
+              <span style={{ fontWeight: 600, color: '#664077' }}>合作流程</span>
             </h2>
           </ScrollReveal>
 
