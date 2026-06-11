@@ -116,9 +116,9 @@ export function AboutPage() {
               {/* Contact Info */}
               <div className="flex flex-col gap-4">
                 {[
-                  { icon: Phone, text: '+886 912 345 678', label: '電話' },
-                  { icon: Mail, text: 'christine@designstudio.tw', label: 'Email' },
-                  { icon: MapPin, text: '台北市, 台灣', label: '所在地' },
+                  { icon: Phone, text: '0979 451327', label: '電話' },
+                  { icon: Mail, text: 'c2170337@gmail.com', label: 'Email' },
+                  { icon: MapPin, text: '台中市, 台灣', label: '所在地' },
                 ].map(({ icon: Icon, text, label }) => (
                   <div key={label} className="flex items-center gap-3">
                     <div
@@ -158,7 +158,7 @@ export function AboutPage() {
               >
                 <img
                   src="images/about/designphoto.jpg"
-                  alt="Christine 設計師個人照"
+                  alt="Christine 個人照"
                   className="w-full h-full object-cover"
                 />
               </div>
