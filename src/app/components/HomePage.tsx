@@ -49,20 +49,20 @@ function FeaturedWorksCarousel() {
           <div>
             <p
               className="mb-3 tracking-widest uppercase"
-              style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.25em' }}
+              style={{ fontSize: '12px', color: '#B07BB3', letterSpacing: '0.2em' }}
             >
               Featured Works
             </p>
             <h2
-              style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 300, color: '#212121', lineHeight: 1.25 }}
+              style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
             >
-              <span style={{ fontWeight: 700, color: '#664077' }}>精選作品集</span>
+              <span style={{ fontWeight: 600, color: '#664077' }}>精選作品集</span>
             </h2>
           </div>
 
           {/* Arrow controls */}
           <div className="flex items-center gap-3">
-            <span style={{ fontSize: '13px', color: '#8B7A8B', marginRight: '4px' }}>
+            <span style={{ fontSize: '14px', color: '#8B7A8B', marginRight: '4px' }}>
               {page + 1} / {totalPages}
             </span>
             <button
@@ -173,7 +173,7 @@ function FeaturedWorksCarousel() {
 
                 {/* Info */}
                 <div className="p-5">
-                  <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#212121', marginBottom: '4px', lineHeight: 1.4 }}>
+                  <h3 style={{ fontSize: '18px', fontWeight: 600, color: '#212121', marginBottom: '4px', lineHeight: 1.4 }}>
                     {work.title}
                   </h3>
                   <p style={{ fontSize: '12px', color: '#8B7A8B', marginBottom: '12px' }}>
@@ -261,7 +261,7 @@ export function HomePage() {
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&h=1200&fit=crop&auto=format"
-            alt="創意設計工作室"
+            alt="設計工作室"
             className="w-full h-full object-cover"
           />
           <div
@@ -278,7 +278,7 @@ export function HomePage() {
             <ScrollReveal delay={100}>
               <p
                 className="mb-5 tracking-widest uppercase"
-                style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.25em' }}
+                style={{ fontSize: '12px', color: '#B07BB3', letterSpacing: '0.2em' }}
               >
                 Creative Design Studio
               </p>
@@ -289,25 +289,25 @@ export function HomePage() {
                 className="mb-6 leading-tight"
                 style={{
                   fontSize: 'clamp(2.6rem, 6vw, 5rem)',
-                  fontWeight: 300,
-                  color: '#212121',
-                  lineHeight: 1.15,
+                  fontWeight: 600,
+                  color: '#664077',
+                  lineHeight: 1.25,
                   letterSpacing: '-0.01em',
                 }}
               >
-                打造有溫度的
+                透過設計
                 <br />
-                <span style={{ fontWeight: 700, color: '#664077' }}>視覺體驗</span>
+                與每個故事相遇。</span>
               </h1>
             </ScrollReveal>
 
             <ScrollReveal delay={320}>
               <p
                 className="mb-10 max-w-lg"
-                style={{ fontSize: '17px', color: '#5A5A5A', lineHeight: 1.85, fontWeight: 300 }}
+                style={{ fontSize: '18px', color: '#474747', lineHeight: 1.85, fontWeight: 400 }}
               >
-                我是 Christine，一位專注於品牌識別、UI/UX、3D 創作與動態設計的創意設計師，
-                以細膩的美學視角為品牌注入獨特的視覺靈魂。
+                我是 Christine，一位專注於視覺設計與數位媒體的設計師。
+                透過設計整合創意、資訊與體驗，將想法轉化為清晰且具有影響力的成果，為品牌與專案創造獨特價值。
               </p>
             </ScrollReveal>
 
@@ -342,27 +342,7 @@ export function HomePage() {
                 </Link>
               </div>
             </ScrollReveal>
-          </div>
-
-          {/* Stats */}
-          <ScrollReveal delay={560}>
-            <div
-              className="mt-20 inline-flex gap-10 px-8 py-5 rounded-2xl"
-              style={{ background: 'rgba(255,255,255,0.75)', backdropFilter: 'blur(12px)', border: '1px solid rgba(176,123,179,0.15)' }}
-            >
-              {[
-                { num: '5+', label: '年設計經驗' },
-                { num: '80+', label: '完成專案' },
-                { num: '30+', label: '品牌客戶' },
-                { num: '12', label: '設計獎項' },
-              ].map(({ num, label }) => (
-                <div key={label} className="text-center">
-                  <div style={{ fontSize: '22px', fontWeight: 700, color: '#664077' }}>{num}</div>
-                  <div style={{ fontSize: '11px', color: '#8B7A8B', marginTop: '2px', letterSpacing: '0.04em' }}>{label}</div>
-                </div>
-              ))}
-            </div>
-          </ScrollReveal>
+          </div>        
         </div>
       </section>
 
@@ -384,19 +364,7 @@ export function HomePage() {
                   alt="Christine 設計師"
                   className="w-full h-full object-cover"
                 />
-              </div>
-              {/* Floating tag */}
-              <div
-                className="absolute -bottom-4 -right-4 px-5 py-3 rounded-2xl"
-                style={{
-                  background: 'linear-gradient(135deg, #B07BB3, #664077)',
-                  color: '#fff',
-                  boxShadow: '0 16px 40px rgba(102,64,119,0.28)',
-                }}
-              >
-                <p style={{ fontSize: '11px', opacity: 0.85, letterSpacing: '0.08em' }}>CREATIVE DESIGNER</p>
-                <p style={{ fontSize: '16px', fontWeight: 700, marginTop: '2px' }}>Christine Lin</p>
-              </div>
+              </div>              
             </div>
           </ScrollReveal>
 
@@ -404,28 +372,28 @@ export function HomePage() {
             <div>
               <p
                 className="mb-4 tracking-widest uppercase"
-                style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.25em' }}
+                style={{ fontSize: '12px', color: '#B07BB3', letterSpacing: '0.2em' }}
               >
                 About Me
               </p>
               <h2
                 className="mb-6"
-                style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 300, color: '#212121', lineHeight: 1.25 }}
+                style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
               >
                 用設計連結<br />
                 <span style={{ fontWeight: 700, color: '#664077' }}>情感與品牌</span>
               </h2>
               <p
                 className="mb-5"
-                style={{ fontSize: '16px', color: '#5A5A5A', lineHeight: 1.9, fontWeight: 300 }}
+                style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}
               >
-                我相信每一個設計都是一個故事的開始。擁有超過五年的專業設計經驗，我擅長將複雜的品牌理念轉化為簡潔、有力且令人難忘的視覺語言。
+                具備平面設計、品牌視覺、UI/UX 與 3D 視覺創作經驗，我擅長整合資訊與視覺語言，創造兼具美感與實用性的成果。
               </p>
               <p
                 className="mb-8"
-                style={{ fontSize: '16px', color: '#5A5A5A', lineHeight: 1.9, fontWeight: 300 }}
+                style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}
               >
-                從平面設計到數位介面，從靜態品牌到動態創作，每一個細節都承載著我對美學的熱愛與對品質的堅持。
+                我相信設計不只是創造美感，更是解決問題與傳遞訊息的過程。期待透過設計，為每個品牌與專案創造獨特的價值。。
               </p>
               <Link
                 to="/about"
