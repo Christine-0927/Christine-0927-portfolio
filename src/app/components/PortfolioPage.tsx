@@ -119,7 +119,7 @@ export function PortfolioPage() {
                     style={{
                       background: 'rgba(255,255,255,0.9)',
                       backdropFilter: 'blur(8px)',
-                      fontSize: '16px',
+                      fontSize: '12px',
                       color: '#664077',
                       fontWeight: 500,
                       letterSpacing: '0.02em',
