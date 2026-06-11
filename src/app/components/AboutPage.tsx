@@ -90,7 +90,7 @@ export function AboutPage() {
                 className="mb-2"
                 style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 700, color: '#212121' }}
               >
-                Christine Lin
+                邱玉欣 Christine
               </h2>
               <p
                 className="mb-8"
@@ -197,19 +197,21 @@ export function AboutPage() {
                 <div
                   className="px-5 py-2.5 rounded-full transition-all duration-300 cursor-default"
                   style={{
-                    background: i % 3 === 0 ? 'linear-gradient(135deg, #B07BB3, #664077)' : i % 3 === 1 ? '#F8D6D9' : '#fff',
-                    color: i % 3 === 0 ? '#fff' : i % 3 === 1 ? '#664077' : '#212121',
-                    border: i % 3 === 2 ? '1px solid rgba(176,123,179,0.2)' : 'none',
-                    fontSize: '14px',
-                    fontWeight: 500,
-                    boxShadow: '0 2px 12px rgba(176,123,179,0.12)',
+                      background: '#FFFFFF',
+                      color: '#664077',
+                      border: '1px solid rgba(176,123,179,0.2)',
+                      fontSize: '14px',
+                      fontWeight: 500,
+                      boxShadow: '0 2px 12px rgba(176,123,179,0.08)',
                   }}
                   onMouseEnter={e => {
                     (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)';
-                    (e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 24px rgba(102,64,119,0.2)';
+                    (e.currentTarget as HTMLDivElement).style.background = '#F8F4F9';
+                    (e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 24px rgba(102,64,119,0.15)';
                   }}
                   onMouseLeave={e => {
                     (e.currentTarget as HTMLDivElement).style.transform = 'translateY(0)';
+                    (e.currentTarget as HTMLDivElement).style.background = '#FFFFFF';
                     (e.currentTarget as HTMLDivElement).style.boxShadow = '0 2px 12px rgba(176,123,179,0.12)';
                   }}
                 >
