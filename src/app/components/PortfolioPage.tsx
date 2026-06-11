@@ -16,14 +16,14 @@ export function PortfolioPage() {
         <ScrollReveal>
           <p
             className="mb-4 tracking-widest uppercase"
-            style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.25em' }}
+            style={{ fontSize: '12px', color: '#B07BB3', letterSpacing: '0.2em' }}
           >
             Portfolio
           </p>
           <h1
-            style={{ fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.15 }}
+            style={{ fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
           >
-            <span style={{ fontWeight: 700, color: '#664077' }}>精選作品集</span>
+            <span style={{ fontWeight: 600, color: '#664077' }}>精選作品集</span>
           </h1>
         </ScrollReveal>
       </section>
@@ -38,7 +38,7 @@ export function PortfolioPage() {
               style={{
                 background: active === 'all' ? 'linear-gradient(135deg, #B07BB3, #664077)' : 'rgba(176,123,179,0.1)',
                 color: active === 'all' ? '#fff' : '#664077',
-                fontSize: '13px',
+                fontSize: '16px',
                 fontWeight: 500,
                 border: 'none',
                 cursor: 'pointer',
@@ -55,7 +55,7 @@ export function PortfolioPage() {
                 style={{
                   background: active === cat ? 'linear-gradient(135deg, #B07BB3, #664077)' : 'rgba(176,123,179,0.1)',
                   color: active === cat ? '#fff' : '#664077',
-                  fontSize: '13px',
+                  fontSize: '14px',
                   fontWeight: 500,
                   border: 'none',
                   cursor: 'pointer',
@@ -119,7 +119,7 @@ export function PortfolioPage() {
                     style={{
                       background: 'rgba(255,255,255,0.9)',
                       backdropFilter: 'blur(8px)',
-                      fontSize: '10px',
+                      fontSize: '14px',
                       color: '#664077',
                       fontWeight: 500,
                       letterSpacing: '0.06em',
@@ -132,12 +132,10 @@ export function PortfolioPage() {
                 {/* Info */}
                 <div className="p-5">
                   <h3
-                    style={{ fontSize: '18px', fontWeight: 700, color: '#212121', marginBottom: '4px', lineHeight: 1.5 }}
+                    style={{ fontSize: '18px', fontWeight: 600, color: '#212121', marginBottom: '4px', lineHeight: 1.5, textAlign: 'center'}}
                   >
                     {work.title}
                   </h3>
-                  <div className="flex flex-wrap gap-1.5 mt-4">
-                  </div>
                 </div>
               </Link>
             </ScrollReveal>
@@ -146,7 +144,7 @@ export function PortfolioPage() {
 
         {filtered.length === 0 && (
           <div className="text-center py-20">
-            <p style={{ color: '#8B7A8B', fontSize: '16px' }}>此分類目前沒有作品</p>
+            <p style={{ color: '#474747', fontSize: '16px' }}>此分類目前沒有作品</p>
           </div>
         )}
       </section>
