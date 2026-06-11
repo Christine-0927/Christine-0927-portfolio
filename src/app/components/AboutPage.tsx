@@ -340,11 +340,11 @@ export function AboutPage() {
                     <Award size={20} color={cert.color} />
                   </div>
                   <div>
-                    <p style={{ fontSize: '11px', color: '#8B7A8B', marginBottom: '2px' }}>{cert.year}</p>
+                    <p style={{ fontSize: '11px', color: '#B07BB3', marginBottom: '2px' }}>{cert.year}</p>
                     <h3 style={{ fontSize: '15px', fontWeight: 700, color: '#212121', lineHeight: 1.3, marginBottom: '4px' }}>
                       {cert.title}
                     </h3>
-                    <p style={{ fontSize: '12px', color: '#8B7A8B' }}>{cert.org}</p>
+                    <p style={{ fontSize: '12px', color: '#B07BB3' }}>{cert.Subtitle}</p>
                   </div>
                 </div>
               </ScrollReveal>
