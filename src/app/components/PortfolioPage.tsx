@@ -42,7 +42,7 @@ export function PortfolioPage() {
                 fontWeight: 500,
                 border: 'none',
                 cursor: 'pointer',
-                letterSpacing: '0.04em',
+                letterSpacing: '0.02em',
               }}
             >
               全部作品
@@ -55,11 +55,11 @@ export function PortfolioPage() {
                 style={{
                   background: active === cat ? 'linear-gradient(135deg, #B07BB3, #664077)' : 'rgba(176,123,179,0.1)',
                   color: active === cat ? '#fff' : '#664077',
-                  fontSize: '14px',
+                  fontSize: '16px',
                   fontWeight: 500,
                   border: 'none',
                   cursor: 'pointer',
-                  letterSpacing: '0.04em',
+                  letterSpacing: '0.02em',
                 }}
               >
                 {cat}
@@ -119,10 +119,10 @@ export function PortfolioPage() {
                     style={{
                       background: 'rgba(255,255,255,0.9)',
                       backdropFilter: 'blur(8px)',
-                      fontSize: '14px',
+                      fontSize: '16px',
                       color: '#664077',
                       fontWeight: 500,
-                      letterSpacing: '0.06em',
+                      letterSpacing: '0.02em',
                     }}
                   >
                     {work.category}
@@ -132,7 +132,7 @@ export function PortfolioPage() {
                 {/* Info */}
                 <div className="p-5">
                   <h3
-                    style={{ fontSize: '18px', fontWeight: 600, color: '#212121', marginBottom: '4px', lineHeight: 1.5, textAlign: 'center'}}
+                    style={{ fontSize: '18px', fontWeight: 400, color: '#212121', marginBottom: '4px', lineHeight: 1.5, textAlign: 'center'}}
                   >
                     {work.title}
                   </h3>
