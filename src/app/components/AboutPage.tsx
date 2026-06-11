@@ -317,7 +317,7 @@ export function AboutPage() {
             {certifications.map((cert, i) => (
               <ScrollReveal key={i} delay={i * 60}>
                 <div
-                  className="p-6 rounded-2xl flex gap-4 min-h-[140px] transition-all duration-300 hover:-translate-y-1"
+                  className="p-6 rounded-2xl flex gap-4 min-h-[120px] transition-all duration-300 hover:-translate-y-1"
                   style={{
                     background: '#fff',
                     border: '1px solid rgba(176,123,179,0.12)',
