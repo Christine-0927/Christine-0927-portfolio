@@ -33,7 +33,7 @@ export function Footer() {
               <Link
                 key={to}
                 to={to}
-                style={{ textDecoration: 'none', fontSize: '14px', color: '#B07BB3' }}
+                style={{ textDecoration: 'none', fontSize: '14px', color: '#333333' }}
                 className="hover:text-primary transition-colors duration-200"
               >
                 {label}
