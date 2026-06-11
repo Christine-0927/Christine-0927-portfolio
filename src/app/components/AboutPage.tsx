@@ -140,10 +140,6 @@ export function AboutPage() {
                   >
                     <span style={{ fontSize: '13px', fontWeight: 700, color: '#B07BB3' }}>L</span>
                   </div>
-                  <div>
-                    <p style={{ fontSize: '11px', color: '#8B7A8B', letterSpacing: '0.06em' }}>Line ID</p>
-                    <p style={{ fontSize: '14px', color: '#212121', fontWeight: 500 }}>@0979451327</p>
-                  </div>
                 </div>
               </div>
             </div>
