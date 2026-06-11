@@ -100,26 +100,23 @@ export function AboutPage() {
                 Visual Designer & Creative Thinker
               </p>
 
-              <p className="mb-5" style={{ fontSize: '16px', color: '#5A5A5A', lineHeight: 1.9, fontWeight: 300 }}>
-                你好，我是 Christine。
-                <br />
+              <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 300 }}>
+                你好，我是 Christine。<br>
                 熱愛設計、影像與創作，專注於視覺設計與數位媒體領域。
               </p>
-              <p className="mb-5" style={{ fontSize: '16px', color: '#5A5A5A', lineHeight: 1.9, fontWeight: 300 }}>
-                具備平面設計、品牌視覺、UI/UX 與 3D 視覺創作經驗，
-                <br />
+              <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 300 }}>
+                具備平面設計、品牌視覺、UI/UX 與 3D 視覺創作經驗，<br>            
                 擅長整合資訊與視覺語言，創造兼具美感與實用性的成果。
               </p>
-              <p className="mb-10" style={{ fontSize: '16px', color: '#5A5A5A', lineHeight: 1.9, fontWeight: 300 }}>
-                我相信設計不只是創造美感，更是解決問題與傳遞訊息的過程。
-                <br />
+              <p className="mb-10" style={{ fontSize: '16px', color: '#474747, lineHeight: 1.9, fontWeight: 300 }}>
+                我相信設計不只是創造美感，更是解決問題與傳遞訊息的過程。<br>
                 期待透過設計，為每個品牌與專案創造獨特的價值。
               </p>
 
               {/* Contact Info */}
               <div className="flex flex-col gap-4">
                 {[
-                  { icon: Phone, text: '0979 451327', label: '電話' },
+                  { icon: Phone, text: '0979451327', label: '電話' },
                   { icon: Mail, text: 'c2170337@gmail.com', label: 'Email' },
                   { icon: MapPin, text: '台中市, 台灣', label: '所在地' },
                 ].map(({ icon: Icon, text, label }) => (
@@ -145,7 +142,7 @@ export function AboutPage() {
                   </div>
                   <div>
                     <p style={{ fontSize: '11px', color: '#8B7A8B', letterSpacing: '0.06em' }}>Line ID</p>
-                    <p style={{ fontSize: '14px', color: '#212121', fontWeight: 500 }}>@christinedesign</p>
+                    <p style={{ fontSize: '14px', color: '#212121', fontWeight: 500 }}>@0979451327</p>
                   </div>
                 </div>
               </div>
