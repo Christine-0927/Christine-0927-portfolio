@@ -52,12 +52,12 @@ const timeline = [
 ];
 
 const certifications = [
-  { year: '2024', title: '金點設計獎', org: 'Taiwan Design Research Institute', color: '#B07BB3' },
-  { year: '2023', title: 'iF Design Award', org: 'iF International Forum Design GmbH', color: '#664077' },
-  { year: '2022', title: 'Red Dot Design Award', org: 'Design Zentrum Nordrhein Westfalen', color: '#B07BB3' },
-  { year: '2022', title: '台灣最美的書 入選', org: '文化部', color: '#664077' },
-  { year: '2021', title: '台灣創意設計競賽 金獎', org: 'Taiwan Design Center', color: '#B07BB3' },
-  { year: '2020', title: 'Behance Featured Creator', org: 'Adobe Behance', color: '#664077' },
+  { title: '網頁設計 丙級', subtitle: 'Level C Technician for Web Page Design', color: '#664077' },
+  { title: '視覺傳達設計 丙級', Subtitle: 'Level C Technician for Visual Communication Design', color: '#664077' },
+  { title: '印前製程－圖文組版 PC 丙級', Subtitle: 'Level C Technician for Prepress Processes – Text and Image Composition(PC)', color: '#664077' },
+  { title: 'ICEP國際英語能力證書 Level 2', Subtitle: 'ICEP International Certificate of English Proficiency – Level 2', color: '#664077' },
+  { title: 'CSEPT大學校院英語能力測驗 Level 1', Subtitle: 'College Student English Proficiency Test (CSEPT), Level 1', color: '#664077' },
+  { title: 'BAP商務專業應用能力國際認證', Subtitle: 'Business Application Professionals (BAP) Certification', color: '#664077' },
 ];
 
 export function AboutPage() {
