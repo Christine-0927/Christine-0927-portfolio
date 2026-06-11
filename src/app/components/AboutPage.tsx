@@ -75,7 +75,7 @@ export function AboutPage() {
           <h1
             style={{ fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.15 }}
           >
-            <span style={{ fontWeight: 600, color: '#212121' }}>關於我</span>
+            <span style={{ fontWeight: 600, color: '#664077' }}>關於我</span>
           </h1>
         </ScrollReveal>
       </section>
@@ -94,22 +94,22 @@ export function AboutPage() {
               </h2>
               <p
                 className="mb-8"
-                style={{ fontSize: '15px', color: '#B07BB3', letterSpacing: '0.08em' }}
+                style={{ fontSize: '16px', color: '#B07BB3', letterSpacing: '0.08em' }}
               >
-                創意設計師 · Creative Design Studio
+                視覺設計師 & 創意工作者  Visual Designer & Creative Thinker
               </p>
 
               <p className="mb-5" style={{ fontSize: '16px', color: '#5A5A5A', lineHeight: 1.9, fontWeight: 300 }}>
-                你好，我是 Christine。一位熱愛設計、相信美學力量的創意設計師。
-                我的設計哲學很簡單：每一個設計都應該能夠說話，都應該有自己的溫度。
+                你好，我是 Christine。
+                熱愛設計、影像與創作，專注於視覺設計與數位媒體領域。
               </p>
               <p className="mb-5" style={{ fontSize: '16px', color: '#5A5A5A', lineHeight: 1.9, fontWeight: 300 }}>
-                在過去五年的設計旅程中，我有幸參與了多種類型的設計專案，從小型獨立品牌到大型企業識別，
-                從靜態海報到動態影片，每一次的創作都讓我對設計有了更深的理解與熱愛。
+                具備平面設計、品牌視覺、UI/UX 與 3D 視覺創作經驗，
+                擅長整合資訊與視覺語言，創造兼具美感與實用性的成果。
               </p>
               <p className="mb-10" style={{ fontSize: '16px', color: '#5A5A5A', lineHeight: 1.9, fontWeight: 300 }}>
-                我擅長傾聽客戶的需求，並將抽象的品牌理念轉化為具體且有溫度的視覺語言。
-                若您正在尋找一位能夠理解您、陪伴您一起打造品牌的設計師，我很樂意與您相遇。
+                我相信設計不只是創造美感，更是解決問題與傳遞訊息的過程。
+                期待透過設計，為每個品牌與專案創造獨特的價值。
               </p>
 
               {/* Contact Info */}
@@ -187,7 +187,7 @@ export function AboutPage() {
               className="mb-12"
               style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.25 }}
             >
-              <span style={{ fontWeight: 600, color: '#212121' }}>設計技能</span>
+              <span style={{ fontWeight: 600, color: '#664077' }}>設計技能</span>
             </h2>
           </ScrollReveal>
 
@@ -234,7 +234,7 @@ export function AboutPage() {
             className="mb-16"
             style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.25 }}
           >
-            <span style={{ fontWeight: 600, color: '#212121' }}>學歷與工作經歷</span>
+            <span style={{ fontWeight: 600, color: '#664077' }}>學歷與工作經歷</span>
           </h2>
         </ScrollReveal>
 
@@ -316,7 +316,7 @@ export function AboutPage() {
               className="mb-12"
               style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.25 }}
             >
-              <span style={{ fontWeight: 600, color: '#212121' }}>獎項與認證</span>
+              <span style={{ fontWeight: 600, color: '#664077' }}>獎項與認證</span>
             </h2>
           </ScrollReveal>
 
