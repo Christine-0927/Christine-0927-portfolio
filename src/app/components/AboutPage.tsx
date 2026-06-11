@@ -211,13 +211,13 @@ export function AboutPage() {
                   onMouseEnter={e => {
                     (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)';
                     (e.currentTarget as HTMLDivElement).style.background = '#B07BB3';
-                    (e.currentTarget as HTMLDivElement).style.Color = '#FFFFFF';
+                    (e.currentTarget as HTMLDivElement).style.color = '#FFFFFF';
                     (e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 24px rgba(102,64,119,0.15)';
                   }}
                   onMouseLeave={e => {
                     (e.currentTarget as HTMLDivElement).style.transform = 'translateY(0)';
                     (e.currentTarget as HTMLDivElement).style.background = '#FFFFFF';
-                    (e.currentTarget as HTMLDivElement).style.Color = '#664077';
+                    (e.currentTarget as HTMLDivElement).style.color = '#664077';
                     (e.currentTarget as HTMLDivElement).style.boxShadow = '0 2px 12px rgba(176,123,179,0.12)';
                   }}
                 >
