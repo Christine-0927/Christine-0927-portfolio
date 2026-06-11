@@ -297,7 +297,7 @@ export function HomePage() {
               >
                 透過設計
                 <br />
-                與每個故事相遇。</span>
+                與每個故事相遇。
               </h1>
             </ScrollReveal>
 
