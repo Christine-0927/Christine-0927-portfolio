@@ -101,7 +101,7 @@ export function AboutPage() {
               </p>
 
               <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 300 }}>
-                你好，我是 Christine。<br>
+                你好，我是 Christine。<br />
                 熱愛設計、影像與創作，專注於視覺設計與數位媒體領域。
               </p>
               <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 300 }}>
