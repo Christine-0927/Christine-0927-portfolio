@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { Instagram, Mail, ExternalLink } from 'lucide-react';
+import { Line, Mail, ExternalLink } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -12,17 +12,13 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <div
-                className="w-8 h-8 rounded-full flex items-center justify-center"
-                style={{ background: 'linear-gradient(135deg, #B07BB3, #664077)' }}
-              >
-                <span style={{ color: '#fff', fontSize: '12px', fontWeight: 700 }}>C</span>
-              </div>
-              <span style={{ fontWeight: 500, fontSize: '15px', color: '#212121' }}>Christine Lin</span>
-            </div>
-            <p style={{ fontSize: '13px', color: '#8B7A8B', lineHeight: 1.7 }}>
-              創意設計師 · 打造有溫度的視覺體驗
-            </p>
+              <Link to="/">
+                <img
+                  src="/images/christine-logo.svg"
+                  alt="Christine"
+                  className="h-10 w-auto"
+                  />
+               </Link>
           </div>
 
           {/* Links */}
@@ -31,12 +27,12 @@ export function Footer() {
               { to: '/about', label: '關於我' },
               { to: '/services', label: '服務項目' },
               { to: '/portfolio', label: '精選作品' },
-              { to: '/contact', label: '聯絡我' },
+              { to: '/contact', label: '聯絡方式' },
             ].map(({ to, label }) => (
               <Link
                 key={to}
                 to={to}
-                style={{ textDecoration: 'none', fontSize: '13px', color: '#8B7A8B' }}
+                style={{ textDecoration: 'none', fontSize: '14px', color: '#B07BB3' }}
                 className="hover:text-primary transition-colors duration-200"
               >
                 {label}
@@ -47,9 +43,9 @@ export function Footer() {
           {/* Social */}
           <div className="flex gap-3">
             {[
-              { icon: Instagram, label: 'Instagram', href: '#' },
-              { icon: Mail, label: 'Email', href: 'mailto:christine@example.com' },
-              { icon: ExternalLink, label: 'Behance', href: '#' },
+              { icon: Line, label: 'Line', href: '#' },
+              { icon: Mail, label: 'Email', href: 'mailto:c2170337@gmail.com' },
+              { icon: ExternalLink, label: 'contact', href: '#' },
             ].map(({ icon: Icon, label, href }) => (
               <a
                 key={label}
@@ -58,7 +54,7 @@ export function Footer() {
                 className="w-9 h-9 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                 style={{ background: 'rgba(176,123,179,0.12)', color: '#B07BB3' }}
               >
-                <Icon size={15} />
+                <Icon size={16} />
               </a>
             ))}
           </div>
@@ -69,7 +65,7 @@ export function Footer() {
           style={{ borderTop: '1px solid rgba(176,123,179,0.1)' }}
         >
           <p style={{ fontSize: '12px', color: '#8B7A8B' }}>
-            © 2024 Christine Lin. 版權所有
+            © Christine. All Rights Reserved.
           </p>
           <p style={{ fontSize: '12px', color: '#8B7A8B' }}>
             設計 · 創作 · 品牌
