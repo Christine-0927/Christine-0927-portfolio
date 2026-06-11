@@ -20,6 +20,7 @@ export function Footer() {
                   />
                </Link>
           </div>
+      </div>
 
           {/* Links */}
           <nav className="flex flex-wrap gap-6">
