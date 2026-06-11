@@ -52,7 +52,7 @@ const timeline = [
 ];
 
 const certifications = [
-  { title: '網頁設計 丙級', subtitle: 'Level C Technician for Web Page Design', color: '#664077' },
+  { title: '網頁設計 丙級', Subtitle: 'Level C Technician for Web Page Design', color: '#664077' },
   { title: '視覺傳達設計 丙級', Subtitle: 'Level C Technician for Visual Communication Design', color: '#664077' },
   { title: '印前製程－圖文組版 PC 丙級', Subtitle: 'Level C Technician for Prepress Processes – Text and Image Composition(PC)', color: '#664077' },
   { title: 'ICEP國際英語能力證書 Level 2', Subtitle: 'ICEP International Certificate of English Proficiency – Level 2', color: '#664077' },
@@ -312,13 +312,13 @@ export function AboutPage() {
               className="mb-3 tracking-widest uppercase"
               style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.25em' }}
             >
-              Certifications & Awards
+              Certifications
             </p>
             <h2
               className="mb-12"
               style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.25 }}
             >
-              <span style={{ fontWeight: 600, color: '#664077' }}>獎項與認證</span>
+              <span style={{ fontWeight: 600, color: '#664077' }}>專業認證</span>
             </h2>
           </ScrollReveal>
 
