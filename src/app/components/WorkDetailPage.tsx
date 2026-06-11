@@ -162,7 +162,7 @@ export function WorkDetailPage() {
               style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', fontWeight: 300, color: '#212121' }}
             >
 
-              <span style={{ fontWeight: 400, color: '#664077' }}>作品圖集</span>
+              <span style={{ fontWeight: 600, color: '#664077' }}>作品圖集</span>
             </h2>
           </ScrollReveal>
 
@@ -254,7 +254,7 @@ export function WorkDetailPage() {
               className="mb-10"
               style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', fontWeight: 300, color: '#212121' }}
             >
-              <span style={{ fontWeight: 400, color: '#664077' }}>影片展示</span>
+              <span style={{ fontWeight: 600, color: '#664077' }}>影片展示</span>
             </h2>
 
             <div
