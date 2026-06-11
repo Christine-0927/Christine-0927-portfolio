@@ -108,7 +108,7 @@ export function AboutPage() {
                 具備平面設計、品牌視覺、UI/UX 與 3D 視覺創作經驗，<br />            
                 擅長整合資訊與視覺語言，創造兼具美感與實用性的成果。
               </p>
-              <p className="mb-10" style={{ fontSize: '16px', color: '#474747, lineHeight: 1.9, fontWeight: 300 }}>
+              <p className="mb-10" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 300 }}>
                 我相信設計不只是創造美感，更是解決問題與傳遞訊息的過程。<br />
                 期待透過設計，為每個品牌與專案創造獨特的價值。
               </p>
