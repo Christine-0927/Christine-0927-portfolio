@@ -279,6 +279,7 @@ function FeaturedWorksCarousel() {
           <ArrowRight size={15} />
         </Link>
       </div>
+    </div>
     </section>
   );
 }
