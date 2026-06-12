@@ -97,15 +97,15 @@ export function ServicesPage() {
         <ScrollReveal>
           <p
             className="mb-4 tracking-widest uppercase"
-            style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.25em' }}
+            style={{ fontSize: '14px', color: '#B07BB3', letterSpacing: '0.2em' }}
           >
             Services
           </p>
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <h1
-              style={{ fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.15 }}
+              style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
             >
-              <span style={{ fontWeight: 700, color: '#664077' }}>服務項目</span>
+              <span style={{ fontWeight: 600, color: '#664077' }}>服務項目</span>
             </h1>
             <p
               className="max-w-md"
@@ -226,13 +226,13 @@ export function ServicesPage() {
           <ScrollReveal>
             <p
               className="mb-3 tracking-widest uppercase"
-              style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.25em' }}
+              style={{ fontSize: '14px', color: '#B07BB3', letterSpacing: '0.2em' }}
             >
               Process
             </p>
             <h2
               className="mb-16"
-              style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 300, color: '#212121' }}
+              style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
             >
               <span style={{ fontWeight: 600, color: '#664077' }}>合作流程</span>
             </h2>
@@ -271,7 +271,7 @@ export function ServicesPage() {
         <ScrollReveal>
           <p
             className="mb-4 tracking-widest uppercase"
-            style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.25em' }}
+            style={{ fontSize: '12px', color: '#B07BB3', letterSpacing: '0.2em' }}
           >
             Ready to Start
           </p>
@@ -279,7 +279,7 @@ export function ServicesPage() {
             className="mb-5"
             style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.6rem)', fontWeight: 300, color: '#212121' }}
           >
-            一起打造您的<span style={{ fontWeight: 700, color: '#664077' }}>品牌故事</span>
+            一起打造您的<span style={{ fontWeight: 600, color: '#664077' }}>品牌故事</span>
           </h2>
           <p
             className="mb-8 max-w-lg mx-auto"
