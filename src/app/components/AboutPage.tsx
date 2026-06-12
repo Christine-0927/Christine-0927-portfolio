@@ -146,7 +146,7 @@ export function AboutPage() {
               >
                 <img
                   src="images/about/designphoto.jpg"
-                  alt="Christine 個人照"
+                  alt="Christine 設計師"
                   className="w-full h-full object-cover"
                 />
               </div>
