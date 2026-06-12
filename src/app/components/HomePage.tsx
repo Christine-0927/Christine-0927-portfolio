@@ -49,12 +49,12 @@ function FeaturedWorksCarousel() {
           <div>
             <p
               className="mb-3 tracking-widest uppercase"
-              style={{ fontSize: '12px', color: '#B07BB3', letterSpacing: '0.2em' }}
+              style={{ fontSize: '14px', color: '#B07BB3', letterSpacing: '0.2em' }}
             >
               Featured Works
             </p>
             <h2
-              style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
+              style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
             >
               <span style={{ fontWeight: 600, color: '#664077' }}>精選作品集</span>
             </h2>
@@ -173,12 +173,9 @@ function FeaturedWorksCarousel() {
 
                 {/* Info */}
                 <div className="p-5">
-                  <h3 style={{ fontSize: '18px', fontWeight: 600, color: '#212121', marginBottom: '4px', lineHeight: 1.4 }}>
+                  <h3 style={{ fontSize: '18px', fontWeight: 500, color: '#212121', marginBottom: '4px', lineHeight: 1.5, textAlign: 'center' }}>
                     {work.title}
                   </h3>
-                  <p style={{ fontSize: '12px', color: '#8B7A8B', marginBottom: '12px' }}>
-                    {work.year} · {work.client}
-                  </p>
                   <div className="flex flex-wrap gap-1.5">
                     {work.tags.slice(0, 2).map(tag => (
                       <span
@@ -275,15 +272,6 @@ export function HomePage() {
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 w-full pt-36">
           <div className="max-w-2xl">
-            <ScrollReveal delay={100}>
-              <p
-                className="mb-5 tracking-widest uppercase"
-                style={{ fontSize: '12px', color: '#B07BB3', letterSpacing: '0.2em' }}
-              >
-                Creative Design Studio
-              </p>
-            </ScrollReveal>
-
             <ScrollReveal delay={200}>
               <h1
                 className="mb-6 leading-tight"
@@ -297,7 +285,7 @@ export function HomePage() {
               >
                 透過設計
                 <br />
-                與每個故事相遇。
+                與各種故事相遇。
               </h1>
             </ScrollReveal>
 
@@ -306,8 +294,8 @@ export function HomePage() {
                 className="mb-10 max-w-lg"
                 style={{ fontSize: '18px', color: '#474747', lineHeight: 1.85, fontWeight: 400 }}
               >
-                我是 Christine，一位專注於視覺設計與數位媒體的設計師。
-                透過設計整合創意、資訊與體驗，將想法轉化為清晰且具有影響力的成果，為品牌與專案創造獨特價值。
+                我是 Christine，一位專注於視覺設計與數位媒體的設計師。                
+                透過設計傳遞訊息，將想法轉化為清晰且具識別度的視覺呈現，為品牌與專案創造價值。
               </p>
             </ScrollReveal>
 
@@ -378,22 +366,17 @@ export function HomePage() {
               </p>
               <h2
                 className="mb-6"
-                style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
+                style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
               >
-                用設計連結<br />
-                <span style={{ fontWeight: 700, color: '#664077' }}>情感與品牌</span>
+                <span style={{ fontWeight: 600, color: '#664077' }}>讓設計成為故事的橋樑</span>
               </h2>
               <p
                 className="mb-5"
                 style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}
               >
-                具備平面設計、品牌視覺、UI/UX 與 3D 視覺創作經驗，我擅長整合資訊與視覺語言，創造兼具美感與實用性的成果。
-              </p>
-              <p
-                className="mb-8"
-                style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}
-              >
-                我相信設計不只是創造美感，更是解決問題與傳遞訊息的過程。期待透過設計，為每個品牌與專案創造獨特的價值。。
+                我相信每個品牌、每個專案背後，都有值得被看見的故事。<br />    
+                設計對我而言，不只是畫面的呈現，更是一種表達方式。透過視覺語言傳遞理念，讓訊息被理解、讓想法被看見。<br />             
+                從品牌視覺、平面設計、UI/UX 設計與 3D 視覺創作，我持續探索不同的可能性，期待創造兼具美感與實用性的設計成果。
               </p>
               <Link
                 to="/about"
@@ -427,9 +410,9 @@ export function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
                 <h2
-                  style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 300, color: '#212121', lineHeight: 1.25 }}
+                  style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
                 >
-                  <span style={{ fontWeight: 700, color: '#664077' }}>我的服務項目</span>
+                  <span style={{ fontWeight: 600, color: '#664077' }}>我的服務項目</span>
                 </h2>
                 <Link
                   to="/services"
@@ -466,17 +449,17 @@ export function HomePage() {
                 >
                   <span
                     className="block mb-5"
-                    style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.15em', fontWeight: 500 }}
+                    style={{ fontSize: '14px', color: '#B07BB3', letterSpacing: '0.15em', fontWeight: 400 }}
                   >
                     {number}
                   </span>
                   <h3
                     className="mb-3"
-                    style={{ fontSize: '18px', fontWeight: 700, color: '#212121' }}
+                    style={{ fontSize: '18px', fontWeight: 600, color: '#212121' }}
                   >
                     {title}
                   </h3>
-                  <p style={{ fontSize: '14px', color: '#8B7A8B', lineHeight: 1.8, fontWeight: 300 }}>
+                  <p style={{ fontSize: '14px', color: '#474747', lineHeight: 1.8, fontWeight: 400 }}>
                     {desc}
                   </p>
                 </div>
@@ -500,7 +483,7 @@ export function HomePage() {
           <ScrollReveal>
             <p
               className="mb-4 tracking-widest uppercase"
-              style={{ fontSize: '11px', color: 'rgba(255,255,255,0.7)', letterSpacing: '0.25em' }}
+              style={{ fontSize: '12px', color: 'rgba(255,255,255,0.7)', letterSpacing: '0.25em' }}
             >
               Let's Work Together
             </p>
