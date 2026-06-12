@@ -508,13 +508,13 @@ export function HomePage() {
             background: `
               radial-gradient(
                 circle at 20% 20%,
-                rgba(176,123,179,.22),
-                transparent 35%
+                rgba(176,123,179,0.25),
+                transparent 25%
               ),
               radial-gradient(
                 circle at 80% 80%,
-                rgba(102,64,119,.35),
-                transparent 40%
+                rgba(102,64,119,0.35),
+                transparent 35%
               ),
               linear-gradient(
                 135deg,
