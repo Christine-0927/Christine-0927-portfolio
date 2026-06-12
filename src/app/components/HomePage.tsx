@@ -46,7 +46,11 @@ function FeaturedWorksCarousel() {
   );
 
   return (
-    <section className="py-28 max-w-7xl mx-auto px-6 lg:px-10">
+    <section 
+      className="py-28"
+      style={{ background: '#FFFFFF' }}
+    >
+      <div className="max-w-7xl mx-auto px-6 lg:px-10">
       {/* Header */}
       <ScrollReveal>
         <div className="mb-14 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
@@ -424,7 +428,7 @@ export function HomePage() {
       {/* Services */}
       <section
         className="py-24"
-        style={{ background: ' background: '#FAFAF8' }}
+        style={{ background: '#FAFAF8' }}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <ScrollReveal>
@@ -497,13 +501,7 @@ export function HomePage() {
       </section>
 
       {/* Featured Works Carousel */}
-      <section
-        style={{
-        background: '#FFFFFF',
-        }}
-      >  
-        <FeaturedWorksCarousel />
-      </section>        
+      <FeaturedWorksCarousel />
 
       {/* CTA Banner */}
       {/* Decorative Glow */}
@@ -536,7 +534,7 @@ export function HomePage() {
         <div
           style={{
             position: 'absolute',
-            top '-100px',
+            top: '-100px',
             left: '-100px',
             width: '260px',
             height: '260px',
@@ -596,7 +594,7 @@ export function HomePage() {
             </Link>
           </ScrollReveal>
         </div>
-      </div>
+        </div>
       </section>
     </div>
   );
