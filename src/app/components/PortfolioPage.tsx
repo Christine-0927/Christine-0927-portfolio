@@ -16,7 +16,7 @@ export function PortfolioPage() {
         <ScrollReveal>
           <p
             className="mb-4 tracking-widest uppercase"
-            style={{ fontSize: '12px', color: '#B07BB3', letterSpacing: '0.2em' }}
+            style={{ fontSize: '14px', color: '#B07BB3', letterSpacing: '0.2em' }}
           >
             Portfolio
           </p>
