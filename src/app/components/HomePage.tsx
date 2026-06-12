@@ -104,11 +104,11 @@ function FeaturedWorksCarousel() {
               style={{
                 background: '#FFFFFF',
                 border: '1px solid rgba(176,123,179,0.18)',
-                opacity: canPrev ? 1 : 0.35,
-                cursor: canPrev ? 'pointer' : 'not-allowed',
+                opacity: canNext ? 1 : 0.35,
+                cursor: canNext ? 'pointer' : 'not-allowed',
               }}
               onMouseEnter={(e) => {
-                if (!canPrev) return;
+                if (!canNext) return;
                 e.currentTarget.style.background = '#664077';
                 e.currentTarget.style.transform = 'translateY(-2px)';
                 const icon = e.currentTarget.querySelector('svg');
@@ -149,7 +149,7 @@ function FeaturedWorksCarousel() {
             >
               <Link
                 to={`/portfolio/${work.id}`}
-                className="group block rounded-2xl overflow-hidden transition-all duration-400"
+                className="group block rounded-2xl overflow-hidden transition-all duration-300"
                 style={{
                   textDecoration: 'none',
                   background: '#fff',
@@ -268,7 +268,7 @@ function FeaturedWorksCarousel() {
           onMouseLeave={e => {
             (e.currentTarget as HTMLAnchorElement).style.background = 'transparent';
             (e.currentTarget as HTMLAnchorElement).style.color = '#B07BB3';
-            (e.currentTarget as HTMLAnchorElement).style.borderColor = '2px solid rgba(176,123,179,1)';
+            (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(176,123,179,1)';
           }}
         >
           查看更多作品
@@ -415,7 +415,6 @@ export function HomePage() {
               >
                 深入了解
                 <ArrowRight size={15} />
-                />
               </Link>
             </div>
           </ScrollReveal>
