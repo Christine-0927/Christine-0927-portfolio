@@ -18,7 +18,7 @@ export function WorkDetailPage() {
   if (!work) {
     return (
       <div className="pt-36 text-center min-h-screen flex flex-col items-center justify-center">
-        <p style={{ fontSize: '18px', color: '#8B7A8B', marginBottom: '24px' }}>找不到此作品</p>
+        <p style={{ fontSize: '16px', color: '#474747', marginBottom: '24px' }}>找不到此作品</p>
         <Link
           to="/portfolio"
           className="inline-flex items-center gap-2"
@@ -38,11 +38,11 @@ export function WorkDetailPage() {
         <Link
           to="/portfolio"
           className="inline-flex items-center gap-2 transition-colors duration-200"
-          style={{ textDecoration: 'none', color: '#8B7A8B', fontSize: '13px' }}
+          style={{ textDecoration: 'none', color: '#8B7A8B', fontSize: '14px' }}
           onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.color = '#B07BB3'; }}
           onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.color = '#8B7A8B'; }}
         >
-          <ArrowLeft size={13} />
+          <ArrowLeft size={14} />
           回到作品集
         </Link>
       </div>
@@ -88,12 +88,12 @@ export function WorkDetailPage() {
             <ScrollReveal>
               <h1
                 className="mb-3"
-                style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: '#212121', lineHeight: 1.2 }}
+                style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 500, color: '#212121', lineHeight: 1.2 }}
               >
                 {work.title}
               </h1>
-              <p style={{ fontSize: '18px', color: '#B07BB3', marginBottom: '20px' }}>{work.subtitle}</p>
-              <p style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 300 }}>
+              <p style={{ fontSize: '20px', color: '#B07BB3', marginBottom: '20px' }}>{work.subtitle}</p>
+              <p style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
                 {work.description}
               </p>
             </ScrollReveal>
@@ -108,7 +108,7 @@ export function WorkDetailPage() {
                 boxShadow: '0 4px 24px rgba(176,123,179,0.08)',
               }}
             >
-              <h3 style={{ fontSize: '13px', color: '#B07BB3', marginBottom: '16px', letterSpacing: '0.1em' }}>
+              <h3 style={{ fontSize: '14px', color: '#B07BB3', marginBottom: '16px', letterSpacing: '0.1em' }}>
                 PROJECT INFO
               </h3>
               {[
@@ -119,12 +119,12 @@ export function WorkDetailPage() {
                   className="flex justify-between py-3"
                   style={{ borderBottom: '1px solid rgba(176,123,179,0.1)' }}
                 >
-                  <span style={{ fontSize: '13px', color: '#B07BB3' }}>{label}</span>
-                  <span style={{ fontSize: '13px', color: '#212121', fontWeight: 500 }}>{value}</span>
+                  <span style={{ fontSize: '14px', color: '#B07BB3' }}>{label}</span>
+                  <span style={{ fontSize: '14px', color: '#474747', fontWeight: 400 }}>{value}</span>
                 </div>
               ))}
               <div className="mt-4">
-                <p style={{ fontSize: '12px', color: '#B07BB3', marginBottom: '10px', letterSpacing: '0.08em' }}>
+                <p style={{ fontSize: '14px', color: '#B07BB3', marginBottom: '10px', letterSpacing: '0.02em' }}>
                   使用工具
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -132,7 +132,7 @@ export function WorkDetailPage() {
                     <span
                       key={tag}
                       className="px-3 py-1 rounded-full"
-                      style={{ background: 'rgba(176,123,179,0.1)', color: '#B07BB3', fontSize: '11px' }}
+                      style={{ background: 'rgba(176,123,179,0.1)', color: '#B07BB3', fontSize: '12px' }}
                     >
                       {tag}
                     </span>
@@ -153,13 +153,13 @@ export function WorkDetailPage() {
           <ScrollReveal>
             <p
               className="mb-3 tracking-widest uppercase"
-              style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.25em' }}
+              style={{ fontSize: '14px', color: '#B07BB3', letterSpacing: '0.2em' }}
             >
               Gallery
             </p>
             <h2
               className="mb-10"
-              style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', fontWeight: 300, color: '#212121' }}
+              style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 400, color: '#212121' }}
             >
 
               <span style={{ fontWeight: 600, color: '#664077' }}>作品圖集</span>
@@ -168,51 +168,31 @@ export function WorkDetailPage() {
 
           {/* Main large image */}
           <div
-            className="rounded-2xl overflow-hidden mb-4 flex justify-center"
+            className="rounded-2xl overflow-hidden mb-4 flex justify-center items-center relative"
             style={{
-              background: '#F5F5F5',
+              background: '#F7F7F7',
               boxShadow: '0 16px 60px rgba(102,64,119,0.14)'
+
+              
+              ...(work.displayType === 'long-scroll'
+                ? {}
+                : {
+                    minHeight: '500px',
+                    height: '70vh',
+                    maxHeight: '900px',
+                  }),
             }}
           >
+            
             <img
               src={work.images[galleryIndex]}
               alt={`${work.title} - 圖 ${galleryIndex + 1}`}
-              className="max-w-full max-h-full object-contain"
+              className=={
+                work.displayType === 'long-scroll'
+                ? 'w-full h-auto'
+                : 'max-w-full max-h-full object-contain'
+              }
             />
-
-            {/* Prev/Next buttons */}
-            {work.images.length > 1 && (
-              <>
-                <button
-                  onClick={() => setGalleryIndex(i => Math.max(0, i - 1))}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110"
-                  style={{
-                    background: 'rgba(255,255,255,0.9)',
-                    backdropFilter: 'blur(8px)',
-                    border: 'none',
-                    cursor: 'pointer',
-                    opacity: galleryIndex === 0 ? 0.4 : 1,
-                  }}
-                  disabled={galleryIndex === 0}
-                >
-                  <ChevronLeft size={18} color="#664077" />
-                </button>
-                <button
-                  onClick={() => setGalleryIndex(i => Math.min(work.images.length - 1, i + 1))}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110"
-                  style={{
-                    background: 'rgba(255,255,255,0.9)',
-                    backdropFilter: 'blur(8px)',
-                    border: 'none',
-                    cursor: 'pointer',
-                    opacity: galleryIndex === work.images.length - 1 ? 0.4 : 1,
-                  }}
-                  disabled={galleryIndex === work.images.length - 1}
-                >
-                  <ChevronRight size={18} color="#664077" />
-                </button>
-              </>
-            )}
           </div>
 
           {/* Thumbnails */}
@@ -246,13 +226,13 @@ export function WorkDetailPage() {
           <ScrollReveal>
             <p
               className="mb-3 tracking-widest uppercase"
-              style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.25em' }}
+              style={{ fontSize: '14px', color: '#B07BB3', letterSpacing: '0.2em' }}
             >
               Video Showcase
             </p>
             <h2
               className="mb-10"
-              style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', fontWeight: 300, color: '#212121' }}
+              style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 400, color: '#212121' }}
             >
               <span style={{ fontWeight: 600, color: '#664077' }}>影片展示</span>
             </h2>
@@ -267,12 +247,30 @@ export function WorkDetailPage() {
               onClick={() => setShowVideo(!showVideo)}
             >
               {!showVideo ? (
-                <>
+                
                   <iframe
                     src={work.videoUrl}
-                    alt={work.title}
-                    className="absolute inset-0 w-full h-full object-cover opacity-40"
+                    className="absolute inset-0 w-full h-full"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
                   />
+                ) : (
+
+                  >
+                    <img
+                      src={work.coverImage}
+                      alt={work.title}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                     
+                    <div
+                      className="absolute inset-0"
+                      style={{
+                        background:
+                          'rgba(0,0,0,0.35)'
+                      }}
+                    />
+                
                   <div className="relative flex flex-col items-center gap-4">
                     <div
                       className="w-20 h-20 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
