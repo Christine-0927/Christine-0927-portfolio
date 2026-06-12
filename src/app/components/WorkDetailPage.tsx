@@ -250,12 +250,22 @@ export function WorkDetailPage() {
               }}
             >
               {showVideo ? (
-                <iframe
-                  src={work.videoUrl}
-                  className="absolute inset-0 w-full h-full"
-                  allow="autoplay; fullscreen"
-                  allowFullScreen
-                />
+                work.videoType === 'youtube' ? (
+                  <iframe
+                    src={`${work.videoUrl}${work.videoUrl.includes('?') ? '&' : '?'}autoplay=1`}
+                    className="absolute inset-0 w-full h-full"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                  />
+                ) : (
+                  <video
+                    className="absolute inset-0 w-full h-full object-cover"
+                    src={work.videoUrl}
+                    controls
+                    autoPlay
+                    playsInline
+                  />
+                )
               ) : (
                 <>
                   <img
