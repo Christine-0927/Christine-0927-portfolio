@@ -491,8 +491,8 @@ export function HomePage() {
               ),
               linear-gradient(
                 135deg,
-                #212121 0%,
-                #2B2530 50%,
+                #664077 0%,
+                #B07BB3 50%,
                 #664077 100%
               )
             `,
@@ -549,14 +549,14 @@ export function HomePage() {
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full transition-all duration-300 hover:-translate-y-1"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
               style={{
                 background: '#FFFFFF',
                 color: '#664077',
                 textDecoration: 'none',
                 fontSize: '14px',
                 fontWeight: 600,
-                boxShadow: '0 10px 30px rgba(0,0,0,0.25)',
+                boxShadow: '0 8px 30px rgba(0,0,0,0.25)',
               }}
             >
               與我聯繫
