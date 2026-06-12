@@ -136,7 +136,12 @@ function FeaturedWorksCarousel() {
       </ScrollReveal>
 
       {/* Carousel track */}
-      <div className="overflow-hidden">
+      <div className="overflow-hidden"
+        style={{
+          paddingTop: '12px',
+          paddingBottom: '24px',
+        }}
+      >
         <div
           ref={trackRef}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-500"
