@@ -474,34 +474,65 @@ export function HomePage() {
 
       {/* CTA Banner */}
       {/* Decorative Glow */}
-      <div
-        style={{
-          position: 'absolute',  
-          top: '-120px',
-          right: '-120px',
-          width: '320px',
-          height: '320px',
-          borderRadius: '50%', 
-          background: 'rgba(176,123,179,.18)',
-          filter: 'blur(80px)',
-          pointerEvents: 'none', 
-        }}
-      />
-      
-      <div
-        style={{
-          position: 'absolute',
-          bottom: '-100px',
-          left: '-100px',
-          width: '260px',
-          height: '260px',
-          borderRadius: '50%',
-          background: 'rgba(102,64,119,.18)',
-          filter: 'blur(80px)',
-          pointerEvents: 'none', 
-        }}
-      />
-      
+      <section className="mx-4 sm:mx-8 lg:mx-10 mb-8 rounded-3xl overflow-hidden">
+        <div
+          className="relative py-20 px-8 text-center"
+          style={{
+            background: `
+              radial-gradient(
+                circle at 20% 20%,
+                rgba(176,123,179,.22),
+                transparent 35%
+              ),
+              radial-gradient(
+                circle at 80% 80%,
+                rgba(102,64,119,.35),
+                transparent 40%
+              ),
+              linear-gradient(
+                135deg,
+                #212121 0%,
+                #2B2530 50%,
+                #664077 100%
+              )
+            `,
+            border: '1px solid rgba(255,255,255,.08)',
+            boxShadow: '0 24px 60px rgba(0,0,0,.18)',
+          }}
+        >
+        {/* Top Right Glow */}
+        <div
+          style={{
+            position: 'absolute',
+            bottom: '-100px',
+            left: '-100px',
+            width: '260px',
+            height: '260px',
+            borderRadius: '50%',
+            background: 'rgba(102,64,119,.18)',
+            filter: 'blur(80px)',
+            pointerEvents: 'none', 
+            zIndex: 0,
+          }}
+        />
+
+        {/* Bottom Left Glow */}
+        <div
+          style={{
+            position: 'absolute',
+            bottom: '-100px',
+            left: '-100px',
+            width: '260px',
+            height: '260px',
+            borderRadius: '50%',
+            background: 'rgba(102,64,119,.18)',
+            filter: 'blur(80px)',
+            pointerEvents: 'none',
+            zIndex: 0,
+          }}
+        />
+          
+        <div style={{ position: 'relative', zIndex: 1 }}>
           <ScrollReveal>
             <h2
               className="mb-6"
@@ -518,13 +549,13 @@ export function HomePage() {
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full transition-all duration-300 hover:-translate-y-1"
               style={{
                 background: '#FFFFFF',
                 color: '#664077',
                 textDecoration: 'none',
                 fontSize: '14px',
-                fontWeight: 700,
+                fontWeight: 600,
                 boxShadow: '0 10px 30px rgba(0,0,0,0.25)',
               }}
             >
@@ -533,6 +564,7 @@ export function HomePage() {
             </Link>
           </ScrollReveal>
         </div>
+      </div>
       </section>
     </div>
   );
