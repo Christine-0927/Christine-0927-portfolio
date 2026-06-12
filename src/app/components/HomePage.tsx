@@ -477,22 +477,33 @@ export function HomePage() {
         <div
           className="relative py-20 px-8 text-center"
           style={{
-            background:
-            radial-gradient(circle at 20% 30%, rgba(145, 120, 255, 0.10),transparent 40%),
-            radial-gradient(circle at 80% 70%, rgba(255, 180, 210, 0.08),transparent 40%),
-            #FAFAF8;
+            background: `
+              radial-gradient(
+                circle at 20% 30%,
+                rgba(145, 120, 255, 0.10),
+                transparent 40%
+              ),
+              radial-gradient(
+                circle at 80% 70%,
+                rgba(255, 180, 210, 0.08),
+                transparent 40%
+              ),
+              #FAFAF8
+            `,
+            border: '1px solid rgba(0,0,0,0.06)',
+            boxShadow: '0 10px 30px rgba(0,0,0,0.04)',
           }}
         >
           <ScrollReveal>
             <h2
               className="mb-6"
-              style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 600, color: '#fff', lineHeight: 1.2 }}
+              style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 600, color: '#664077', lineHeight: 1.2 }}
             >
               如果你正在尋找設計協作的夥伴
             </h2>
             <p
               className="mb-10 max-w-xl mx-auto"
-              style={{ fontSize: '16px', color: 'rgba(255,255,255,0.85)', lineHeight: 1.8, fontWeight: 300 }}
+              style={{ fontSize: '16px', color: '#B07BB3', lineHeight: 1.8, fontWeight: 400 }}
             >
               無論是品牌建立、視覺設計，或是數位設計需求，<br className="hidden sm:block" />
               都可以一起討論，讓想法慢慢變得清晰並落地。
@@ -501,11 +512,11 @@ export function HomePage() {
               to="/contact"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
               style={{
-                background: '#fff',
-                color: '#664077',
+                background: 'linear-gradient(135deg, #B07BB3, #664077)',
+                color: '#FFFFFF',
                 textDecoration: 'none',
                 fontSize: '14px',
-                fontWeight: 700,
+                fontWeight: 600,
                 boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
               }}
             >
