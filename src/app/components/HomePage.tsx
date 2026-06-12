@@ -27,16 +27,20 @@ const services = [
   },
 ];
 
+const CARDS_PER_PAGE_DESKTOP = 3;
+const featuredWorks = works.filter(
+  work => work.featured
+);
+
 function FeaturedWorksCarousel() {
-  const CARDS_PER_PAGE_DESKTOP = 3;
-  const totalPages = Math.ceil(works.length / CARDS_PER_PAGE_DESKTOP);
+  const totalPages = Math.ceil(featuredWorks.length / CARDS_PER_PAGE_DESKTOP);
   const [page, setPage] = useState(0);
   const trackRef = useRef<HTMLDivElement>(null);
 
   const canPrev = page > 0;
   const canNext = page < totalPages - 1;
 
-  const visibleWorks = works.slice(
+  const visibleWorks = featuredWorks.slice(
     page * CARDS_PER_PAGE_DESKTOP,
     page * CARDS_PER_PAGE_DESKTOP + CARDS_PER_PAGE_DESKTOP,
   );
@@ -61,40 +65,67 @@ function FeaturedWorksCarousel() {
           </div>
 
           {/* Arrow controls */}
-          <div className="flex items-center gap-3">
-            <span style={{ fontSize: '14px', color: '#8B7A8B', marginRight: '4px' }}>
-              {page + 1} / {totalPages}
-            </span>
+          <div className="flex items-center gap-2">
             <button
               onClick={() => setPage(p => Math.max(0, p - 1))}
               disabled={!canPrev}
-              className="w-11 h-11 rounded-full flex items-center justify-center transition-all duration-300"
+              className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
               style={{
-                background: canPrev ? '#fff' : '#F4EEF5',
-                border: `1px solid ${canPrev ? 'rgba(176,123,179,0.3)' : 'rgba(176,123,179,0.1)'}`,
-                boxShadow: canPrev ? '0 4px 16px rgba(176,123,179,0.15)' : 'none',
+                background: '#FFFFFF',
+                border: '1px solid rgba(176,123,179,0.18)',
+                opacity: canPrev ? 1 : 0.35,
                 cursor: canPrev ? 'pointer' : 'not-allowed',
-                transform: canPrev ? undefined : undefined,
               }}
-              onMouseEnter={e => { if (canPrev) (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1.08)'; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1)'; }}
+              onMouseEnter={(e) => {
+                if (!canPrev) return;
+                e.currentTarget.style.background = '#664077';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                const icon = e.currentTarget.querySelector('svg');
+                if (icon) icon.style.color = '#FFFFFF';
+              }}
+              onMouseLeave={(e) => {
+                 e.currentTarget.style.background = '#FFFFFF';
+                 e.currentTarget.style.transform = 'translateY(0)';
+                 const icon = e.currentTarget.querySelector('svg');
+                 if (icon) icon.style.color = '#664077';
+              }}
             >
-              <ChevronLeft size={18} color={canPrev ? '#664077' : '#C0A8C2'} />
+              <ChevronLeft 
+                size={18}
+                color='#664077'
+                style={{ transition: '0.3s ease' }}
+              />
             </button>
+            
             <button
               onClick={() => setPage(p => Math.min(totalPages - 1, p + 1))}
               disabled={!canNext}
-              className="w-11 h-11 rounded-full flex items-center justify-center transition-all duration-300"
+              className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
               style={{
-                background: canNext ? 'linear-gradient(135deg, #B07BB3, #664077)' : '#F4EEF5',
-                border: `1px solid ${canNext ? 'transparent' : 'rgba(176,123,179,0.1)'}`,
-                boxShadow: canNext ? '0 4px 16px rgba(102,64,119,0.25)' : 'none',
-                cursor: canNext ? 'pointer' : 'not-allowed',
+                background: '#FFFFFF',
+                border: '1px solid rgba(176,123,179,0.18)',
+                opacity: canPrev ? 1 : 0.35,
+                cursor: canPrev ? 'pointer' : 'not-allowed',
               }}
-              onMouseEnter={e => { if (canNext) (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1.08)'; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1)'; }}
+              onMouseEnter={(e) => {
+                if (!canPrev) return;
+                e.currentTarget.style.background = '#664077';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                const icon = e.currentTarget.querySelector('svg');
+                if (icon) icon.style.color = '#FFFFFF';
+              }}
+              onMouseLeave={(e) => {
+                 e.currentTarget.style.background = '#FFFFFF';
+                 e.currentTarget.style.transform = 'translateY(0)';
+                 const icon = e.currentTarget.querySelector('svg');
+                 if (icon) icon.style.color = '#664077';
+              }}
             >
-              <ChevronRight size={18} color={canNext ? '#fff' : '#C0A8C2'} />
+              <ChevronRight 
+                size={18}
+                color='#664077'
+                style={{ transition: '0.3s ease' }}
+              />
             </button>
           </div>
         </div>
@@ -222,7 +253,7 @@ function FeaturedWorksCarousel() {
           className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
           style={{
             textDecoration: 'none',
-            background: '#transparent',
+            background: 'transparent',
             border: '2px solid rgba(176,123,179,1)',
             color: '#B07BB3',
             fontSize: '14px',
@@ -383,9 +414,7 @@ export function HomePage() {
                 style={{ textDecoration: 'none', color: '#664077', fontSize: '14px', fontWeight: 500 }}
               >
                 深入了解
-                <ArrowUpRight
-                  size={16}
-                  className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                <ArrowRight size={15} />
                 />
               </Link>
             </div>
