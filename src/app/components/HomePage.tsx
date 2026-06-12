@@ -219,16 +219,15 @@ function FeaturedWorksCarousel() {
       <div className="flex justify-center mt-10">
         <Link
           to="/portfolio"
-          className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+          className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
           style={{
             textDecoration: 'none',
             background: '#transparent',
             border: '2px solid rgba(176,123,179,1)',
-            color: '#664077',
+            color: '#B07BB3',
             fontSize: '14px',
             fontWeight: 500,
             letterSpacing: '0.04em',
-            boxShadow: '0 4px 20px rgba(176,123,179,0.12)',
           }}
           onMouseEnter={e => {
             (e.currentTarget as HTMLAnchorElement).style.background = 'linear-gradient(135deg, #B07BB3, #664077)';
@@ -237,8 +236,8 @@ function FeaturedWorksCarousel() {
           }}
           onMouseLeave={e => {
             (e.currentTarget as HTMLAnchorElement).style.background = 'transparent';
-            (e.currentTarget as HTMLAnchorElement).style.color = '#664077';
-            (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(176,123,179,1)';
+            (e.currentTarget as HTMLAnchorElement).style.color = '#B07BB3';
+            (e.currentTarget as HTMLAnchorElement).style.borderColor = '2px solid rgba(176,123,179,1)';
           }}
         >
           查看更多作品
@@ -492,8 +491,7 @@ export function HomePage() {
               linear-gradient(
                 135deg,
                 #664077 0%,
-                #B07BB3 50%,
-                #664077 100%
+                #B07BB3 100%,
               )
             `,
             border: '1px solid rgba(255,255,255,.08)',
@@ -542,7 +540,7 @@ export function HomePage() {
             </h2>
             <p
               className="mb-10 max-w-xl mx-auto"
-              style={{ fontSize: '16px', color: 'rgba(255,255,255,0.78)', lineHeight: 1.8, fontWeight: 400 }}
+              style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.8, fontWeight: 400 }}
             >
               無論是品牌建立、視覺設計，或是數位設計需求，<br className="hidden sm:block" />
               都可以一起討論，讓想法慢慢變得清晰並落地。
