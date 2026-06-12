@@ -280,9 +280,6 @@ export function WorkDetailPage() {
                     </div>
                   </div>
                 </>
-              ) : (
-                <div className="w-full h-full flex items-center justify-center">
-                </div>
               )}
             </div>
           </ScrollReveal>
