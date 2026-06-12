@@ -63,12 +63,12 @@ export function ContactPage() {
         <ScrollReveal>
           <p
             className="mb-4 tracking-widest uppercase"
-            style={{ fontSize: '12px', color: '#B07BB3', letterSpacing: '0.2em' }}
+            style={{ fontSize: '14px', color: '#B07BB3', letterSpacing: '0.2em' }}
           >
             Contact
           </p>
           <h1
-            style={{ fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
+            style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
           >
             <span style={{ fontWeight: 600, color: '#664077' }}>聯絡方式</span>
           </h1>
