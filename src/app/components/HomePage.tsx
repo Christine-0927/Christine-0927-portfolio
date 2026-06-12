@@ -519,18 +519,18 @@ export function HomePage() {
               linear-gradient(
                 135deg,
                 #664077 0%,
-                #B07BB3 100%,
+                #B07BB3 100%
               )
             `,
             border: '1px solid rgba(255,255,255,.08)',
             boxShadow: '0 24px 60px rgba(0,0,0,.18)',
           }}
         >
-        {/* Top Right Glow */}
+        {/* Top Left Glow */}
         <div
           style={{
             position: 'absolute',
-            bottom: '-100px',
+            top '-100px',
             left: '-100px',
             width: '260px',
             height: '260px',
@@ -542,12 +542,12 @@ export function HomePage() {
           }}
         />
 
-        {/* Bottom Left Glow */}
+        {/* Bottom Right Glow */}
         <div
           style={{
             position: 'absolute',
             bottom: '-100px',
-            left: '-100px',
+            Right: '-100px',
             width: '260px',
             height: '260px',
             borderRadius: '50%',
