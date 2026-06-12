@@ -132,7 +132,7 @@ export function PortfolioPage() {
                 {/* Info */}
                 <div className="p-5">
                   <h3
-                    style={{ fontSize: '18px', fontWeight: 400, color: '#212121', marginBottom: '4px', lineHeight: 1.5, textAlign: 'center'}}
+                    style={{ fontSize: '18px', fontWeight: 500, color: '#212121', marginBottom: '4px', lineHeight: 1.5, textAlign: 'center'}}
                   >
                     {work.title}
                   </h3>
