@@ -222,8 +222,8 @@ function FeaturedWorksCarousel() {
           className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
           style={{
             textDecoration: 'none',
-            background: '#fff',
-            border: '1px solid rgba(176,123,179,0.3)',
+            background: '#transparent',
+            border: '2px solid rgba(176,123,179,1)',
             color: '#664077',
             fontSize: '14px',
             fontWeight: 500,
@@ -236,13 +236,13 @@ function FeaturedWorksCarousel() {
             (e.currentTarget as HTMLAnchorElement).style.borderColor = 'transparent';
           }}
           onMouseLeave={e => {
-            (e.currentTarget as HTMLAnchorElement).style.background = '#fff';
+            (e.currentTarget as HTMLAnchorElement).style.background = 'transparent';
             (e.currentTarget as HTMLAnchorElement).style.color = '#664077';
-            (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(176,123,179,0.3)';
+            (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(176,123,179,1)';
           }}
         >
           查看更多作品
-          <ArrowRight size={14} />
+          <ArrowRight size={15} />
         </Link>
       </div>
     </section>
@@ -337,7 +337,7 @@ export function HomePage() {
       {/* About Preview */}
       <section className="py-28 max-w-7xl mx-auto px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <ScrollReveal direction="left">
+          <ScrollReveal direction="right">
             <div className="relative">
               <div
                 className="absolute -top-6 -left-6 w-64 h-64 rounded-full opacity-20"
@@ -345,7 +345,7 @@ export function HomePage() {
               />
               <div
                 className="relative rounded-3xl overflow-hidden"
-                style={{ aspectRatio: '4/5', boxShadow: '0 32px 80px rgba(102,64,119,0.18)' }}
+                style={{ aspectRatio: '3/4', boxShadow: '0 32px 80px rgba(102,64,119,0.18)' }}
               >
                 <img
                   src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=1000&fit=crop&auto=format"
@@ -356,7 +356,7 @@ export function HomePage() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal direction="right" delay={100}>
+          <ScrollReveal direction="left" delay={100}>
             <div>
               <p
                 className="mb-4 tracking-widest uppercase"
@@ -477,28 +477,25 @@ export function HomePage() {
         <div
           className="relative py-20 px-8 text-center"
           style={{
-            background: 'linear-gradient(135deg, #664077 0%, #B07BB3 60%, #F8D6D9 100%)',
+            background:
+            radial-gradient(circle at 20% 30%, rgba(145, 120, 255, 0.10),transparent 40%),
+            radial-gradient(circle at 80% 70%, rgba(255, 180, 210, 0.08),transparent 40%),
+            #FAFAF8;
           }}
         >
           <ScrollReveal>
-            <p
-              className="mb-4 tracking-widest uppercase"
-              style={{ fontSize: '12px', color: 'rgba(255,255,255,0.7)', letterSpacing: '0.25em' }}
-            >
-              Let's Work Together
-            </p>
             <h2
               className="mb-6"
-              style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 700, color: '#fff', lineHeight: 1.2 }}
+              style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 600, color: '#fff', lineHeight: 1.2 }}
             >
-              準備好開啟您的<br />品牌設計之旅了嗎？
+              如果你正在尋找設計協作的夥伴
             </h2>
             <p
               className="mb-10 max-w-xl mx-auto"
               style={{ fontSize: '16px', color: 'rgba(255,255,255,0.85)', lineHeight: 1.8, fontWeight: 300 }}
             >
-              無論是全新品牌打造、設計翻新，或是數位介面優化，<br className="hidden sm:block" />
-              我都很樂意與您一同創造精彩。
+              無論是品牌建立、視覺設計，或是數位設計需求，<br className="hidden sm:block" />
+              都可以一起討論，讓想法慢慢變得清晰並落地。
             </p>
             <Link
               to="/contact"
@@ -512,7 +509,7 @@ export function HomePage() {
                 boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
               }}
             >
-              立即聯繫
+              與我聯繫
               <ArrowRight size={15} />
             </Link>
           </ScrollReveal>
