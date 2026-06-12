@@ -424,7 +424,7 @@ export function HomePage() {
       {/* Services */}
       <section
         className="py-24"
-        style={{ background: 'linear-gradient(180deg, #FAFAF8 0%, #F8F4F9 100%)' }}
+        style={{ background: ' background: '#FAFAF8' }}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <ScrollReveal>
@@ -497,7 +497,13 @@ export function HomePage() {
       </section>
 
       {/* Featured Works Carousel */}
-      <FeaturedWorksCarousel />
+      <section
+        style={{
+        background: '#FFFFFF',
+        }}
+      >  
+        <FeaturedWorksCarousel />
+      </section>        
 
       {/* CTA Banner */}
       {/* Decorative Glow */}
@@ -547,7 +553,7 @@ export function HomePage() {
           style={{
             position: 'absolute',
             bottom: '-100px',
-            Right: '-100px',
+            right: '-100px',
             width: '260px',
             height: '260px',
             borderRadius: '50%',
