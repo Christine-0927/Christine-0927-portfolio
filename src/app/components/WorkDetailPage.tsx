@@ -171,8 +171,7 @@ export function WorkDetailPage() {
             className="rounded-2xl overflow-hidden mb-4 flex justify-center items-center relative"
             style={{
               background: '#F7F7F7',
-              boxShadow: '0 16px 60px rgba(102,64,119,0.14)'
-
+              boxShadow: '0 16px 60px rgba(102,64,119,0.14)',
               
               ...(work.displayType === 'long-scroll'
                 ? {}
@@ -187,7 +186,7 @@ export function WorkDetailPage() {
             <img
               src={work.images[galleryIndex]}
               alt={`${work.title} - 圖 ${galleryIndex + 1}`}
-              className=={
+              className={
                 work.displayType === 'long-scroll'
                 ? 'w-full h-auto'
                 : 'max-w-full max-h-full object-contain'
@@ -244,32 +243,33 @@ export function WorkDetailPage() {
                 background: 'linear-gradient(135deg, #664077, #B07BB3)',
                 boxShadow: '0 16px 60px rgba(102,64,119,0.2)',
               }}
-              onClick={() => setShowVideo(!showVideo)}
+              onClick={() => {
+                if (!showVideo) {
+                setShowVideo(true);
+                }
+              }}
             >
-              {!showVideo ? (
-                
-                  <iframe
-                    src={work.videoUrl}
-                    className="absolute inset-0 w-full h-full"
-                    allow="autoplay; fullscreen"
-                    allowFullScreen
+              {showVideo ? (
+                <iframe
+                  src={work.videoUrl}
+                  className="absolute inset-0 w-full h-full"
+                  allow="autoplay; fullscreen"
+                  allowFullScreen
+                />
+              ) : (
+                <>
+                  <img
+                    src={work.coverImage}
+                    alt={work.title}
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
-                ) : (
-
-                  >
-                    <img
-                      src={work.coverImage}
-                      alt={work.title}
-                      className="absolute inset-0 w-full h-full object-cover"
-                    />
                      
-                    <div
-                      className="absolute inset-0"
-                      style={{
-                        background:
-                          'rgba(0,0,0,0.35)'
-                      }}
-                    />
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background: 'rgba(0,0,0,0.35)',
+                    }}
+                  />
                 
                   <div className="relative flex flex-col items-center gap-4">
                     <div
@@ -309,10 +309,10 @@ export function WorkDetailPage() {
                   <ChevronLeft size={18} color="#B07BB3" />
                 </div>
                 <div>
-                  <p style={{ fontSize: '11px', color: '#8B7A8B', marginBottom: '2px', letterSpacing: '0.1em' }}>
+                  <p style={{ fontSize: '14px', color: '#B07BB3', marginBottom: '2px', letterSpacing: '0.1em' }}>
                     上一個作品
                   </p>
-                  <p style={{ fontSize: '15px', color: '#212121', fontWeight: 500 }}>{prevWork.title}</p>
+                  <p style={{ fontSize: '16px', color: '#212121', fontWeight: 500 }}>{prevWork.title}</p>
                 </div>
               </Link>
             ) : <div className="flex-1" />}
@@ -324,7 +324,7 @@ export function WorkDetailPage() {
                 background: 'rgba(176,123,179,0.12)',
                 color: '#664077',
                 textDecoration: 'none',
-                fontSize: '13px',
+                fontSize: '14px',
                 whiteSpace: 'nowrap',
               }}
             >
@@ -338,10 +338,10 @@ export function WorkDetailPage() {
                 style={{ textDecoration: 'none' }}
               >
                 <div>
-                  <p style={{ fontSize: '11px', color: '#8B7A8B', marginBottom: '2px', letterSpacing: '0.1em' }}>
+                  <p style={{ fontSize: '14px', color: '#B07BB3', marginBottom: '2px', letterSpacing: '0.1em' }}>
                     下一個作品
                   </p>
-                  <p style={{ fontSize: '15px', color: '#212121', fontWeight: 500 }}>{nextWork.title}</p>
+                  <p style={{ fontSize: '16px', color: '#212121', fontWeight: 500 }}>{nextWork.title}</p>
                 </div>
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 group-hover:translate-x-1"
