@@ -259,26 +259,21 @@ function FeaturedWorksCarousel() {
       <div className="flex justify-center mt-10">
         <Link
           to="/portfolio"
-          className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
-          style={{
-            textDecoration: 'none',
-            background: 'transparent',
-            border: '2px solid rgba(176,123,179,1)',
-            color: '#B07BB3',
-            fontSize: '14px',
-            fontWeight: 500,
-            letterSpacing: '0.04em',
-          }}
-          onMouseEnter={e => {
-            (e.currentTarget as HTMLAnchorElement).style.background = 'linear-gradient(135deg, #B07BB3, #664077)';
-            (e.currentTarget as HTMLAnchorElement).style.color = '#fff';
-            (e.currentTarget as HTMLAnchorElement).style.borderColor = 'transparent';
-          }}
-          onMouseLeave={e => {
-            (e.currentTarget as HTMLAnchorElement).style.background = 'transparent';
-            (e.currentTarget as HTMLAnchorElement).style.color = '#B07BB3';
-            (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(176,123,179,1)';
-          }}
+          className="
+            inline-flex items-center gap-2
+            px-7 py-3.5 
+            rounded-full 
+            border-2 border-[#B07BB3]
+            text-[#B07BB3]
+            text-sm font-medium tracking-[0.04em]
+            transition-all duration-300 ease-out
+            hover:bg-gradient-to-r hover:from-[#B07BB3] hover:to-[#664077]
+            hover:text-white
+            hover:border-transparent
+            hover:shadow-lg
+            hover:-translate-y-0.5
+            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B07BB3]/40
+          "
         >
           查看更多作品
           <ArrowRight size={15} />
@@ -377,18 +372,18 @@ export function HomePage() {
       {/* About Preview */}
       <section className="py-28 max-w-7xl mx-auto px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <ScrollReveal direction="right">
+          <ScrollReveal direction="left">
             <div className="relative">
               <div
                 className="absolute -top-6 -left-6 w-64 h-64 rounded-full opacity-20"
                 style={{ background: 'radial-gradient(circle, #B07BB3, transparent)' }}
               />
               <div
-                className="relative rounded-3xl overflow-hidden"
-                style={{ aspectRatio: '3/4', boxShadow: '0 32px 80px rgba(102,64,119,0.18)' }}
+                className="relative rounded-3xl overflow-hidden mx-auto"
+                style={{ aspectRatio: '3/4', maxWidth: '380px', boxShadow: '0 32px 80px rgba(102,64,119,0.18)' }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=1000&fit=crop&auto=format"
+                  src="images/about/designphoto.jpg"
                   alt="Christine 設計師"
                   className="w-full h-full object-cover"
                 />
@@ -396,7 +391,7 @@ export function HomePage() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal direction="left" delay={100}>
+          <ScrollReveal direction="right" delay={100}>
             <div>
               <p
                 className="mb-4 tracking-widest uppercase"
@@ -410,18 +405,34 @@ export function HomePage() {
               >
                 <span style={{ fontWeight: 600, color: '#664077' }}>讓設計成為故事的橋樑</span>
               </h2>
-              <p
-                className="mb-5"
-                style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}
-              >
-                我相信每個品牌、每個專案背後，都有值得被看見的故事。<br />    
-                設計對我而言，不只是畫面的呈現，更是一種表達方式。透過視覺語言傳遞理念，讓訊息被理解、讓想法被看見。<br />             
-                從品牌視覺、平面設計、UI/UX 設計與 3D 視覺創作，我持續探索不同的可能性，期待創造兼具美感與實用性的設計成果。
+              <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
+                我相信每個品牌、每個專案背後，都有值得被看見的故事。
+              </p>
+              <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
+                設計對我而言，不只是畫面的呈現，更是一種表達方式。<br />
+                透過視覺語言傳遞理念，讓訊息被理解、讓想法被看見。
+              </p>
+              <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
+                從品牌視覺、平面設計、UI/UX 設計與 3D 視覺創作，<br />
+                我持續探索不同的可能性，期待創造兼具美感與實用性的設計成果。
               </p>
               <Link
                 to="/about"
-                className="inline-flex items-center gap-2 transition-all duration-300 group"
-                style={{ textDecoration: 'none', color: '#664077', fontSize: '14px', fontWeight: 500 }}
+                className="
+                  inline-flex items-center gap-2
+                  px-7 py-3.5 
+                  rounded-full 
+                  border-2 border-[#B07BB3]
+                  text-[#B07BB3]
+                  text-sm font-medium tracking-[0.04em]
+                  transition-all duration-300 ease-out
+                  hover:bg-gradient-to-r hover:from-[#B07BB3] hover:to-[#664077]
+                  hover:text-white
+                  hover:border-transparent
+                  hover:shadow-lg
+                  hover:-translate-y-0.5
+                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B07BB3]/40
+                "
               >
                 深入了解
                 <ArrowRight size={15} />
