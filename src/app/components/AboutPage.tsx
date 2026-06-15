@@ -128,7 +128,7 @@ export function AboutPage() {
                       <Icon size={20} color="#B07BB3" />
                     </div>
                     <div>
-                      <p style={{ fontSize: '12px', color: '#664027', letterSpacing: '0.06em' }}>{label}</p>
+                      <p style={{ fontSize: '12px', color: '#664077', letterSpacing: '0.06em' }}>{label}</p>
                       <p style={{ fontSize: '16px', color: '#474747', fontWeight: 400 }}>{text}</p>
                     </div>
                   </div>
