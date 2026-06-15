@@ -258,6 +258,9 @@ function FeaturedWorksCarousel() {
             text-[#B07BB3]
             text-sm font-medium tracking-[0.04em]
             transition-all duration-300 ease-out
+            
+            overflow-hidden
+          
             before:content-['']
             before:absolute before:inset-0
             before:rounded-full
@@ -267,17 +270,16 @@ function FeaturedWorksCarousel() {
             before:opacity-0
             before:transition-opacity before:duration-300
             hover:before:opacity-100
-            hover:text-white
             hover:border-transparent
+            hover:text-white
 
-            overflow-hidden
             focus-visible:outline-none
             focus-visible:ring-2
             focus-visible:ring-[#B07BB3]/40
           "
         >          
           <span className="relative z-10 flex items-center gap-2">
-            深入了解
+            查看更多作品
             <ArrowRight size={15} />
           </span>
         </Link>
