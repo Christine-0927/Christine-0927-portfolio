@@ -70,7 +70,7 @@ function FeaturedWorksCarousel() {
 
           {/* Arrow controls */}
           <div className="flex items-center gap-2">
-             {/* Prev */}
+            {/* Prev */}
             <button
               onClick={() => setPage(p => Math.max(0, p - 1))}
               disabled={!canPrev}
@@ -258,9 +258,7 @@ function FeaturedWorksCarousel() {
             text-[#B07BB3]
             text-sm font-medium tracking-[0.04em]
             transition-all duration-300 ease-out
-            
             overflow-hidden
-          
             before:content-['']
             before:absolute before:inset-0
             before:rounded-full
@@ -423,7 +421,7 @@ export function HomePage() {
               <Link
                 to="/about"
                 className="
-                  inline-flex items-center gap-2
+                  relative z-0 inline-flex items-center gap-2
                   px-5 py-2.5 
                   mt-6
                   rounded-full 
@@ -431,16 +429,27 @@ export function HomePage() {
                   text-[#B07BB3]
                   text-sm font-medium tracking-[0.04em]
                   transition-all duration-300 ease-out
-                  hover:bg-gradient-to-r hover:from-[#B07BB3] hover:to-[#664077]
+                  overflow-hidden
+                  before:content-['']
+                  before:absolute before:inset-0
+                  before:rounded-full
+                  before:bg-gradient-to-r
+                  before:from-[#B07BB3]
+                  before:to-[#664077]
+                  before:opacity-0
+                  before:transition-opacity before:duration-300
+                  hover:before:opacity-100
                   hover:text-white
-                  hover:shadow-lg
-                  hover:-translate-y-0.5
-                  hover:border-[#B07BB3]/0
-                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B07BB3]/40
+                  hover:border-transparent
+                  focus-visible:outline-none
+                  focus-visible:ring-2
+                  focus-visible:ring-[#B07BB3]/40
                 "
               >
-                深入了解
-                <ArrowRight size={15} />
+                <span className="relative z-10 flex items-center gap-2">
+                  深入了解
+                  <ArrowRight size={15} />
+                </span>
               </Link>
             </div>
           </ScrollReveal>
