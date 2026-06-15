@@ -251,7 +251,7 @@ function FeaturedWorksCarousel() {
         <Link
           to="/portfolio"
           className="
-            inline-flex items-center gap-2
+            relative z-0 inline-flex items-center gap-2
             px-5 py-2.5 
             rounded-full 
             border-2 border-[#B07BB3]
@@ -263,16 +263,15 @@ function FeaturedWorksCarousel() {
           
             before:content-['']
             before:absolute before:inset-0
-            before:bg-red-500
             before:rounded-full
+            before:bg-gradient-to-r
             before:from-[#B07BB3]
             before:to-[#664077]
             before:opacity-0
             before:transition-opacity before:duration-300
             hover:before:opacity-100
-            hover:border-transparent
             hover:text-white
-
+            hover:border-transparent
             focus-visible:outline-none
             focus-visible:ring-2
             focus-visible:ring-[#B07BB3]/40
