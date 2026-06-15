@@ -122,7 +122,7 @@ function FeaturedWorksCarousel() {
       </ScrollReveal>
 
       {/* Carousel track */}
-      <div className="overflow-hidden"
+      <div 
         style={{
           paddingTop: '12px',
           paddingBottom: '24px',
@@ -142,6 +142,7 @@ function FeaturedWorksCarousel() {
                 animationDelay: `${i * 80}ms`,
               }}
             >
+              {/* Card 外層 */}
               <Link
                 to={`/portfolio/${work.id}`}
                 className="group block rounded-2xl overflow-hidden transition-all duration-300"
@@ -150,6 +151,7 @@ function FeaturedWorksCarousel() {
                   background: '#fff',
                   border: '1px solid rgba(176,123,179,0.1)',
                   boxShadow: '0 4px 28px rgba(102,64,119,0.08)',
+                  transform: 'translateY(0)',
                 }}
                 onMouseEnter={e => {
                   (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(-3px)';
@@ -161,7 +163,8 @@ function FeaturedWorksCarousel() {
                 }}
               >
                 {/* Image */}
-                <div className="relative overflow-hidden" style={{ aspectRatio: '4/3' }}>
+                <div 
+                  className="relative overflow-hidden rounded-t-2xl" style={{ aspectRatio: '4/3' }}>
                   <img
                     src={work.coverImage}
                     alt={work.title}
@@ -170,6 +173,8 @@ function FeaturedWorksCarousel() {
                     onMouseEnter={e => { (e.currentTarget as HTMLImageElement).style.filter = 'grayscale(0%)'; }}
                     onMouseLeave={e => { (e.currentTarget as HTMLImageElement).style.filter = 'grayscale(35%)'; }}
                   />
+
+                  {/* Hover overlay */}
                   <div
                     className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
                     style={{ background: 'rgba(102,64,119,0.25)', backdropFilter: 'blur(2px)' }}
@@ -231,7 +236,7 @@ function FeaturedWorksCarousel() {
               width: i === page ? '24px' : '8px',
               height: '8px',
               borderRadius: '4px',
-              background: i === page ? 'linear-gradient(90deg, #B07BB3, #664077)' : 'rgba(176,123,179,0.25)',
+              background: i === page ? '#B07BB3' : 'rgba(176,123,179,0.25)',
               border: 'none',
               cursor: 'pointer',
               padding: 0,
