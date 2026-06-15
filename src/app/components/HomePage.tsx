@@ -73,26 +73,22 @@ function FeaturedWorksCarousel() {
             <button
               onClick={() => setPage(p => Math.max(0, p - 1))}
               disabled={!canPrev}
-              className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
-              style={{
-                background: '#FFFFFF',
-                border: '1px solid rgba(176,123,179,0.18)',
-                opacity: canPrev ? 1 : 0.35,
-                cursor: canPrev ? 'pointer' : 'not-allowed',
-              }}
-              onMouseEnter={(e) => {
-                if (!canPrev) return;
-                e.currentTarget.style.background = '#664077';
-                e.currentTarget.style.transform = 'translateY(-2px)';
-                const icon = e.currentTarget.querySelector('svg');
-                if (icon) icon.style.color = '#FFFFFF';
-              }}
-              onMouseLeave={(e) => {
-                 e.currentTarget.style.background = '#FFFFFF';
-                 e.currentTarget.style.transform = 'translateY(0)';
-                 const icon = e.currentTarget.querySelector('svg');
-                 if (icon) icon.style.color = '#664077';
-              }}
+              className="
+                w-10 h-10 
+                rounded-full 
+                flex items-center justify-center
+                transition-all duration-300 ease-out
+                text-[#664077]
+                bg-white
+                border border-[rgba(176,123,179,0.18)]
+                hover:bg-[#664077]
+                hover:text-white
+                hover:-translate-y-0.5
+                disabled:opacity-30
+                disabled:cursor-not-allowed
+                disabled:hover:bg-white
+                disabled:hover:text-[#664077]
+              "
             >
               <ChevronLeft 
                 size={18}
@@ -166,8 +162,8 @@ function FeaturedWorksCarousel() {
                   boxShadow: '0 4px 28px rgba(102,64,119,0.08)',
                 }}
                 onMouseEnter={e => {
-                  (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(-6px)';
-                  (e.currentTarget as HTMLAnchorElement).style.boxShadow = '0 20px 60px rgba(102,64,119,0.16)';
+                  (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(-3px)';
+                  (e.currentTarget as HTMLAnchorElement).style.boxShadow = '0 10px 30px rgba(102,64,119,0.16)';
                 }}
                 onMouseLeave={e => {
                   (e.currentTarget as HTMLAnchorElement).style.transform = 'translateY(0)';
@@ -261,7 +257,7 @@ function FeaturedWorksCarousel() {
           to="/portfolio"
           className="
             inline-flex items-center gap-2
-            px-7 py-3.5 
+            px-5 py-2.5 
             rounded-full 
             border-2 border-[#B07BB3]
             text-[#B07BB3]
@@ -269,9 +265,9 @@ function FeaturedWorksCarousel() {
             transition-all duration-300 ease-out
             hover:bg-gradient-to-r hover:from-[#B07BB3] hover:to-[#664077]
             hover:text-white
-            hover:border-transparent
             hover:shadow-lg
             hover:-translate-y-0.5
+            hover:border-[#B07BB3]/0
             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B07BB3]/40
           "
         >
@@ -420,7 +416,7 @@ export function HomePage() {
                 to="/about"
                 className="
                   inline-flex items-center gap-2
-                  px-7 py-3.5 
+                  px-5 py-2.5 
                   rounded-full 
                   border-2 border-[#B07BB3]
                   text-[#B07BB3]
@@ -428,9 +424,9 @@ export function HomePage() {
                   transition-all duration-300 ease-out
                   hover:bg-gradient-to-r hover:from-[#B07BB3] hover:to-[#664077]
                   hover:text-white
-                  hover:border-transparent
                   hover:shadow-lg
                   hover:-translate-y-0.5
+                  hover:border-[#B07BB3]/0
                   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B07BB3]/40
                 "
               >
