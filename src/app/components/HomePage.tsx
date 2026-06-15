@@ -265,7 +265,6 @@ function FeaturedWorksCarousel() {
             before:absolute before:inset-0
             before:bg-red-500
             before:rounded-full
-            before:bg-gradient-to-r
             before:from-[#B07BB3]
             before:to-[#664077]
             before:opacity-0
