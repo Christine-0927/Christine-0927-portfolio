@@ -263,15 +263,17 @@ function FeaturedWorksCarousel() {
             hover:text-white
             hover:border-transparent
             overflow-hidden
+            focus-visible:outline-none
+            focus-visible:ring-2 focus-visible:ring-[#B07BB3]/40
           "
         >
-          {/* gradient layer */}
+          {/* gradient */}
           <span
             className="
             absolute inset-0
             opacity-0
-            hover:opacity-100
-            transition-opacity duration-300
+            group-hover:opacity-100
+            transition-opacity duration-300 ease-out
           "
           style={{
             background: 'linear-gradient(135deg, #B07BB3, #664077)',
