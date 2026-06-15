@@ -102,19 +102,20 @@ export function AboutPage() {
 
               <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
                 你好，我是 Christine。<br />
-                熱愛設計、影像與創作，專注於視覺設計與數位媒體領域。喜歡觀察生活中的細節，也享受將想法轉化為設計成果的過程。
+                熱愛設計、影像與創作，專注於視覺設計與數位媒體領域。<br />
+                喜歡觀察生活中的細節，也享受將想法轉化為設計成果的過程。
               </p>
               <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
                 具備平面設計、品牌視覺、UI/UX 與 3D 視覺創作經驗，<br />           
                 擅長整合資訊與視覺語言，創造兼具美感與實用性的作品。
               </p>
               <p className="mb-10" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
-                我相信好的設計不只是讓畫面更美，而是讓訊息被理解、讓想法被看見。<br />
-                期待透過設計，為品牌、產品與使用者創造更好的體驗。
+                我相信好的設計不只是視覺上的美感，更是整理思維、傳遞訊息的方式。<br /> 
+                期待透過設計，為品牌創造獨特價值，讓每個專案都擁有屬於自己的故事。
               </p>
 
               {/* Contact Info */}
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-5">
                 {[
                   { icon: Phone, text: '0979451327', label: '電話' },
                   { icon: Mail, text: 'c2170337@gmail.com', label: 'Email' },
