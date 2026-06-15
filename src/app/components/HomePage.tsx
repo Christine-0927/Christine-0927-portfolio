@@ -82,7 +82,7 @@ function FeaturedWorksCarousel() {
                 text-[#664077]
                 bg-white
                 border border-[rgba(176,123,179,0.18)]
-                hover:bg-[#664077]
+                hover:bg-gradient-to-r hover:from-[#B07BB3] hover:to-[#664077]
                 hover:text-white
                 hover:-translate-y-0.5
                 disabled:opacity-30
@@ -106,7 +106,7 @@ function FeaturedWorksCarousel() {
                 text-[#664077]
                 bg-white
                 border border-[rgba(176,123,179,0.18)]
-                hover:bg-[#664077]
+                hover:bg-gradient-to-r hover:from-[#B07BB3] hover:to-[#664077]
                 hover:text-white
                 hover:-translate-y-0.5
                 disabled:opacity-30
@@ -407,6 +407,7 @@ export function HomePage() {
                 className="
                   inline-flex items-center gap-2
                   px-5 py-2.5 
+                  mt-6
                   rounded-full 
                   border-2 border-[#B07BB3]
                   text-[#B07BB3]
