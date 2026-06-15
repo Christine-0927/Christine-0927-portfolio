@@ -110,12 +110,11 @@ export function AboutPage() {
                 擅長整合資訊與視覺語言，創造兼具美感與實用性的作品。
               </p>
               <p className="mb-10" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
-                我相信好的設計不只是視覺上的美感，更是整理思維、傳遞訊息的方式。<br /> 
-                期待透過設計，為品牌創造獨特價值，讓每個專案都擁有屬於自己的故事。
+                我相信好的設計不只是視覺美感，更是整理思維、傳遞訊息的方式。期待透過設計，為品牌創造獨特價值，讓每個專案都擁有屬於自己的故事。
               </p>
 
               {/* Contact Info */}
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-4">
                 {[
                   { icon: Phone, text: '0979451327', label: '電話' },
                   { icon: Mail, text: 'c2170337@gmail.com', label: 'Email' },
@@ -129,7 +128,7 @@ export function AboutPage() {
                       <Icon size={20} color="#B07BB3" />
                     </div>
                     <div>
-                      <p style={{ fontSize: '12px', color: '#664077', letterSpacing: '0.06em' }}>{label}</p>
+                      <p style={{ fontSize: '12px', color: '#B07BB3', letterSpacing: '0.06em' }}>{label}</p>
                       <p style={{ fontSize: '16px', color: '#474747', fontWeight: 400 }}>{text}</p>
                     </div>
                   </div>
