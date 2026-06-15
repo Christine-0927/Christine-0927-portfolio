@@ -258,39 +258,28 @@ function FeaturedWorksCarousel() {
             text-[#B07BB3]
             text-sm font-medium tracking-[0.04em]
             transition-all duration-300 ease-out
-            overflow-hidden
-            group
-          
             hover:-translate-y-0.5
             hover:shadow-lg
+            hover:text-white
+            hover:border-transparent
             
             focus-visible:outline-none
             focus-visible:ring-2 focus-visible:ring-[#B07BB3]/40
           "
+          style={{
+            background: '#fff',
+          }}
+          onMouseEnter={e => {
+            const el = e.currentTarget as HTMLAnchorElement;
+            el.style.background = 'linear-gradient(135deg, #B07BB3, #664077)';
+          }}
+          onMouseLeave={e => {
+            const el = e.currentTarget as HTMLAnchorElement;
+            el.style.background = '#fff';
+          }}
         >
-          {/* gradient background layer */}
-          <span
-            className="
-              absolute inset-0
-              opacity-0 group-hover:opacity-100
-              transition-all duration-300 ease-out
-            "
-            style={{
-              background: 'linear-gradient(135deg, #B07BB3, #664077)',
-            }}
-          />
-
-          {/* text */}
-          <span
-            className="
-              relative flex items-center gap-2
-              group-hover:text-white
-              transition-colors duration-300
-            "
-          >
-            查看更多作品
-            <ArrowRight size={15} />
-          </span>
+          查看作品集
+          <ArrowRight size={15} />
         </Link>
       </div>
     </div>
