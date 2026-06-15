@@ -70,6 +70,7 @@ function FeaturedWorksCarousel() {
 
           {/* Arrow controls */}
           <div className="flex items-center gap-2">
+             {/* Prev */}
             <button
               onClick={() => setPage(p => Math.max(0, p - 1))}
               disabled={!canPrev}
@@ -90,42 +91,31 @@ function FeaturedWorksCarousel() {
                 disabled:hover:text-[#664077]
               "
             >
-              <ChevronLeft 
-                size={18}
-                color='#664077'
-                style={{ transition: '0.3s ease' }}
-              />
+              <ChevronLeft size={18} />
             </button>
             
+            {/* Next */}
             <button
               onClick={() => setPage(p => Math.min(totalPages - 1, p + 1))}
               disabled={!canNext}
-              className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
-              style={{
-                background: '#FFFFFF',
-                border: '1px solid rgba(176,123,179,0.18)',
-                opacity: canNext ? 1 : 0.35,
-                cursor: canNext ? 'pointer' : 'not-allowed',
-              }}
-              onMouseEnter={(e) => {
-                if (!canNext) return;
-                e.currentTarget.style.background = '#664077';
-                e.currentTarget.style.transform = 'translateY(-2px)';
-                const icon = e.currentTarget.querySelector('svg');
-                if (icon) icon.style.color = '#FFFFFF';
-              }}
-              onMouseLeave={(e) => {
-                 e.currentTarget.style.background = '#FFFFFF';
-                 e.currentTarget.style.transform = 'translateY(0)';
-                 const icon = e.currentTarget.querySelector('svg');
-                 if (icon) icon.style.color = '#664077';
-              }}
+              className="
+                w-10 h-10 
+                rounded-full 
+                flex items-center justify-center
+                transition-all duration-300 ease-out
+                text-[#664077]
+                bg-white
+                border border-[rgba(176,123,179,0.18)]
+                hover:bg-[#664077]
+                hover:text-white
+                hover:-translate-y-0.5
+                disabled:opacity-30
+                disabled:cursor-not-allowed
+                disabled:hover:bg-white
+                disabled:hover:text-[#664077]
+              "
             >
-              <ChevronRight 
-                size={18}
-                color='#664077'
-                style={{ transition: '0.3s ease' }}
-              />
+              <ChevronRight size={18} />
             </button>
           </div>
         </div>
