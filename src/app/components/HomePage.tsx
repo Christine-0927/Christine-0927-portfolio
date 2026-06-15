@@ -262,25 +262,27 @@ function FeaturedWorksCarousel() {
             hover:shadow-lg
             hover:text-white
             hover:border-transparent
-            
-            focus-visible:outline-none
-            focus-visible:ring-2 focus-visible:ring-[#B07BB3]/40
+            overflow-hidden
+          "
+        >
+          {/* gradient layer */}
+          <span
+            className="
+            absolute inset-0
+            opacity-0
+            hover:opacity-100
+            transition-opacity duration-300
           "
           style={{
-            background: '#fff',
+            background: 'linear-gradient(135deg, #B07BB3, #664077)',
           }}
-          onMouseEnter={e => {
-            const el = e.currentTarget as HTMLAnchorElement;
-            el.style.background = 'linear-gradient(135deg, #B07BB3, #664077)';
-          }}
-          onMouseLeave={e => {
-            const el = e.currentTarget as HTMLAnchorElement;
-            el.style.background = '#fff';
-          }}
-        >
+        />
+        {/* content */}
+        <span className="relative flex items-center gap-2">
           查看作品集
           <ArrowRight size={15} />
-        </Link>
+        </span>
+      </Link>
       </div>
     </div>
     </section>
