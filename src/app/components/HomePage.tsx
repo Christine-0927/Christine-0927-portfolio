@@ -258,16 +258,39 @@ function FeaturedWorksCarousel() {
             text-[#B07BB3]
             text-sm font-medium tracking-[0.04em]
             transition-all duration-300 ease-out
-            hover:bg-gradient-to-r hover:from-[#B07BB3] hover:to-[#664077]
-            hover:text-white
-            hover:shadow-lg
+            overflow-hidden
+            group
+          
             hover:-translate-y-0.5
-            hover:border-[#B07BB3]/0
-            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B07BB3]/40
+            hover:shadow-lg
+            
+            focus-visible:outline-none
+            focus-visible:ring-2 focus-visible:ring-[#B07BB3]/40
           "
         >
-          查看更多作品
-          <ArrowRight size={15} />
+          {/* gradient background layer */}
+          <span
+            className="
+              absolute inset-0
+              opacity-0 group-hover:opacity-100
+              transition-all duration-300 ease-out
+            "
+            style={{
+              background: 'linear-gradient(135deg, #B07BB3, #664077)',
+            }}
+          />
+
+          {/* text */}
+          <span
+            className="
+              relative flex items-center gap-2
+              group-hover:text-white
+              transition-colors duration-300
+            "
+          >
+            查看更多作品
+            <ArrowRight size={15} />
+          </span>
         </Link>
       </div>
     </div>
