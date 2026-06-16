@@ -356,7 +356,7 @@ export function HomePage() {
                   to="/about"
                   className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full transition-all duration-300 hover:-translate-y-0.5"
                   style={{
-                    background: 'rgba(176,123,179,0.2)',
+                    background: 'rgba(176,123,179,0.15)',
                     color: '#664077',
                     textDecoration: 'none',
                     fontSize: '14px',
