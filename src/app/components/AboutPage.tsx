@@ -142,7 +142,7 @@ export function AboutPage() {
             <div className="relative">
               <div
                 className="rounded-3xl overflow-hidden"
-                style={{  aspectRatio: '3/4', maxWidth: '380px', boxShadow: '0 32px 80px rgba(102,64,119,0.15)' }}
+                style={{  aspectRatio: '3/4', maxWidth: '420px', boxShadow: '0 32px 80px rgba(102,64,119,0.15)' }}
               >
                 <img
                   src="images/about/designphoto.jpg"
