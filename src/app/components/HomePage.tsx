@@ -290,7 +290,7 @@ export function HomePage() {
   return (
     <div style={{ fontFamily: "'Noto Sans TC', sans-serif" }}>
       {/* Hero */}
-      <section className="relative min-h-screen flex items-end pb-20 overflow-hidden">
+      <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* Background image */}
         <div className="absolute inset-0">
           <img
@@ -308,7 +308,7 @@ export function HomePage() {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10 w-full">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl -translate-y-12">
             <ScrollReveal delay={200}>
               <h1
                 className="mb-6 leading-tight"
