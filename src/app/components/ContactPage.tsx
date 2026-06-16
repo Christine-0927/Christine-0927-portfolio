@@ -114,19 +114,19 @@ export function ContactPage() {
 
                   <h2
                     className="mb-2"
-                    style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', fontWeight: 700, color: '#fff', lineHeight: 1.15 }}
+                    style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 600, color: '#fff', lineHeight: 1.25 }}
                   >
-                    Christine
+                    邱玉欣 Christine
                   </h2>
                   <p
                     className="mb-6"
-                    style={{ fontSize: '15px', color: 'rgba(248,214,217,0.9)', letterSpacing: '0.06em' }}
+                    style={{ fontSize: '16px', color: '#B07BB3', letterSpacing: '0.06em' }}
                   >
                     視覺設計師 & 創意工作者 <br />
                     Visual Designer & Creative Thinker
                   </p>
                   <p
-                    style={{ fontSize: '15px', color: 'rgba(255,255,255,0.75)', lineHeight: 1.9, fontWeight: 300, maxWidth: '380px' }}
+                    style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.9, fontWeight: 400, maxWidth: '380px' }}
                   >
                     專注於平面設計、品牌視覺、UI/UX 與 3D 視覺創作，期待透過設計傳遞想法與價值。無論是專案合作、品牌需求或工作機會，都歡迎與我聊聊。
                   </p>
@@ -161,22 +161,6 @@ export function ContactPage() {
                       </div>
                     </div>
                   ))}
-
-                  {/* LINE */}
-                  <div className="flex items-center gap-4">
-                    <div
-                      className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
-                      style={{ background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(8px)' }}
-                    >
-                      <span style={{ fontSize: '15px', fontWeight: 800, color: 'rgba(255,255,255,0.9)' }}>L</span>
-                    </div>
-                    <div>
-                      <p style={{ fontSize: '10px', color: 'rgba(255,255,255,0.5)', letterSpacing: '0.1em', marginBottom: '2px' }}>
-                        LINE ID
-                      </p>
-                      <p style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>@christinedesign</p>
-                    </div>
-                  </div>
 
                   {/* Social links */}
                   <div className="flex gap-3 mt-2">
