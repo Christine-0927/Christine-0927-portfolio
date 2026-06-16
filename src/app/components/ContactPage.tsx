@@ -114,19 +114,19 @@ export function ContactPage() {
 
                   <h2
                     className="mb-2"
-                    style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 600, color: '#fff', lineHeight: 1.25 }}
+                    style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 600, color: '#fff', letterSpacing: '0.06em',lineHeight: 1.25 }}
                   >
-                    邱玉欣 Christine
+                    邱玉欣  Christine
                   </h2>
                   <p
                     className="mb-6"
-                    style={{ fontSize: '16px', color: '#B07BB3', letterSpacing: '0.06em' }}
+                    style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', letterSpacing: '0.06em' }}
                   >
                     視覺設計師 & 創意工作者 <br />
                     Visual Designer & Creative Thinker
                   </p>
                   <p
-                    style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', lineHeight: 1.9, fontWeight: 400, maxWidth: '380px' }}
+                    style={{ fontSize: '16px', color: 'rgba(255,255,255,1)', lineHeight: 1.9, fontWeight: 400, maxWidth: '380px' }}
                   >
                     專注於平面設計、品牌視覺、UI/UX 與 3D 視覺創作，期待透過設計傳遞想法與價值。無論是專案合作、品牌需求或工作機會，都歡迎與我聊聊。
                   </p>
