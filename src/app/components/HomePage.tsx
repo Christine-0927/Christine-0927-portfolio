@@ -328,7 +328,7 @@ export function HomePage() {
 
             <ScrollReveal delay={320}>
               <p
-                className="mb-10 max-w-lg"
+                className="mb-10 max-w-[500px]"
                 style={{ fontSize: '18px', color: '#474747', lineHeight: 1.85, fontWeight: 400 }}
               >
                 我是 Christine，一位專注於視覺設計與數位媒體的設計師。                
@@ -356,7 +356,7 @@ export function HomePage() {
                   to="/about"
                   className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full transition-all duration-300 hover:-translate-y-0.5"
                   style={{
-                    background: 'rgba(176,123,179,0.5)',
+                    background: 'rgba(176,123,179,0.2)',
                     color: '#664077',
                     textDecoration: 'none',
                     fontSize: '14px',
