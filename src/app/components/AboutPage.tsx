@@ -141,8 +141,8 @@ export function AboutPage() {
           <ScrollReveal direction="right">
             <div className="relative">
               <div
-                className="rounded-3xl overflow-hidden"
-                style={{  aspectRatio: '3/4', maxWidth: '420px', boxShadow: '0 32px 80px rgba(102,64,119,0.15)' }}
+                className="relative rounded-3xl overflow-hidden mx-auto"
+                style={{  aspectRatio: '3/4', maxWidth: '440px', boxShadow: '0 32px 80px rgba(102,64,119,0.15)' }}
               >
                 <img
                   src="images/about/designphoto.jpg"
