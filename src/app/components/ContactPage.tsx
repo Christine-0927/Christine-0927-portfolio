@@ -2,9 +2,9 @@ import { Mail, Phone, MapPin, Instagram, ExternalLink } from 'lucide-react';
 import { ScrollReveal } from './ScrollReveal';
 
 const contactDetails = [
-  { icon: Phone, label: '電話', value: '+886 912 345 678', href: 'tel:+886912345678' },
-  { icon: Mail, label: 'Email', value: 'christine@designstudio.tw', href: 'mailto:christine@designstudio.tw' },
-  { icon: MapPin, label: '所在地', value: '台北市, 台灣', href: null },
+  { icon: Phone, label: '電話', value: '0979 451 327', href: 'tel:+886979451327' },
+  { icon: Mail, label: 'Email', value: 'c2170337@gmail.com', href: 'mailto:c2170337@gmail.com' },
+  { icon: MapPin, label: '所在地', value: '台中市, 台灣', href: null },
 ];
 
 function QRCodeSVG() {
@@ -63,14 +63,14 @@ export function ContactPage() {
         <ScrollReveal>
           <p
             className="mb-4 tracking-widest uppercase"
-            style={{ fontSize: '11px', color: '#B07BB3', letterSpacing: '0.25em' }}
+            style={{ fontSize: '14px', color: '#B07BB3', letterSpacing: '0.2em' }}
           >
             Contact
           </p>
           <h1
-            style={{ fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 300, color: '#212121', lineHeight: 1.15 }}
+            style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 400, color: '#212121', lineHeight: 1.25 }}
           >
-            聯絡<span style={{ fontWeight: 700, color: '#664077' }}>我</span>
+            <span style={{ fontWeight: 600, color: '#664077' }}>聯絡我</span>
           </h1>
         </ScrollReveal>
       </section>
@@ -116,19 +116,19 @@ export function ContactPage() {
                     className="mb-2"
                     style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', fontWeight: 700, color: '#fff', lineHeight: 1.15 }}
                   >
-                    Christine Lin
+                    Christine
                   </h2>
                   <p
                     className="mb-6"
                     style={{ fontSize: '15px', color: 'rgba(248,214,217,0.9)', letterSpacing: '0.06em' }}
                   >
-                    創意設計師 • Creative Design Studio
+                    視覺設計師 & 創意工作者 <br />
+                    Visual Designer & Creative Thinker
                   </p>
                   <p
                     style={{ fontSize: '15px', color: 'rgba(255,255,255,0.75)', lineHeight: 1.9, fontWeight: 300, maxWidth: '380px' }}
                   >
-                    我熱衷於打造有溫度的視覺體驗，擅長品牌識別、UI/UX 設計、3D 創作與動態設計。
-                    無論是品牌合作或求職機會，都非常歡迎與我聯繫。
+                    專注於平面設計、品牌視覺、UI/UX 與 3D 視覺創作，期待透過設計傳遞想法與價值。無論是專案合作、品牌需求或工作機會，都歡迎與我聊聊。
                   </p>
                 </div>
 
