@@ -307,7 +307,7 @@ export function HomePage() {
           />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-10 w-full pt-36">
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-10 w-full">
           <div className="max-w-2xl">
             <ScrollReveal delay={200}>
               <h1
