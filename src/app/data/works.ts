@@ -18,7 +18,7 @@ export const works: Work[] = [
     id: 'logo-sfrb',
     title: 'Logo 設計-閒雜魚飯糰',
     subtitle: 'Logo design-SFRB',
-    featured: false,
+    featured: true,
     category: '平面設計',
     displayType: 'gallery',
     description: '為創作團隊「閒雜魚飯糰」所設計的 Logo。以一隻魚構成三角飯糰的外型，象徵團隊核心人物如同將成員凝聚在一起的魚。飯糰中的海苔設計為五種不同顏色，分別代表團隊中的五位成員，每個人性格迥異，因此才能激盪出多元的創意。<br />整體造型以簡潔的黑灰線條勾勒，搭配五種亮眼色彩，增添辨識度與視覺趣味。延伸的輔助圖形象徵成員特質，轉化為五種配料：水波紋、肉排、荷包蛋、海苔以及小魚，展現出團隊雖然多元，卻能彼此緊密合作的特色。',
@@ -148,7 +148,7 @@ export const works: Work[] = [
     year: '',
     client: '',
     description: '運用 Blender 與 Substance Painter 為頂級香氛品牌創作高擬真度的 3D 產品視覺化，透過精密的材質模擬與燈光設計，呈現玻璃瓶身的光折射效果與金屬配件的質感，打造令人驚豔的視覺表現。',
-    tags: ['Blender', 'Substance Painter', '3D 渲染', '產品視覺化'],
+    tags: [],
     coverImage: '/images/works/3D/Blender-1.webp',
     images: [
       '/images/works/3D/Blender-1.webp',
@@ -235,7 +235,7 @@ export const works: Work[] = [
     year: '',
     client: '',
     description: '為親子出版社創作「夢遊仙境」兒童繪本全套插畫，共 32 頁，以溫柔的色調與圓潤的線條描繪奇幻世界，陪伴孩童進入充滿想像力的故事旅程。本書榮獲 2022 年台灣最美的書入選。',
-    tags: ['兒童插畫', '繪本', '數位繪圖', '出版設計'],
+    tags: [],
     coverImage: '/images/works/Drawing/Watercolor-2.webp',
     images: [
       '/images/works/Drawing/Watercolor-2.webp',
@@ -268,7 +268,7 @@ export const works: Work[] = [
     year: '',
     client: '',
     description: '為親子出版社創作「夢遊仙境」兒童繪本全套插畫，共 32 頁，以溫柔的色調與圓潤的線條描繪奇幻世界，陪伴孩童進入充滿想像力的故事旅程。本書榮獲 2022 年台灣最美的書入選。',
-    tags: ['兒童插畫', '繪本', '數位繪圖', '出版設計'],
+    tags: [],
     coverImage: '/images/works/Drawing/Digital-Boun.webp',
     images: [
       '/images/works/Drawing/Digital-Boun.webp',
