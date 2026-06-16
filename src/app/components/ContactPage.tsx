@@ -319,60 +319,6 @@ export function ContactPage() {
           </ScrollReveal>
         </div>
       </section>
-
-      {/* Bottom editorial strip */}
-      <section
-        className="mx-4 sm:mx-8 lg:mx-10 mb-8 rounded-3xl overflow-hidden"
-      >
-        <div
-          className="px-10 py-12 flex flex-col sm:flex-row items-center justify-between gap-6"
-          style={{ background: 'linear-gradient(135deg, #F8F4F9 0%, #F8D6D9 100%)', border: '1px solid rgba(176,123,179,0.15)' }}
-        >
-          <ScrollReveal direction="left">
-            <div>
-              <p style={{ fontSize: '13px', color: '#8B7A8B', marginBottom: '6px', letterSpacing: '0.08em' }}>
-                喜歡我的作品？
-              </p>
-              <p style={{ fontSize: 'clamp(1.2rem, 2.5vw, 1.6rem)', fontWeight: 700, color: '#664077' }}>
-                讓我們一起打造精彩。
-              </p>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal direction="right" delay={80}>
-            <div className="flex flex-wrap gap-3">
-              <a
-                href="mailto:christine@designstudio.tw"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
-                style={{
-                  background: 'linear-gradient(135deg, #B07BB3, #664077)',
-                  color: '#fff',
-                  textDecoration: 'none',
-                  fontSize: '13px',
-                  fontWeight: 500,
-                }}
-              >
-                <Mail size={13} />
-                傳送 Email
-              </a>
-              <a
-                href="tel:+886912345678"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full transition-all duration-300 hover:-translate-y-0.5"
-                style={{
-                  background: '#fff',
-                  color: '#664077',
-                  textDecoration: 'none',
-                  fontSize: '13px',
-                  fontWeight: 500,
-                  border: '1px solid rgba(176,123,179,0.25)',
-                }}
-              >
-                <Phone size={13} />
-                直接通話
-              </a>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
     </div>
   );
 }
