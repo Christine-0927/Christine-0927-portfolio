@@ -328,7 +328,7 @@ export function HomePage() {
 
             <ScrollReveal delay={320}>
               <p
-                className="mb-10 max-w-[500px]"
+                className="mb-10 max-w-[490px]"
                 style={{ fontSize: '18px', color: '#474747', lineHeight: 1.85, fontWeight: 400 }}
               >
                 我是 Christine，一位專注於視覺設計與數位媒體的設計師。                
