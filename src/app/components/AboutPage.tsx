@@ -110,7 +110,8 @@ export function AboutPage() {
                 擅長整合資訊與視覺語言，創造兼具美感與實用性的作品。
               </p>
               <p className="mb-10" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
-                我相信好的設計不只是視覺美感，更是整理思維、傳遞訊息的方式。期待透過設計，為品牌創造獨特價值，讓每個專案都擁有屬於自己的故事。
+                我相信好的設計不只是視覺美感，更是整理思維、傳遞訊息的方式。<br /> 
+                期待透過設計，為品牌創造獨特價值，讓每個專案都擁有屬於自己的故事。
               </p>
 
               {/* Contact Info */}
@@ -142,7 +143,7 @@ export function AboutPage() {
             <div className="relative">
               <div
                 className="relative rounded-3xl overflow-hidden mx-auto"
-                style={{  aspectRatio: '3/4', maxWidth: '440px', boxShadow: '0 32px 80px rgba(102,64,119,0.15)' }}
+                style={{  aspectRatio: '3/4', maxWidth: '460px', boxShadow: '0 32px 80px rgba(102,64,119,0.15)' }}
               >
                 <img
                   src="images/about/designphoto.jpg"
