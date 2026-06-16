@@ -313,7 +313,7 @@ export function HomePage() {
               <h1
                 className="mb-6 leading-tight"
                 style={{
-                  fontSize: 'clamp(2.6rem, 6vw, 5rem)',
+                  fontSize: 'clamp(2rem, 4.5vw, 3.5rem)',
                   fontWeight: 600,
                   color: '#664077',
                   lineHeight: 1.25,
@@ -322,7 +322,7 @@ export function HomePage() {
               >
                 透過設計
                 <br />
-                與各種故事相遇。
+                與各種故事相遇
               </h1>
             </ScrollReveal>
 
@@ -356,7 +356,7 @@ export function HomePage() {
                   to="/about"
                   className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full transition-all duration-300 hover:-translate-y-0.5"
                   style={{
-                    background: 'rgba(176,123,179,0.12)',
+                    background: 'rgba(176,123,179,0.5)',
                     color: '#664077',
                     textDecoration: 'none',
                     fontSize: '14px',
