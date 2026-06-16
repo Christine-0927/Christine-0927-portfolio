@@ -114,9 +114,9 @@ export function AboutPage() {
               </p>
 
               {/* Contact Info */}
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-5">
                 {[
-                  { icon: Phone, text: '0979451327', label: '電話' },
+                  { icon: Phone, text: '0979 451 327', label: '電話' },
                   { icon: Mail, text: 'c2170337@gmail.com', label: 'Email' },
                   { icon: MapPin, text: '台中市, 台灣', label: '所在地' },
                 ].map(({ icon: Icon, text, label }) => (
