@@ -9,7 +9,7 @@ export function WorkDetailPage() {
   const navigate = useNavigate();
   const [galleryIndex, setGalleryIndex] = useState(0);
   const [showVideo, setShowVideo] = useState(false);
-
+  const tools = work.tools || [];
   const idx = works.findIndex(w => w.id === id);
   const work = works[idx];
   const prevWork = idx > 0 ? works[idx - 1] : null;
@@ -96,54 +96,163 @@ export function WorkDetailPage() {
               <p style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
                 {work.description}
               </p>
+              
+              {/* tools（取代 tag 的核心） */}
+              {tools.length > 0 && (
+                <div style={{ marginTop: '16px' }}>
+                  <p>
+                    style={{
+                      fontSize: '12px',
+                      color: '#B07BB3',
+                      marginBottom: '8px',
+                      letterSpacing: '0.1em',
+                    }}
+                  >
+                    使用工具
+                  </p>
+                  
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                    {tools.map((tool) => (
+                      <span
+                        key={tool}
+                        style={{
+                          fontSize: '12px',
+                          padding: '4px 10px',
+                          borderRadius: '999px',
+                          background: 'rgba(176,123,179,0.12)',
+                          color: '#664077',
+                          border: '1px solid rgba(176,123,179,0.2)',
+                          whiteSpace: 'nowrap',
+                        }}
+                      >
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </ScrollReveal>
-          </div>
-
-          <ScrollReveal delay={100} direction="right">
-            <div
-              className="p-6 rounded-2xl"
-              style={{
-                background: '#fff',
-                border: '1px solid rgba(176,123,179,0.12)',
-                boxShadow: '0 4px 24px rgba(176,123,179,0.08)',
-              }}
-            >
-              <h3 style={{ fontSize: '14px', color: '#B07BB3', marginBottom: '16px', letterSpacing: '0.1em' }}>
-                PROJECT INFO
-              </h3>
-              {[
-                { label: '類別', value: work.category },
-              ].map(({ label, value }) => (
-                <div
-                  key={label}
-                  className="flex justify-between py-3"
-                  style={{ borderBottom: '1px solid rgba(176,123,179,0.1)' }}
-                >
-                  <span style={{ fontSize: '14px', color: '#B07BB3' }}>{label}</span>
-                  <span style={{ fontSize: '14px', color: '#474747', fontWeight: 400 }}>{value}</span>
-                </div>
-              ))}
-              <div className="mt-4">
-                <p style={{ fontSize: '14px', color: '#B07BB3', marginBottom: '10px', letterSpacing: '0.02em' }}>
-                  使用工具
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {work.tags.map(tag => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 rounded-full"
-                      style={{ background: 'rgba(176,123,179,0.1)', color: '#B07BB3', fontSize: '12px' }}
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </ScrollReveal>
+          </div>          
         </div>
       </section>
 
+      {/* Featured Case Study */}
+      {work.featuredCaseStudy && (
+        <section className="max-w-7xl mx-auto px-6 lg:px-10 mb-20">
+          <div
+            className="rounded-3xl p-8 lg:p-12"
+              style={{
+                background: '#fff',
+                border: '1px solid rgba(176,123,179,0.12)',
+                boxShadow: '0 8px 40px rgba(102,64,119,0.08)',
+              }}
+          >
+            <h2
+              style={{
+                fontSize: 'clamp(1.6rem, 3vw, 2.2rem)',
+                fontWeight: 600,
+                color: '#664077',
+                marginBottom: '24px',
+              }}
+            >
+              專案介紹
+            </h2>
+      
+            <p
+              style={{
+                fontSize: '16px',
+                lineHeight: 2,
+                color: '#474747',
+                marginBottom: '32px',
+              }}
+            >
+              《Sweet BonBons》為畢業專題製作的 3D 動畫短片，以手足情感與人性的黑暗面為核心主題，透過玩偶作為故事媒介，打造兼具奇幻、驚悚與黑色幽默風格的動畫作品。
+            </p>
+      
+            <div className="grid md:grid-cols-2 gap-10">
+              <div>
+                <h3
+                  style={{
+                    color: '#B07BB3',
+                    fontSize: '14px',
+                    letterSpacing: '0.1em',
+                    marginBottom: '16px',
+                  }}
+                >
+                  我的角色
+                </h3>
+      
+                <ul
+                  style={{
+                    color: '#474747',
+                    lineHeight: 2,
+                    fontSize: '15px',
+                  }}
+                >
+                  <li>• 監製（Producer）</li>
+                  <li>• 3D 場景與物件設計</li>
+                  <li>• 3D 建模製作</li>
+                  <li>• Animation 動作調整</li>
+                  <li>• 專案管理與進度控管</li>
+                  <li>• 腳本與企劃書撰寫</li>
+                </ul>
+              </div>
+      
+              <div>
+                <h3
+                  style={{
+                    color: '#B07BB3',
+                    fontSize: '14px',
+                    letterSpacing: '0.1em',
+                    marginBottom: '16px',
+                  }}
+                >
+                  國際獎項與影展
+                </h3>
+                
+                <div style={{ color: '#474747', lineHeight: 2, fontSize: '15px' }}>
+                    <p
+                      style={{
+                        color: '#664077',
+                        fontWeight: 600,
+                        marginBottom: '8px',
+                      }}
+                    >
+                      獲獎紀錄
+                    </p>
+                
+                    <ul style={{ marginBottom: '20px' }}>
+                      <li>2023 德國紅點設計獎</li>
+                      <li>2024 麥德林國際影展｜最佳學生短片</li>
+                      <li>2024 索契影展｜最佳動畫片</li>
+                      <li>2024 技專校院電腦動畫競賽｜佳作</li>
+                    </ul>
+                
+                    <p
+                      style={{
+                        color: '#664077',
+                        fontWeight: 600,
+                        marginBottom: '8px',
+                      }}
+                    >
+                      入圍放映
+                    </p>
+                
+                    <ul>
+                      <li>2023 放視大賞</li>
+                      <li>2024 義大利國際動漫電玩影展</li>
+                      <li>2024 西班牙奇想短片影展</li>
+                      <li>2024 美國芝加哥獨立影展</li>
+                      <li>2024 美國拉斯維加斯短片影展</li>
+                      <li>2024 立陶宛標誌性影像影展</li>
+                      <li>2024 伊斯坦堡金橋國際短片影展</li>
+                    </ul>
+                  </div>
+                </div>
+          </div>
+        </section>
+      )}
+      
       {/* Gallery */}
       <section
         className="py-16"
@@ -170,10 +279,13 @@ export function WorkDetailPage() {
           <div
             className="rounded-2xl overflow-hidden mb-4 flex justify-center items-center relative"
             style={{
-              background: '#F7F7F7',
+              background:
+                work.ImageLayout === 'landscape'
+                  ? 'transparent'
+                  : '#F8F8F8',
               boxShadow: '0 16px 60px rgba(102,64,119,0.14)',
               
-              ...(work.displayType === 'long-scroll'
+              ...(work.ImageLayout === 'long-scroll'
                 ? {}
                 : {
                     minHeight: '500px',
@@ -181,13 +293,18 @@ export function WorkDetailPage() {
                     maxHeight: '900px',
                   }),
             }}
-          >
-            
+          >            
             <img
               src={work.images[galleryIndex]}
               alt={`${work.title} - 圖 ${galleryIndex + 1}`}
               className={
-                work.displayType === 'long-scroll'
+                : work.ImageLayout === 'landscape'
+                ? 'w-full h-full object-cover'
+
+                : work.ImageLayout === 'portrait'
+                ? 'max-w-full max-h-full object-contain'
+                
+                work.ImageLayout === 'long-scroll'
                 ? 'w-full h-auto'
                 : 'max-w-full max-h-full object-contain'
               }
