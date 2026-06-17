@@ -1,6 +1,6 @@
 export type WorkCategory = '平面設計' | 'UI/UX 設計' | '3D 創作' | '繪圖作品' | '動態設計';
 
-export type DisplayType =
+export type ImageLayout =
   | 'landscape'
   | 'portrait' 
   | 'long-scroll';
@@ -10,12 +10,13 @@ export interface Work {
   title: string;
   subtitle: string;
   featured: boolean;
+  featuredCaseStudy?: boolean;
   category: WorkCategory;
   description: string;
   tools: string[];
   coverImage: string;
   images: string[];
-  displayType: DisplayType;
+  imageLayout: ImageLayout;
   hasVideo: boolean;
 }
 
@@ -32,7 +33,7 @@ export const works: Work[] = [
     images: [
       '/images/works/Graphic/Logo-SFRB.webp',
     ],
-    displayType: 'landscape',
+    imageLayout: 'landscape',
     hasVideo: false,
   },
   {
@@ -47,7 +48,7 @@ export const works: Work[] = [
     images: [
       '/images/works/Graphic/Logo-Canvas Print.webp',
     ],
-    displayType: 'landscape',
+    imageLayout: 'landscape',
     hasVideo: false,
   },
   {
@@ -62,7 +63,7 @@ export const works: Work[] = [
     images: [
       '/images/works/Graphic/Logo-Since.webp',
     ],
-    displayType: 'landscape',
+    imageLayout: 'landscape',
     hasVideo: false,
   },
   {
@@ -70,10 +71,10 @@ export const works: Work[] = [
     title: '3D 動畫短片-Sweet BonBons',
     subtitle: '3D animated short film-Sweet BonBons',
     featured: true,
+    featuredCaseStudy: true,
     category: '3D 創作',
-    displayType: 'gallery',
-    description: '為精品咖啡品牌「山霧咖啡」設計完整品牌識別系統，包含 Logo 設計、品牌色彩規範、名片、包裝及各式行銷物料。設計靈感取自台灣高山雲霧繚繞的意境，以柔和的線條與自然色調傳達品牌的溫度與質感。',
-    tags: [],
+    description: '《Sweet BonBons》為畢業專題製作的 3D 動畫短片，以手足情感與人性的黑暗面為創作核心。我於團隊中擔任監製，參與場景與物件設計、3D 建模、動畫調整及專案管理等工作，並協助作品獲得多項國內外獎項與影展肯定。',
+    tools: ["Autodesk Maya", "Blender", "Substance Painter", "Premiere Pro", "After Effects"],
     coverImage: '/images/works/3D/Sweet BonBons-1.webp',
     images: [
       '/images/works/3D/Sweet BonBons-1.webp',
@@ -83,6 +84,7 @@ export const works: Work[] = [
       '/images/works/3D/Sweet BonBons-5.webp',
       '/images/works/3D/Sweet BonBons-6.webp',
     ],
+    imageLayout: 'landscape',
     hasVideo: true,
     videoType: 'youtube',
     videoUrl: 'https://www.youtube.com/embed/JZzQGwNhPHc?si=nBGIRRqAtJ69Ucsj'
@@ -93,7 +95,6 @@ export const works: Work[] = [
     subtitle: '3D Character-Jinx',
     featured: true,
     category: '3D 創作',
-    displayType: 'gallery',
     description: '為健康科技新創公司設計直覺且溫暖的健康管理應用程式介面，透過資料視覺化與人性化互動設計，讓用戶輕鬆追蹤日常健康數據。專案涵蓋使用者研究、資訊架構、線框圖、高擬真度原型設計及設計規範文件。',
     tags: [],
     coverImage: '/images/works/3D/Jinx-1.webp',
