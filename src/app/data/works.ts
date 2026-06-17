@@ -15,7 +15,7 @@ export interface Work {
 
 export const works: Work[] = [
   {
-    id: 'logo-sfrb',
+    id: 'logo-sfrb'
     title: 'Logo 設計-閒雜魚飯糰',
     subtitle: 'Logo design-SFRB',
     featured: true,
