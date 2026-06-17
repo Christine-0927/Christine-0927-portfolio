@@ -532,7 +532,6 @@ export function HomePage() {
       <FeaturedWorksCarousel />
 
       {/* CTA Banner */}
-      {/* Decorative Glow */}
       <section className="max-w-7xl mx-auto px-6 lg:px-10 mb-8">
         <div
           className="relative py-20 px-8 text-center rounded-3xl overflow-hidden"
