@@ -125,6 +125,8 @@ export function WorkDetailPage() {
                 </div>
               )}
             </ScrollReveal>
+        </div>
+      </div>
       </section>
 
       {/* Featured Case Study */}
@@ -242,6 +244,12 @@ export function WorkDetailPage() {
               boxShadow: '0 16px 60px rgba(102,64,119,0.14)',
               ...(work.imageLayout === 'long-scroll'
                 ? {}
+                : work.imageLayout === 'portrait'
+                ? {
+                    minHeight: '700px',
+                    height: '80vh',
+                    maxHeight: '1200px',
+                  }
                 : {
                     minHeight: '500px',
                     height: '70vh',
