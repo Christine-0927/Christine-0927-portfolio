@@ -34,7 +34,7 @@ const services = [
       '互動原型製作',
       '響應式網頁設計（RWD）',
     ],
-    image: 'https://images.unsplash.com/photo-1616400619175-5beda3a17896?w=700&h=500&fit=crop&auto=format',
+    image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=700&h=500&fit=crop&auto=format',
     accent: '#B07BB3',
   },
   {
@@ -127,7 +127,7 @@ export function ServicesPage() {
                   {/* Image */}
                   <div
                     className={`relative overflow-hidden ${!isEven ? 'lg:order-last' : ''}`}
-                    style={{ aspectRatio: '16/10', minHeight: '280px', background: '#F8F8F8',}}
+                    style={{ aspectRatio: '16/10', minHeight: '280px', background: '#F8F8F8',overflow: 'hidden'}}
                   >
                     <img
                       src={service.image}
