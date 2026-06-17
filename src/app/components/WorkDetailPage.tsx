@@ -9,9 +9,9 @@ export function WorkDetailPage() {
   const navigate = useNavigate();
   const [galleryIndex, setGalleryIndex] = useState(0);
   const [showVideo, setShowVideo] = useState(false);
-  const tools = work.tools || [];
   const idx = works.findIndex(w => w.id === id);
   const work = works[idx];
+  const tools = work.tools || [];
   const prevWork = idx > 0 ? works[idx - 1] : null;
   const nextWork = idx < works.length - 1 ? works[idx + 1] : null;
 
@@ -100,7 +100,7 @@ export function WorkDetailPage() {
               {/* tools（取代 tag 的核心） */}
               {tools.length > 0 && (
                 <div style={{ marginTop: '16px' }}>
-                  <p>
+                  <p
                     style={{
                       fontSize: '12px',
                       color: '#B07BB3',
