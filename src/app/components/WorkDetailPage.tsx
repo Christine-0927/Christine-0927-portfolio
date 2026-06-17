@@ -125,8 +125,8 @@ export function WorkDetailPage() {
                 </div>
               )}
             </ScrollReveal>
+          </div>
         </div>
-      </div>
       </section>
 
       {/* Featured Case Study */}
@@ -208,6 +208,7 @@ export function WorkDetailPage() {
                     </ul>
                   </div>
                 </div>
+              </div>
           </div>
         </section>
       )}
