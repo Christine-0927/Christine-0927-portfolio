@@ -101,9 +101,9 @@ export function ServicesPage() {
             </h1>
             <p
               className="max-w-md"
-              style={{ fontSize: '16px', color: '#5A5A5A', lineHeight: 1.85, fontWeight: 300 }}
+              style={{ fontSize: '16px', color: '#474747', lineHeight: 1.85, fontWeight: 400 }}
             >
-              提供四大核心設計服務，每一項目都以最高的專業標準與滿滿的創意熱情為您打造。
+              涵蓋平面設計、UI/UX 設計、3D 創作與動態設計，透過不同的設計形式，將想法轉化為美感與實用性兼具的設計成果。
             </p>
           </div>
         </ScrollReveal>
@@ -147,7 +147,7 @@ export function ServicesPage() {
                         border: '1px solid rgba(255,255,255,0.3)',
                       }}
                     >
-                      <span style={{ color: '#fff', fontSize: '12px', letterSpacing: '0.12em', fontWeight: 500 }}>
+                      <span style={{ color: '#fff', fontSize: '14px', letterSpacing: '0.12em', fontWeight: 400 }}>
                         {service.number}
                       </span>
                     </div>
@@ -162,21 +162,21 @@ export function ServicesPage() {
                       className="w-12 h-12 rounded-xl flex items-center justify-center mb-6"
                       style={{ background: `${service.accent}15` }}
                     >
-                      <Icon size={22} color={service.accent} />
+                      <Icon size={24} color={service.accent} />
                     </div>
 
-                    <p style={{ fontSize: '11px', color: service.accent, letterSpacing: '0.15em', marginBottom: '8px' }}>
+                    <p style={{ fontSize: '14px', color: service.accent, letterSpacing: '0.15em', marginBottom: '8px' }}>
                       {service.subtitle}
                     </p>
                     <h2
                       className="mb-4"
-                      style={{ fontSize: 'clamp(1.4rem, 2.5vw, 1.9rem)', fontWeight: 700, color: '#212121' }}
+                      style={{ fontSize: 'clamp(1.4rem, 2.5vw, 1.9rem)', fontWeight: 600, color: '#212121' }}
                     >
                       {service.title}
                     </h2>
                     <p
                       className="mb-7"
-                      style={{ fontSize: '15px', color: '#5A5A5A', lineHeight: 1.9, fontWeight: 300 }}
+                      style={{ fontSize: '15px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}
                     >
                       {service.desc}
                     </p>
@@ -188,7 +188,7 @@ export function ServicesPage() {
                             className="w-1.5 h-1.5 rounded-full shrink-0"
                             style={{ background: service.accent }}
                           />
-                          <span style={{ fontSize: '13px', color: '#5A5A5A' }}>{item}</span>
+                          <span style={{ fontSize: '14px', color: '#47474' }}>{item}</span>
                         </div>
                       ))}
                     </div>
@@ -243,14 +243,14 @@ export function ServicesPage() {
                 >
                   <div
                     className="w-10 h-10 rounded-full flex items-center justify-center mb-5"
-                    style={{ background: 'linear-gradient(135deg, #B07BB3, #664077)' }}
+                    style={{ background: '#B07BB3' }}
                   >
-                    <span style={{ color: '#fff', fontSize: '12px', fontWeight: 700 }}>{step}</span>
+                    <span style={{ color: '#fff', fontSize: '14px', fontWeight: 600 }}>{step}</span>
                   </div>
-                  <h3 style={{ fontSize: '16px', fontWeight: 700, color: '#212121', marginBottom: '8px' }}>
+                  <h3 style={{ fontSize: '16px', fontWeight: 600, color: '#212121', marginBottom: '8px' }}>
                     {title}
                   </h3>
-                  <p style={{ fontSize: '13px', color: '#8B7A8B', lineHeight: 1.8 }}>{desc}</p>
+                  <p style={{ fontSize: '14px', color: '#474747', lineHeight: 1.9 }}>{desc}</p>
                 </div>
               </ScrollReveal>
             ))}
