@@ -125,7 +125,7 @@ export function PortfolioPage() {
                       letterSpacing: '0.02em',
                     }}
                   >
-                    {work.category}
+                    <p>{work.category}</p>
                   </div>
                 </div>
 
