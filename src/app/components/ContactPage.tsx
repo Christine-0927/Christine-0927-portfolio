@@ -9,30 +9,21 @@ const contactDetails = [
 
 function QRCodeSVG() {
   return (
-    <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-      {/* Top-left finder pattern */}
-      <rect x="8" y="8" width="44" height="44" rx="5" fill="#664077" />
-      <rect x="15" y="15" width="30" height="30" rx="3" fill="white" />
-      <rect x="22" y="22" width="16" height="16" rx="2" fill="#664077" />
-      {/* Top-right finder pattern */}
-      <rect x="108" y="8" width="44" height="44" rx="5" fill="#664077" />
-      <rect x="115" y="15" width="30" height="30" rx="3" fill="white" />
-      <rect x="122" y="22" width="16" height="16" rx="2" fill="#664077" />
-      {/* Bottom-left finder pattern */}
-      <rect x="8" y="108" width="44" height="44" rx="5" fill="#664077" />
-      <rect x="15" y="115" width="30" height="30" rx="3" fill="white" />
-      <rect x="22" y="122" width="16" height="16" rx="2" fill="#664077" />
-      {/* Data modules — timing & data */}
-      {[62,70,78,86,94].map((x, xi) =>
-        [62,70,78,86,94].map((y, yi) => {
-          const pattern = [
-            [1,0,1,1,0],[0,1,0,1,1],[1,1,1,0,0],[0,1,0,0,1],[1,0,1,1,0],
-          ];
-          return pattern[xi][yi] ? (
-            <rect key={`${x}-${y}`} x={x} y={y} width="6" height="6" rx="1.5" fill="#B07BB3" />
-          ) : null;
-        })
-      )}
+    <a
+      href="https://line.me/ti/p/j1QGNTJhgg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block w-full h-full"
+    >
+      <img
+        src="/images/line-qrcode.jpg"
+        alt="加入 LINE"
+        className="w-full h-full object-contain rounded-xl transition-transform duration-300 hover:scale-105"
+      />
+    </a>
+  );
+}
+    
       {/* Bottom-right data */}
       {[108,116,124,132,140].map((x, xi) =>
         [108,116,124,132,140].map((y, yi) => {
@@ -220,13 +211,6 @@ export function ContactPage() {
                 />
 
                 <div className="relative flex flex-col items-center">
-                  <p
-                    className="mb-6 tracking-widest uppercase"
-                    style={{ fontSize: '10px', color: '#B07BB3', letterSpacing: '0.25em' }}
-                  >
-                    Scan to Connect
-                  </p>
-
                   {/* QR frame */}
                   <div className="relative">
                     {/* Outer decorative ring */}
@@ -254,10 +238,7 @@ export function ContactPage() {
                     className="mt-7 mb-1"
                     style={{ fontSize: '16px', fontWeight: 700, color: '#212121' }}
                   >
-                    加入 LINE 聯繫我
-                  </p>
-                  <p style={{ fontSize: '13px', color: '#B07BB3', letterSpacing: '0.06em' }}>
-                    @christinedesign
+                    點擊加入 LINE 聯繫我
                   </p>
                 </div>
               </div>
