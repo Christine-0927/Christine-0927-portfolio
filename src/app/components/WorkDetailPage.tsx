@@ -97,17 +97,10 @@ export function WorkDetailPage() {
                 {work.description}
               </p>
               
-              {/* tools（取代 tag 的核心） */}
+              {/* tools */}
               {tools.length > 0 && (
                 <div style={{ marginTop: '16px' }}>
-                  <p
-                    style={{
-                      fontSize: '12px',
-                      color: '#B07BB3',
-                      marginBottom: '8px',
-                      letterSpacing: '0.1em',
-                    }}
-                  >
+                  <p style={{ fontSize: '12px', color: '#B07BB3', marginBottom: '8px' }}>
                     使用工具
                   </p>
                   
@@ -132,8 +125,6 @@ export function WorkDetailPage() {
                 </div>
               )}
             </ScrollReveal>
-          </div>          
-        </div>
       </section>
 
       {/* Featured Case Study */}
@@ -141,47 +132,23 @@ export function WorkDetailPage() {
         <section className="max-w-7xl mx-auto px-6 lg:px-10 mb-20">
           <div
             className="rounded-3xl p-8 lg:p-12"
-              style={{
-                background: '#fff',
-                border: '1px solid rgba(176,123,179,0.12)',
-                boxShadow: '0 8px 40px rgba(102,64,119,0.08)',
-              }}
+            style={{
+              background: '#fff',
+              border: '1px solid rgba(176,123,179,0.12)',
+              boxShadow: '0 8px 40px rgba(102,64,119,0.08)',
+            }}
           >
-            <h2
-              style={{
-                fontSize: 'clamp(1.6rem, 3vw, 2.2rem)',
-                fontWeight: 600,
-                color: '#664077',
-                marginBottom: '24px',
-              }}
-            >
+            <h2 style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 600, color: '#664077', marginBottom: '24px' }}>
               專案介紹
             </h2>
       
-            <p
-              style={{
-                fontSize: '16px',
-                lineHeight: 2,
-                color: '#474747',
-                marginBottom: '32px',
-              }}
-            >
+            <p style={{ fontSize: '16px', lineHeight: 2, color: '#474747', marginBottom: '32px' }}>
               《Sweet BonBons》為畢業專題製作的 3D 動畫短片，以手足情感與人性的黑暗面為核心主題，透過玩偶作為故事媒介，打造兼具奇幻、驚悚與黑色幽默風格的動畫作品。
             </p>
       
             <div className="grid md:grid-cols-2 gap-10">
               <div>
-                <h3
-                  style={{
-                    color: '#B07BB3',
-                    fontSize: '14px',
-                    letterSpacing: '0.1em',
-                    marginBottom: '16px',
-                  }}
-                >
-                  我的角色
-                </h3>
-      
+                <h3 style={{ color: '#B07BB3', fontSize: '14px', letterSpacing: '0.1em', marginBottom: '16px' }}>我的角色</h3>
                 <ul
                   style={{
                     color: '#474747',
@@ -199,17 +166,7 @@ export function WorkDetailPage() {
               </div>
       
               <div>
-                <h3
-                  style={{
-                    color: '#B07BB3',
-                    fontSize: '14px',
-                    letterSpacing: '0.1em',
-                    marginBottom: '16px',
-                  }}
-                >
-                  國際獎項與影展
-                </h3>
-                
+                <h3 style={{ color: '#B07BB3', fontSize: '14px', letterSpacing: '0.1em', marginBottom: '16px' }}>獎項與影展</h3>             
                 <div style={{ color: '#474747', lineHeight: 2, fontSize: '15px' }}>
                     <p
                       style={{
