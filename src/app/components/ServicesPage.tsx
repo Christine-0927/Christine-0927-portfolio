@@ -35,7 +35,7 @@ const services = [
       '響應式網頁設計（RWD）',
     ],
     image: 'https://images.unsplash.com/photo-1616400619175-5beda3a17896?w=700&h=500&fit=crop&auto=format',
-    accent: '#664077',
+    accent: '#B07BB3',
   },
   {
     icon: Box,
@@ -69,16 +69,16 @@ const services = [
       '宣傳影片製作',
     ],
     image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=700&h=500&fit=crop&auto=format',
-    accent: '#664077',
+    accent: '#B07BB3',
   },
 ];
 
 const process = [
-  { step: '01', title: '了解需求', desc: '深入溝通品牌背景、目標受眾與設計目標，確立專案方向。' },
-  { step: '02', title: '創意發想', desc: '蒐集靈感素材，進行多方向概念發展與草圖探索。' },
-  { step: '03', title: '設計提案', desc: '提交 2-3 個設計方向，附上詳細設計說明與視覺展示。' },
-  { step: '04', title: '修改完稿', desc: '根據客戶回饋進行修改調整，直至雙方滿意為止。' },
-  { step: '05', title: '交付驗收', desc: '整理完整設計檔案，提供使用說明，確保完美交接。' },
+  { step: '01', title: '需求討論', desc: '了解專案需求、目標與期望方向，建立合作共識。' },
+  { step: '02', title: '規劃發想', desc: '整理資訊與設計方向，探索適合的視覺表現方式。' },
+  { step: '03', title: '設計製作', desc: '依據規劃內容進行設計，逐步將想法轉化為具體成果。' },
+  { step: '04', title: '調整優化', desc: '根據回饋進行修改與細節調整，讓設計更加完善。' },
+  { step: '05', title: '交付完成', desc: '提供最終設計檔案與相關資料，完成專案交付。' },
 ];
 
 export function ServicesPage() {
@@ -176,7 +176,7 @@ export function ServicesPage() {
                     </h2>
                     <p
                       className="mb-7"
-                      style={{ fontSize: '15px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}
+                      style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}
                     >
                       {service.desc}
                     </p>
@@ -188,7 +188,7 @@ export function ServicesPage() {
                             className="w-1.5 h-1.5 rounded-full shrink-0"
                             style={{ background: service.accent }}
                           />
-                          <span style={{ fontSize: '14px', color: '#47474' }}>{item}</span>
+                          <span style={{ fontSize: '14px', color: '#8B7A8B' }}>{item}</span>
                         </div>
                       ))}
                     </div>
@@ -199,7 +199,7 @@ export function ServicesPage() {
                       style={{ textDecoration: 'none', color: service.accent, fontSize: '14px', fontWeight: 500 }}
                     >
                       詢問此服務
-                      <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
+                      <ArrowRight size={15} className="transition-transform duration-300 group-hover:translate-x-1" />
                     </Link>
                   </div>
                 </div>
