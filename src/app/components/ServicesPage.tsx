@@ -127,30 +127,17 @@ export function ServicesPage() {
                   {/* Image */}
                   <div
                     className={`relative overflow-hidden ${!isEven ? 'lg:order-last' : ''}`}
-                    style={{ aspectRatio: '16/10', minHeight: '280px', background: '#F8F8F8',overflow: 'hidden'}}
+                    style={{ aspectRatio: '16/10', background: '#F8F8F8'}}
                   >
                     <img
                       src={service.image}
                       alt={service.title}
-                      className="absolute inset-0 w-full h-full object-cover block"
-                      style={{ filter: 'grayscale(15%)' }}
+                      className="absolute inset-0 w-full h-full object-cover"                      
                     />
                     <div
                       className="absolute inset-0"
                       style={{ background: `linear-gradient(135deg, ${service.accent}30, transparent)` }}
                     />
-                    <div
-                      className="absolute top-6 left-6 px-4 py-2 rounded-full"
-                      style={{
-                        background: 'rgba(255,255,255,0.15)',
-                        backdropFilter: 'blur(12px)',
-                        border: '1px solid rgba(255,255,255,0.3)',
-                      }}
-                    >
-                      <span style={{ color: '#fff', fontSize: '14px', letterSpacing: '0.12em', fontWeight: 400 }}>
-                        {service.number}
-                      </span>
-                    </div>
                   </div>
 
                   {/* Content */}
@@ -188,7 +175,7 @@ export function ServicesPage() {
                             className="w-1.5 h-1.5 rounded-full shrink-0"
                             style={{ background: service.accent }}
                           />
-                          <span style={{ fontSize: '14px', color: '#8B7A8B' }}>{item}</span>
+                          <span style={{ fontSize: '14px', color: '#474747' }}>{item}</span>
                         </div>
                       ))}
                     </div>
@@ -244,8 +231,8 @@ export function ServicesPage() {
                   <div
                     className="w-10 h-10 rounded-full flex items-center justify-center mb-5"
                     style={{
-                      fontSize: '32px',
-                      fontWeight: 700,
+                      fontSize: '36px',
+                      fontWeight: 900,
                       color: 'rgba(176,123,179,0.18)',
                       lineHeight: 1,
                       marginBottom: '16px',
