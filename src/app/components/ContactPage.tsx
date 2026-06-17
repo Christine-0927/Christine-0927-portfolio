@@ -129,39 +129,7 @@ export function ContactPage() {
                         )}
                       </div>
                     </div>
-                  ))}
-
-                  {/* Social links */}
-                  <div className="flex gap-3 mt-2">
-                    {[
-                      { icon: Instagram, label: 'Instagram', href: '#' },
-                      { icon: ExternalLink, label: 'Behance', href: '#' },
-                    ].map(({ icon: Icon, label, href }) => (
-                      <a
-                        key={label}
-                        href={href}
-                        aria-label={label}
-                        className="flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300"
-                        style={{
-                          background: 'rgba(255,255,255,0.12)',
-                          color: 'rgba(255,255,255,0.85)',
-                          textDecoration: 'none',
-                          fontSize: '12px',
-                          backdropFilter: 'blur(8px)',
-                          border: '1px solid rgba(255,255,255,0.2)',
-                        }}
-                        onMouseEnter={e => {
-                          (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(255,255,255,0.22)';
-                        }}
-                        onMouseLeave={e => {
-                          (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(255,255,255,0.12)';
-                        }}
-                      >
-                        <Icon size={13} />
-                        {label}
-                      </a>
-                    ))}
-                  </div>
+                  ))}                  
                 </div>
               </div>
             </div>
