@@ -1,9 +1,9 @@
 export type WorkCategory = '平面設計' | 'UI/UX 設計' | '3D 創作' | '繪圖作品' | '動態設計';
 
 export type DisplayType =
-  | 'landscape' {/* 橫式 */}
-  | 'portrait'  {/* 直式 */}
-  | 'long-scroll';  {/* 長圖 */}
+  | 'landscape'
+  | 'portrait' 
+  | 'long-scroll';
 
 export interface Work {
   id: string;
