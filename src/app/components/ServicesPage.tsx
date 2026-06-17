@@ -127,12 +127,12 @@ export function ServicesPage() {
                   {/* Image */}
                   <div
                     className={`relative overflow-hidden ${!isEven ? 'lg:order-last' : ''}`}
-                    style={{ aspectRatio: '16/10', minHeight: '280px' }}
+                    style={{ aspectRatio: '16/10', minHeight: '280px', background: '#F8F8F8',}}
                   >
                     <img
                       src={service.image}
                       alt={service.title}
-                      className="w-full h-full object-cover"
+                      className="absolute inset-0 w-full h-full object-cover block"
                       style={{ filter: 'grayscale(15%)' }}
                     />
                     <div
@@ -262,44 +262,6 @@ export function ServicesPage() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 max-w-7xl mx-auto px-6 lg:px-10 text-center">
-        <ScrollReveal>
-          <p
-            className="mb-4 tracking-widest uppercase"
-            style={{ fontSize: '12px', color: '#B07BB3', letterSpacing: '0.2em' }}
-          >
-            Ready to Start
-          </p>
-          <h2
-            className="mb-5"
-            style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.6rem)', fontWeight: 300, color: '#212121' }}
-          >
-            一起打造您的<span style={{ fontWeight: 600, color: '#664077' }}>品牌故事</span>
-          </h2>
-          <p
-            className="mb-8 max-w-lg mx-auto"
-            style={{ fontSize: '16px', color: '#5A5A5A', lineHeight: 1.85, fontWeight: 300 }}
-          >
-            對我的服務感興趣嗎？歡迎與我聯繫，讓我們一同聊聊您的品牌需求。
-          </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-            style={{
-              background: 'linear-gradient(135deg, #B07BB3, #664077)',
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '14px',
-              fontWeight: 500,
-            }}
-          >
-            聯繫我
-            <ArrowRight size={15} />
-          </Link>
-        </ScrollReveal>
       </section>
     </div>
   );
