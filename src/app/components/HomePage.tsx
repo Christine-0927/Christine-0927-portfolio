@@ -533,60 +533,44 @@ export function HomePage() {
 
       {/* CTA Banner */}
       {/* Decorative Glow */}
-      <section className="mx-4 sm:mx-8 lg:mx-10 mb-8 rounded-3xl overflow-hidden">
+      <section className="max-w-7xl mx-auto px-6 lg:px-10 mb-8">
         <div
-          className="relative py-20 px-8 text-center"
+          className="relative py-20 px-8 text-center rounded-3xl overflow-hidden"
           style={{
-            background: `
-              radial-gradient(
-                circle at 20% 20%,
-                rgba(176,123,179,0.25),
-                transparent 25%
-              ),
-              radial-gradient(
-                circle at 80% 80%,
-                rgba(102,64,119,0.35),
-                transparent 35%
-              ),
-              linear-gradient(
-                135deg,
-                #664077 0%,
-                #B07BB3 100%
-              )
-            `,
+            background: 'linear-gradient(145deg, #664077 0%, #8B5A95 45%, #B07BB3 100%)',
             border: '1px solid rgba(255,255,255,.08)',
             boxShadow: '0 24px 60px rgba(0,0,0,.18)',
           }}
         >
-        {/* Top Left Glow */}
+        {/* Glow 1 */}
         <div
           style={{
             position: 'absolute',
-            top: '-100px',
-            left: '-100px',
-            width: '260px',
-            height: '260px',
+            top: '-120px',
+            right: '-120px',
+            width: '280px',
+            height: '280px',
             borderRadius: '50%',
-            background: 'rgba(102,64,119,.18)',
-            filter: 'blur(80px)',
-            pointerEvents: 'none', 
-            zIndex: 0,
+            background: 'radial-gradient(circle, #F8D6D9, transparent)',
+            filter: 'blur(60px)',
+            opacity: 0.25,
+            pointerEvents: 'none',            
           }}
         />
 
-        {/* Bottom Right Glow */}
+        {/* Glow 2 */}
         <div
           style={{
             position: 'absolute',
-            bottom: '-100px',
-            right: '-100px',
-            width: '260px',
-            height: '260px',
+            bottom: '-120px',
+            left: '-120px',
+            width: '280px',
+            height: '280px',
             borderRadius: '50%',
-            background: 'rgba(102,64,119,.18)',
-            filter: 'blur(80px)',
+            background: 'radial-gradient(circle, #fff, transparent)',
+            filter: 'blur(60px)',
+            opacity: 0.12,
             pointerEvents: 'none',
-            zIndex: 0,
           }}
         />
           
