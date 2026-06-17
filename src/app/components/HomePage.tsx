@@ -310,10 +310,10 @@ export function HomePage() {
               <h1
                 className="mb-6 leading-tight"
                 style={{
-                  fontSize: 'clamp(2rem, 4.5vw, 3.5rem)',
+                  fontSize: 'clamp(2.2rem, 5vw, 4.2rem)',
                   fontWeight: 600,
                   color: '#664077',
-                  lineHeight: 1.25,
+                  lineHeight: 1.15,
                   letterSpacing: '-0.01em',
                 }}
               >
@@ -404,15 +404,15 @@ export function HomePage() {
               >
                 <span style={{ fontWeight: 600, color: '#664077' }}>讓設計成為故事的橋樑</span>
               </h2>
-              <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
+              <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400, maxWidth: '42rem'}}>
                 我相信每個品牌、每個專案背後，都有值得被看見的故事。
               </p>
-              <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
-                設計對我而言，不只是畫面的呈現，更是一種表達方式。<br />
+              <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400, maxWidth: '42rem' }}>
+                設計對我而言，不只是畫面的呈現，更是一種表達方式。
                 透過視覺語言傳遞理念，讓訊息被理解、讓想法被看見。
               </p>
-              <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
-                從品牌視覺、平面設計、UI/UX 設計與 3D 視覺創作，<br />
+              <p className="mb-5" style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400, maxWidth: '42rem' }}>
+                從品牌視覺、平面設計、UI/UX 設計與 3D 視覺創作，
                 我持續探索不同的可能性，期待創造兼具美感與實用性的設計成果。
               </p>
               <Link
