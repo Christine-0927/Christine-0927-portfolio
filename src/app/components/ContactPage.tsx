@@ -16,7 +16,7 @@ function QRCodeSVG() {
       className="block w-full h-full"
     >
       <img
-        src="/images/line-qrcode.jpg"
+        src="/images/contact/line-qrcode.jpg"
         alt="加入 LINE"
         className="w-full h-full object-contain rounded-xl transition-transform duration-300 hover:scale-105"
       />
