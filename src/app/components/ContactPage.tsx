@@ -24,28 +24,6 @@ function QRCodeSVG() {
   );
 }
     
-      {/* Bottom-right data */}
-      {[108,116,124,132,140].map((x, xi) =>
-        [108,116,124,132,140].map((y, yi) => {
-          const p2 = [[1,1,0,1,0],[0,1,1,0,1],[1,0,1,1,0],[1,1,0,0,1],[0,0,1,0,1]];
-          return p2[xi][yi] ? (
-            <rect key={`br-${x}-${y}`} x={x} y={y} width="6" height="6" rx="1.5" fill="#664077" />
-          ) : null;
-        })
-      )}
-      {/* Scattered data dots */}
-      {[
-        [62,108],[70,116],[78,108],[86,124],[94,116],
-        [62,124],[78,140],[94,132],[62,140],[86,108],
-        [108,62],[116,70],[124,62],[132,86],[140,78],
-        [108,78],[124,94],[140,62],[116,86],[132,70],
-      ].map(([x, y]) => (
-        <rect key={`d-${x}-${y}`} x={x} y={y} width="6" height="6" rx="1.5" fill="#B07BB3" opacity="0.7" />
-      ))}
-    </svg>
-  );
-}
-
 export function ContactPage() {
   return (
     <div style={{ fontFamily: "'Noto Sans TC', sans-serif" }} className="pt-24 min-h-screen">
