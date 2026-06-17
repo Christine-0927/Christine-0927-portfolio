@@ -1,15 +1,21 @@
 export type WorkCategory = '平面設計' | 'UI/UX 設計' | '3D 創作' | '繪圖作品' | '動態設計';
 
+export type DisplayType =
+  | 'landscape' {/* 橫式 */}
+  | 'portrait'  {/* 直式 */}
+  | 'long-scroll';  {/* 長圖 */}
+
 export interface Work {
   id: string;
   title: string;
-  featured: boolean;
   subtitle: string;
+  featured: boolean;
   category: WorkCategory;
   description: string;
-  tags: string[];
+  tools: string[];
   coverImage: string;
   images: string[];
+  displayType: DisplayType;
   hasVideo: boolean;
 }
 
@@ -20,28 +26,13 @@ export const works: Work[] = [
     subtitle: 'Logo design-SFRB',
     featured: true,
     category: '平面設計',
-    displayType: 'gallery',
     description: '為創作團隊「閒雜魚飯糰」所設計的 Logo。以一隻魚構成三角飯糰的外型，象徵團隊核心人物如同將成員凝聚在一起的魚。飯糰中的海苔設計為五種不同顏色，分別代表團隊中的五位成員，每個人性格迥異，因此才能激盪出多元的創意。<br />整體造型以簡潔的黑灰線條勾勒，搭配五種亮眼色彩，增添辨識度與視覺趣味。延伸的輔助圖形象徵成員特質，轉化為五種配料：水波紋、肉排、荷包蛋、海苔以及小魚，展現出團隊雖然多元，卻能彼此緊密合作的特色。',
-    tags: [],
+    tools: ["Photoshop", "Illustrator"],
     coverImage: '/images/works/Graphic/Logo-SFRB.webp',
     images: [
       '/images/works/Graphic/Logo-SFRB.webp',
     ],
-    hasVideo: false,
-  },
-  {
-    id: 'logo-since',
-    title: 'Logo 設計-欣思工作室',
-    subtitle: 'Logo design-SINCE Studio ',
-    featured: false,
-    category: '平面設計',
-    displayType: 'gallery',
-    description: '為健康科技新創公司設計直覺且溫暖的健康管理應用程式介面，透過資料視覺化與人性化互動設計，讓用戶輕鬆追蹤日常健康數據。專案涵蓋使用者研究、資訊架構、線框圖、高擬真度原型設計及設計規範文件。',
-    tags: ['UI 設計', 'UX 研究', '原型設計', 'Figma'],
-    coverImage: '/images/works/Graphic/Logo-Since.webp',
-    images: [
-      '/images/works/Graphic/Logo-Since.webp',
-    ],
+    displayType: 'landscape',
     hasVideo: false,
   },
   {
@@ -50,13 +41,28 @@ export const works: Work[] = [
     subtitle: 'Logo design-YuCheng Canvas Print ',
     featured: true,
     category: '平面設計',
-    displayType: 'gallery',
-    description: '為健康科技新創公司設計直覺且溫暖的健康管理應用程式介面，透過資料視覺化與人性化互動設計，讓用戶輕鬆追蹤日常健康數據。專案涵蓋使用者研究、資訊架構、線框圖、高擬真度原型設計及設計規範文件。',
-    tags: [],
+    description: '為「祤橙無框畫」設計的LOGO，靈感來自品牌名稱的讀音聯想，以羽毛、甜橙作為主視覺元素，在後方以簡約的畫框線條構成背景，不僅呼應產品無框畫的特性，也象徵創作不被侷限的精神。<br />色彩運用上，以橙色作為主色，傳遞品牌的親切感、創造力，搭配橄欖綠作為輔色，平衡視覺上的穩定性，並強化品牌的專業形象，點綴的鮮綠色為畫面注入活力，展現出品牌想傳遞的溫暖、穩定與充滿活力的氛圍。',
+    tools: ["Photoshop", "Illustrator"],
     coverImage: '/images/works/Graphic/Logo-Canvas Print.webp',
     images: [
       '/images/works/Graphic/Logo-Canvas Print.webp',
     ],
+    displayType: 'landscape',
+    hasVideo: false,
+  },
+  {
+    id: 'logo-since',
+    title: 'Logo 設計-欣思工作室',
+    subtitle: 'Logo design-SINCE Studio ',
+    featured: false,
+    category: '平面設計',
+    description: '「Since 欣思工作室」專注於手寫字創作與客製化商品，因此LOGO設計以鋼筆結合流動感的「S」筆畫，也帶有 Sin 草寫的感覺，呼應品牌的手寫字特色，強化其獨特性與辨識度。<br />整體色彩以柔和的藍色調為主，營造沉穩又帶有感性的氛圍。中英文標準字皆使用手寫風格字體，延續品牌的特色，傳達真誠、細膩且富有文藝氣息的設計調性。',
+    tools: ["Photoshop", "Illustrator"],
+    coverImage: '/images/works/Graphic/Logo-Since.webp',
+    images: [
+      '/images/works/Graphic/Logo-Since.webp',
+    ],
+    displayType: 'landscape',
     hasVideo: false,
   },
   {
@@ -210,7 +216,7 @@ export const works: Work[] = [
     hasVideo: false,
   },
   {
-    id: 'drawing-Watercolor',
+    id: 'drawing-Watercolor-1',
     title: '水彩-紅磚建築',
     subtitle: 'Watercolor-Red brick buildings',
     category: '繪圖作品',
@@ -226,7 +232,7 @@ export const works: Work[] = [
     hasVideo: false,
   },
   {
-    id: 'drawing-Watercolor',
+    id: 'drawing-Watercolor-2',
     title: '水彩-秋天的公園',
     subtitle: 'Watercolor-Autumn park',
     featured: true,
@@ -243,7 +249,7 @@ export const works: Work[] = [
     hasVideo: false,
   },
   {
-    id: 'drawing-Watercolor',
+    id: 'drawing-Watercolor-3',
     title: '水彩-倫敦塔橋',
     subtitle: 'Watercolor-Tower Bridge',
     category: '繪圖作品',
