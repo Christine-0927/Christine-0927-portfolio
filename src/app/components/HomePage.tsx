@@ -169,9 +169,6 @@ function FeaturedWorksCarousel() {
                     src={work.coverImage}
                     alt={work.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    style={{ filter: 'grayscale(35%)', transition: 'transform 0.7s ease, filter 0.5s ease' }}
-                    onMouseEnter={e => { (e.currentTarget as HTMLImageElement).style.filter = 'grayscale(0%)'; }}
-                    onMouseLeave={e => { (e.currentTarget as HTMLImageElement).style.filter = 'grayscale(35%)'; }}
                   />
 
                   {/* Hover overlay */}
