@@ -243,9 +243,15 @@ export function ServicesPage() {
                 >
                   <div
                     className="w-10 h-10 rounded-full flex items-center justify-center mb-5"
-                    style={{ background: '#B07BB3' }}
+                    style={{
+                      fontSize: '32px',
+                      fontWeight: 700,
+                      color: 'rgba(176,123,179,0.18)',
+                      lineHeight: 1,
+                      marginBottom: '16px',
+                    }}
                   >
-                    <span style={{ color: '#fff', fontSize: '14px', fontWeight: 600 }}>{step}</span>
+                    {step}
                   </div>
                   <h3 style={{ fontSize: '16px', fontWeight: 600, color: '#212121', marginBottom: '8px' }}>
                     {title}
