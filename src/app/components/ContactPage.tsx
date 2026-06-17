@@ -179,14 +179,7 @@ export function ContactPage() {
                   boxShadow: '0 16px 60px rgba(176,123,179,0.1)',
                   minHeight: '380px',
                 }}
-              >
-                {/* Subtle bg accent */}
-                <div
-                  className="absolute inset-0 pointer-events-none"
-                  style={{
-                    background: 'radial-gradient(ellipse at 50% 110%, rgba(248,214,217,0.35) 0%, transparent 65%)',
-                  }}
-                />
+              >  
 
                 <div className="relative flex flex-col items-center">
                   {/* QR frame */}
