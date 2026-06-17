@@ -194,7 +194,7 @@ export function ContactPage() {
                     />
                     {/* QR card */}
                     <div
-                      className="relative w-52 h-52 lg:w-60 lg:h-60 p-5 rounded-2xl"
+                      className="relative w-64 h-64 lg:w-72 lg:h-72 p-6 rounded-2xl"
                       style={{
                         background: '#fff',
                         boxShadow: '0 8px 40px rgba(102,64,119,0.14)',
@@ -207,7 +207,7 @@ export function ContactPage() {
 
                   <p
                     className="mt-7 mb-1"
-                    style={{ fontSize: '16px', fontWeight: 700, color: '#212121' }}
+                    style={{ fontSize: '16px', fontWeight: 400, color: '#B07BB3' }}
                   >
                     點擊加入 LINE 聯繫我
                   </p>
