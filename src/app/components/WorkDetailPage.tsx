@@ -266,26 +266,24 @@ export function WorkDetailPage() {
             >
               Gallery
             </p>
+      
             <h2
               className="mb-10"
               style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 400, color: '#212121' }}
             >
-
-              <span style={{ fontWeight: 600, color: '#664077' }}>作品圖集</span>
+              <span style={{ fontWeight: 600, color: '#664077' }}>
+                作品圖集
+              </span>
             </h2>
           </ScrollReveal>
-
-          {/* Main large image */}
+      
+          {/* Main image */}
           <div
             className="rounded-2xl overflow-hidden mb-4 flex justify-center items-center relative"
             style={{
-              background:
-                work.ImageLayout === 'landscape'
-                  ? 'transparent'
-                  : '#F8F8F8',
+              background: '#F7F7F7',
               boxShadow: '0 16px 60px rgba(102,64,119,0.14)',
-              
-              ...(work.ImageLayout === 'long-scroll'
+              ...(work.imageLayout === 'long-scroll'
                 ? {}
                 : {
                     minHeight: '500px',
@@ -293,43 +291,37 @@ export function WorkDetailPage() {
                     maxHeight: '900px',
                   }),
             }}
-          >            
+          >
             <img
               src={work.images[galleryIndex]}
               alt={`${work.title} - 圖 ${galleryIndex + 1}`}
               className={
-                : work.ImageLayout === 'landscape'
-                ? 'w-full h-full object-cover'
-
-                : work.ImageLayout === 'portrait'
-                ? 'max-w-full max-h-full object-contain'
-                
-                work.ImageLayout === 'long-scroll'
-                ? 'w-full h-auto'
-                : 'max-w-full max-h-full object-contain'
+                work.imageLayout === 'long-scroll'
+                  ? 'w-full h-auto'
+                  : 'max-w-full max-h-full object-contain'
               }
             />
           </div>
-
+      
           {/* Thumbnails */}
           <div className="flex gap-3 overflow-x-auto pb-2">
             {work.images.map((img, i) => (
               <button
                 key={i}
                 onClick={() => setGalleryIndex(i)}
-                className="shrink-0 rounded-xl overflow-hidden transition-all duration-300"
+                className="shrink-0 rounded-xl overflow-hidden"
                 style={{
                   width: '100px',
                   aspectRatio: '4/3',
                   border: i === galleryIndex ? '2px solid #B07BB3' : '2px solid transparent',
-                  cursor: 'pointer',
-                  background: 'none',
-                  padding: 0,
                   opacity: i === galleryIndex ? 1 : 0.6,
-                  transform: i === galleryIndex ? 'scale(1)' : 'scale(0.97)',
                 }}
               >
-                <img src={img} alt={`縮圖 ${i + 1}`} className="w-full h-full object-cover" />
+                <img
+                  src={img}
+                  alt={`縮圖 ${i + 1}`}
+                  className="w-full h-full object-cover"
+                />
               </button>
             ))}
           </div>
