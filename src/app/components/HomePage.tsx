@@ -203,18 +203,7 @@ function FeaturedWorksCarousel() {
                 <div className="p-5">
                   <h3 style={{ fontSize: '18px', fontWeight: 500, color: '#212121', marginBottom: '4px', lineHeight: 1.5, textAlign: 'center' }}>
                     {work.title}
-                  </h3>
-                  <div className="flex flex-wrap gap-1.5">
-                    {work.tags.slice(0, 2).map(tag => (
-                      <span
-                        key={tag}
-                        className="px-2.5 py-1 rounded-full"
-                        style={{ background: 'rgba(176,123,179,0.1)', color: '#B07BB3', fontSize: '10px' }}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
+                  </h3>                  
                 </div>
               </Link>
             </div>
