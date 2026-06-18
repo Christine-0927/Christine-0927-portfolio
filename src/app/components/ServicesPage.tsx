@@ -198,7 +198,7 @@ export function ServicesPage() {
 
       {/* Process */}
       <section
-        className="py-24"
+        className="py-20"
         style={{ background: 'rgba(250, 250, 248, 1)' }}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
