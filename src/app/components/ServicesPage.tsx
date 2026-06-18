@@ -199,7 +199,7 @@ export function ServicesPage() {
       {/* Process */}
       <section
         className="py-24"
-        style={{ background: 'linear-gradient(180deg, #FAFAF8 0%, #F8F4F9 100%)' }}
+        style={{ background: 'rgba(250, 250, 248, 1)' }}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <ScrollReveal>
