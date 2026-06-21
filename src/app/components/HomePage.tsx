@@ -372,7 +372,7 @@ export function HomePage() {
               >
                 <img
                   src="images/about/designphoto.jpg"
-                  alt="Christine 設計師"
+                  alt="Christine"
                   className="w-full h-full object-cover"
                 />
               </div>              
