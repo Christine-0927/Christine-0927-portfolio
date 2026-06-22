@@ -1,10 +1,9 @@
 import { Link } from 'react-router';
-import { ArrowRight, Layers, Monitor, Box, Play } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { ScrollReveal } from './ScrollReveal';
 
 const services = [
   {
-    icon: Layers,
     number: '01',
     title: '平面設計',
     subtitle: 'Graphic Design',
@@ -17,11 +16,10 @@ const services = [
       '名片與企業識別物',
       '印刷與行銷素材設計',
     ],
-    image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=700&h=500&fit=crop&auto=format',
+    image: '/images/services/Graphic Design.webp',
     accent: '#B07BB3',
   },
   {
-    icon: Monitor,
     number: '02',
     title: 'UI/UX 設計',
     subtitle: 'UI/UX Design',
@@ -34,11 +32,10 @@ const services = [
       '互動原型製作',
       '響應式網頁設計（RWD）',
     ],
-    image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=700&h=500&fit=crop&auto=format',
+    image: '/images/services/UIUX Design.webp',
     accent: '#B07BB3',
   },
   {
-    icon: Box,
     number: '03',
     title: '3D 創作',
     subtitle: '3D Creation',
@@ -51,11 +48,10 @@ const services = [
       '3D 視覺設計',
       '情境模擬與展示',
     ],
-    image: 'https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=700&h=500&fit=crop&auto=format',
+    image:'/images/services/3D Creation.webp',
     accent: '#B07BB3',
   },
   {
-    icon: Play,
     number: '04',
     title: '動態設計',
     subtitle: 'Motion Graphics',
@@ -113,7 +109,6 @@ export function ServicesPage() {
       <section className="max-w-7xl mx-auto px-6 lg:px-10 pb-24">
         <div className="flex flex-col gap-8">
           {services.map((service, i) => {
-            const Icon = service.icon;
             const isEven = i % 2 === 0;
             return (
               <ScrollReveal key={service.number} delay={i * 60}>
@@ -127,16 +122,12 @@ export function ServicesPage() {
                   {/* Image */}
                   <div
                     className={`relative overflow-hidden ${!isEven ? 'lg:order-last' : ''}`}
-                    style={{ aspectRatio: '16/10', background: '#F8F8F8'}}
+                    style={{ background: '#F8F8F8'}}
                   >
                     <img
                       src={service.image}
                       alt={service.title}
                       className="absolute inset-0 w-full h-full object-cover"                      
-                    />
-                    <div
-                      className="absolute inset-0"
-                      style={{ background: `linear-gradient(135deg, ${service.accent}30, transparent)` }}
                     />
                   </div>
 
@@ -144,14 +135,7 @@ export function ServicesPage() {
                   <div
                     className="p-8 lg:p-12 flex flex-col justify-center"
                     style={{ background: '#fff' }}
-                  >
-                    <div
-                      className="w-12 h-12 rounded-xl flex items-center justify-center mb-6"
-                      style={{ background: `${service.accent}15` }}
-                    >
-                      <Icon size={24} color={service.accent} />
-                    </div>
-
+                  >                    
                     <p style={{ fontSize: '14px', color: service.accent, letterSpacing: '0.15em', marginBottom: '8px' }}>
                       {service.subtitle}
                     </p>
@@ -243,7 +227,7 @@ export function ServicesPage() {
                   <h3 style={{ fontSize: '16px', fontWeight: 600, color: '#212121', marginBottom: '8px' }}>
                     {title}
                   </h3>
-                  <p style={{ fontSize: '14px', color: '#474747', lineHeight: 1.9 }}>{desc}</p>
+                  <p style={{ fontSize: '14px', color: '#474747', lineHeight: 1.6 }}>{desc}</p>
                 </div>
               </ScrollReveal>
             ))}

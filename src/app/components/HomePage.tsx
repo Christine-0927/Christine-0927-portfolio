@@ -280,9 +280,9 @@ export function HomePage() {
         {/* Background image */}
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&h=1200&fit=crop&auto=format"
-            alt="設計工作室"
-            className="w-full h-full object-cover"
+            src="/images/index/Hero-Banner.webp"
+            alt="首頁圖片"
+            className="w-full h-full object-cover object-bottom"
           />
           <div
             className="absolute inset-0"
@@ -497,17 +497,17 @@ export function HomePage() {
                 >
                   <span
                     className="block mb-5"
-                    style={{ fontSize: '14px', color: '#B07BB3', letterSpacing: '0.15em', fontWeight: 400 }}
+                    style={{ fontSize: '36px', color: 'rgba(176,123,179,0.18)', fontWeight: 900 }}
                   >
                     {number}
                   </span>
                   <h3
                     className="mb-3"
-                    style={{ fontSize: '18px', fontWeight: 600, color: '#212121' }}
+                    style={{ fontSize: '20px', fontWeight: 600, color: '#212121' }}
                   >
                     {title}
                   </h3>
-                  <p style={{ fontSize: '14px', color: '#474747', lineHeight: 1.8, fontWeight: 400 }}>
+                  <p style={{ fontSize: '16px', color: '#474747', lineHeight: 1.6, fontWeight: 400 }}>
                     {desc}
                   </p>
                 </div>
