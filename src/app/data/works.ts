@@ -67,21 +67,6 @@ export const works: Work[] = [
     hasVideo: false,
   },
   {
-    id: 'logo-sfrb',
-    title: 'Logo 設計-閒雜魚飯糰',
-    subtitle: 'Logo design-SFRB',
-    featured: true,
-    category: '平面設計',
-    description: '',
-    tools: ["Photoshop", "Illustrator"],
-    coverImage: '/images/works/Graphic/Business cards-Moving.webp',
-    images: [
-      '/images/works/Graphic/Business cards-Moving.webp',
-    ],
-    imageLayout: 'landscape',
-    hasVideo: false,
-  },
-  {
     id: '3d-SweetBonBons',
     title: '3D 動畫短片-Sweet BonBons',
     subtitle: '3D animated short film-Sweet BonBons',
