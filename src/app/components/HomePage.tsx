@@ -282,7 +282,7 @@ export function HomePage() {
           <img
             src="/images/index/Hero-Banner.webp"
             alt="首頁圖片"
-            className="w-full h-full object-cover object-bottom"
+            className="w-full h-full object-cover object-right-bottom"
           />
           <div
             className="absolute inset-0"
