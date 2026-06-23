@@ -84,46 +84,70 @@ export function WorkDetailPage() {
       {/* Title + Meta */}
       <section className="max-w-7xl mx-auto px-6 lg:px-10 mb-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-          <div className="lg:col-span-2">
-            <ScrollReveal>
-              <h1
-                className="mb-3"
-                style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 500, color: '#212121', lineHeight: 1.2 }}
-              >
-                {work.title}
-              </h1>
-              <p style={{ fontSize: '20px', color: '#B07BB3', marginBottom: '20px' }}>{work.subtitle}</p>
-              <p style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
+            {/* LEFT */}
+            <div className="lg:col-span-2">
+              <ScrollReveal>
+                <h1
+                  className="mb-3"
+                  style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 600, color: '#212121', lineHeight: 1.2 }}
+                >
+                  {work.title}
+                </h1>
+                <p style={{ fontSize: '20px', color: '#B07BB3', marginBottom: '20px' }}>{work.subtitle}</p>
+                <p style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
                 {work.description}
-              </p>
-              
-              {/* tools */}
-              {tools.length > 0 && (
-                <div style={{ marginTop: '16px' }}>
-                  <p style={{ fontSize: '12px', color: '#B07BB3', marginBottom: '8px' }}>
-                    使用工具
-                  </p>
-                  
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                    {tools.map((tool) => (
-                      <span
-                        key={tool}
-                        style={{
-                          fontSize: '12px',
-                          padding: '4px 10px',
-                          borderRadius: '999px',
-                          background: 'rgba(176,123,179,0.12)',
-                          color: '#664077',
-                          border: '1px solid rgba(176,123,179,0.2)',
-                          whiteSpace: 'nowrap',
-                        }}
-                      >
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
+                </p>
+              </ScrollReveal>
+            </div>
+
+            {/* RIGHT SIDEBAR CARD */}
+            <div>
+            <ScrollReveal delay={100} direction="right">
+              <div
+                className="p-6 rounded-2xl"
+                style={{
+                  background: '#fff',
+                  border: '1px solid rgba(176,123,179,0.12)',
+                  boxShadow: '0 4px 24px rgba(176,123,179,0.08)',
+                }}
+              >
+                <h3 style={{ fontSize: '16px', color: '#B07BB3',lineHeight: 2.4 }}>
+                  PROJECT INFO
+                </h3>
+
+                {/* CATEGORY */}
+                <p style={{ fontSize: '14px', color: '#664077', marginBottom: '6px' }}>
+                  類別
+                </p>
+
+                <p style={{ fontSize: '16px', color: '#664077', marginBottom: '14px', fontWeight: 500 }}>
+                  {work.category}
+                </p>
+
+                {/* TOOLS */}
+                <p style={{ fontSize: '14px', color: '#B07BB3', marginTop: '10px' }}>
+                  使用工具
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                  {tools.map(tool => (
+                    <span
+                      key={tool}
+                      style={{
+                        fontSize: '12px',
+                        padding: '4px 10px',
+                        borderRadius: '999px',
+                        background: 'rgba(176,123,179,0.12)',
+                        color: '#664077',
+                        border: '1px solid rgba(176,123,179,0.2)',
+                        whiteSpace: 'nowrap',
+                      }}
+                    >
+                      {tool}
+                    </span>
+                  ))}
                 </div>
-              )}
+              </div>
             </ScrollReveal>
           </div>
         </div>

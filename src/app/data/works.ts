@@ -27,7 +27,7 @@ export const works: Work[] = [
     subtitle: 'Logo design-SFRB',
     featured: true,
     category: '平面設計',
-    description: '為創作團隊「閒雜魚飯糰」所設計的 Logo。以一隻魚構成三角飯糰的外型，象徵團隊核心人物如同將成員凝聚在一起的魚。飯糰中的海苔設計為五種不同顏色，分別代表團隊中的五位成員，每個人性格迥異，因此才能激盪出多元的創意。<br />整體造型以簡潔的黑灰線條勾勒，搭配五種亮眼色彩，增添辨識度與視覺趣味。延伸的輔助圖形象徵成員特質，轉化為五種配料：水波紋、肉排、荷包蛋、海苔以及小魚，展現出團隊雖然多元，卻能彼此緊密合作的特色。',
+    description: '為創作團隊「閒雜魚飯糰」所設計的 Logo。以一隻魚構成三角飯糰的外型，象徵團隊核心人物如同將成員凝聚在一起的魚。飯糰中的海苔設計為五種不同顏色，分別代表團隊中的五位成員，每個人性格迥異，因此才能激盪出多元的創意。整體造型以簡潔的黑灰線條勾勒，搭配五種亮眼色彩，增添辨識度與視覺趣味。延伸的輔助圖形象徵成員特質，轉化為五種配料：水波紋、肉排、荷包蛋、海苔以及小魚，展現出團隊雖然多元，卻能彼此緊密合作的特色。',
     tools: ["Photoshop", "Illustrator"],
     coverImage: '/images/works/Graphic/Logo-SFRB.webp',
     images: [
@@ -67,6 +67,21 @@ export const works: Work[] = [
     hasVideo: false,
   },
   {
+    id: 'logo-sfrb',
+    title: 'Logo 設計-閒雜魚飯糰',
+    subtitle: 'Logo design-SFRB',
+    featured: true,
+    category: '平面設計',
+    description: '',
+    tools: ["Photoshop", "Illustrator"],
+    coverImage: '/images/works/Graphic/Business cards-Moving.webp',
+    images: [
+      '/images/works/Graphic/Business cards-Moving.webp',
+    ],
+    imageLayout: 'landscape',
+    hasVideo: false,
+  },
+  {
     id: '3d-SweetBonBons',
     title: '3D 動畫短片-Sweet BonBons',
     subtitle: '3D animated short film-Sweet BonBons',
@@ -95,7 +110,7 @@ export const works: Work[] = [
     subtitle: '3D Character-Jinx',
     featured: true,
     category: '3D 創作',
-    description: '為健康科技新創公司設計直覺且溫暖的健康管理應用程式介面，透過資料視覺化與人性化互動設計，讓用戶輕鬆追蹤日常健康數據。專案涵蓋使用者研究、資訊架構、線框圖、高擬真度原型設計及設計規範文件。',
+    description: '',
     tags: [],
     coverImage: '/images/works/3D/Jinx-1.webp',
     images: [
@@ -117,7 +132,7 @@ export const works: Work[] = [
     displayType: 'gallery',
     year: '',
     client: '',
-    description: '為健康科技新創公司設計直覺且溫暖的健康管理應用程式介面，透過資料視覺化與人性化互動設計，讓用戶輕鬆追蹤日常健康數據。專案涵蓋使用者研究、資訊架構、線框圖、高擬真度原型設計及設計規範文件。',
+    description: '',
     tags: [],
     coverImage: '/images/works/3D/Jirachi-1.webp',
     images: [
@@ -135,7 +150,7 @@ export const works: Work[] = [
     displayType: 'gallery',
     year: '',
     client: '',
-    description: '為健康科技新創公司設計直覺且溫暖的健康管理應用程式介面，透過資料視覺化與人性化互動設計，讓用戶輕鬆追蹤日常健康數據。專案涵蓋使用者研究、資訊架構、線框圖、高擬真度原型設計及設計規範文件。',
+    description: '',
     tags: [],
     coverImage: 'https://images.unsplash.com/photo-1616400619175-5beda3a17896?w=800&h=600&fit=crop&auto=format',
     images: [
@@ -154,7 +169,7 @@ export const works: Work[] = [
     displayType: 'gallery',
     year: '',
     client: '',
-    description: '運用 Blender 與 Substance Painter 為頂級香氛品牌創作高擬真度的 3D 產品視覺化，透過精密的材質模擬與燈光設計，呈現玻璃瓶身的光折射效果與金屬配件的質感，打造令人驚豔的視覺表現。',
+    description: '',
     tags: [],
     coverImage: '/images/works/3D/Blender-1.webp',
     images: [
