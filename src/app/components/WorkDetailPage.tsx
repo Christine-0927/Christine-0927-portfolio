@@ -12,6 +12,9 @@ export function WorkDetailPage() {
   const idx = works.findIndex(w => w.id === id);
   const work = works[idx];
   const tools = work.tools || [];
+  const hasGallery =
+    work.images &&
+    work.images.length > 1;
   const prevWork = idx > 0 ? works[idx - 1] : null;
   const nextWork = idx < works.length - 1 ? works[idx + 1] : null;
 
@@ -48,16 +51,16 @@ export function WorkDetailPage() {
       </div>
 
       {/* Hero Image */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-10 mb-16">
+      <section className="max-w-6xl mx-auto px-6 lg:px-10 mb-12">
         <ScrollReveal>
           <div
-            className="relative rounded-3xl overflow-hidden"
-            style={{ aspectRatio: '16/9', boxShadow: '0 32px 80px rgba(102,64,119,0.18)' }}
+            className="relative rounded-3xl overflow-hidden mx-auto"
+            style={{ aspectRatio: '4/3', maxWidth: '1200px', maxHeight: '720px', boxShadow: '0 32px 80px rgba(102,64,119,0.18)' }}
           >
             <img
               src={work.coverImage}
               alt={work.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
             />
             <div
               style={{ background: 'linear-gradient(to top, rgba(30,10,40,0.6) 0%, transparent 50%)' }}
@@ -82,85 +85,74 @@ export function WorkDetailPage() {
       </section>
 
       {/* Title + Meta */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-10 mb-16">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-            {/* LEFT */}
-            <div className="lg:col-span-2">
-              <ScrollReveal>
-                <h1
-                  className="mb-3"
-                  style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 600, color: '#212121', lineHeight: 1.2 }}
-                >
-                  {work.title}
-                </h1>
-                <p style={{ fontSize: '20px', color: '#B07BB3', marginBottom: '20px' }}>{work.subtitle}</p>
-                <p style={{ fontSize: '16px', color: '#474747', lineHeight: 1.9, fontWeight: 400 }}>
-                {work.description}
-                </p>
-              </ScrollReveal>
-            </div>
+      <section className="max-w-6xl mx-auto px-6 lg:px-10 mb-16">
+        <div className="mx-auto"style={{ maxWidth: '1200px'}}>
+          <ScrollReveal>
+            <h1
+              className="mb-3"
+              style={{
+                fontSize: 'clamp(2rem, 4vw, 3rem)',
+                fontWeight: 600,
+                color: '#212121',
+                lineHeight: 1.2,
+              }}
+            >
+              {work.title}
+            </h1>
 
-            {/* RIGHT SIDEBAR CARD */}
-            <div>
-            <ScrollReveal delay={100} direction="right">
-              <div
-                className="p-6 rounded-2xl"
-                style={{
-                  background: '#fff',
-                  border: '1px solid rgba(176,123,179,0.12)',
-                  boxShadow: '0 4px 24px rgba(176,123,179,0.08)',
-                }}
-              >
-                <h3 style={{ fontSize: '16px', color: '#B07BB3',lineHeight: 2.4 }}>
-                  PROJECT INFO
-                </h3>
+            <p
+              style={{
+                fontSize: '20px',
+                color: '#B07BB3',
+                marginBottom: '24px',
+              }}
+            >
+              {work.subtitle}
+            </p>
 
-                {/* CATEGORY */}
-                <p style={{ fontSize: '14px', color: '#664077', marginBottom: '6px' }}>
-                  類別
-                </p>
+            <p
+              style={{
+                fontSize: '16px',
+                color: '#474747',
+                lineHeight: 2,
+                marginBottom: '28px',
+              }}
+            >
+              {work.description}
+            </p>
 
-                <p style={{ fontSize: '16px', color: '#664077', marginBottom: '14px', fontWeight: 500 }}>
-                  {work.category}
-                </p>
-
-                {/* TOOLS */}
-                <p style={{ fontSize: '14px', color: '#B07BB3', marginTop: '10px' }}>
-                  使用工具
-                </p>
-
-                <div className="flex flex-wrap gap-2">
-                  {tools.map(tool => (
-                    <span
-                      key={tool}
-                      style={{
-                        fontSize: '12px',
-                        padding: '4px 10px',
-                        borderRadius: '999px',
-                        background: 'rgba(176,123,179,0.12)',
-                        color: '#664077',
-                        border: '1px solid rgba(176,123,179,0.2)',
-                        whiteSpace: 'nowrap',
-                      }}
-                    >
-                      {tool}
-                    </span>
-                  ))}
-                </div>
+            {tools.length > 0 && (
+              <div className="flex flex-wrap justify-center gap-2 mt-8">
+                {tools.map(tool => (
+                  <span
+                    key={tool}
+                    style={{
+                      fontSize: '12px',
+                      padding: '6px 12px',
+                      borderRadius: '999px',
+                      background: 'rgba(176,123,179,0.1)',
+                      color: '#664077',
+                      border: '1px solid rgba(176,123,179,0.15)',
+                    }}
+                  >
+                    {tool}
+                  </span>
+                ))}
               </div>
-            </ScrollReveal>
-          </div>
+            )}
+          </ScrollReveal>
         </div>
       </section>
 
       {/* Featured Case Study */}
       {work.featuredCaseStudy && (
-        <section className="max-w-7xl mx-auto px-6 lg:px-10 mb-20">
+        <section className="max-w-6xl mx-auto px-6 lg:px-10 mb-20">
           <div
             className="rounded-3xl p-8 lg:p-12"
             style={{
               background: '#fff',
               border: '1px solid rgba(176,123,179,0.12)',
+              maxWidth: '1200px',
               boxShadow: '0 8px 40px rgba(102,64,119,0.08)',
             }}
           >
@@ -238,11 +230,15 @@ export function WorkDetailPage() {
       )}
       
       {/* Gallery */}
-      <section
-        className="py-16"
-        style={{ background: 'linear-gradient(180deg, #FAFAF8 0%, #F8F4F9 100%)' }}
-      >
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+      {hasGallery && (
+        <section
+          className="py-16"
+          style={{
+            background:
+              'linear-gradient(180deg, #FAFAF8 0%, #F8F4F9 100%)'
+          }}
+        >
+        <div className="max-w-6xl mx-auto px-6 lg:px-10">
           <ScrollReveal>
             <p
               className="mb-3 tracking-widest uppercase"
@@ -288,7 +284,9 @@ export function WorkDetailPage() {
               className={
                 work.imageLayout === 'long-scroll'
                   ? 'w-full h-auto'
-                  : 'max-w-full max-h-full object-contain'
+                  : work.imageLayout === 'portrait'
+                  ? 'w-full h-full object-contain'
+                  : 'w-full h-full object-cover'
               }
             />
           </div>
@@ -317,10 +315,11 @@ export function WorkDetailPage() {
           </div>
         </div>
       </section>
+      )}
 
       {/* Video Showcase */}
       {work.hasVideo && (
-        <section className="py-16 max-w-7xl mx-auto px-6 lg:px-10">
+        <section className="py-16 max-w-6xl mx-auto px-6 lg:px-10">
           <ScrollReveal>
             <p
               className="mb-3 tracking-widest uppercase"
