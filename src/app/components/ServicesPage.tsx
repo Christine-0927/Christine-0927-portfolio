@@ -95,12 +95,6 @@ export function ServicesPage() {
             >
               <span style={{ fontWeight: 600, color: '#664077' }}>服務項目</span>
             </h1>
-            <p
-              className="max-w-md"
-              style={{ fontSize: '16px', color: '#474747', lineHeight: 1.85, fontWeight: 400 }}
-            >
-              涵蓋平面設計、UI/UX 設計、3D 創作與動態設計，透過不同的設計形式，將想法轉化為美感與實用性兼具的設計成果。
-            </p>
           </div>
         </ScrollReveal>
       </section>

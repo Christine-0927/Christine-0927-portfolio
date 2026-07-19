@@ -189,7 +189,7 @@ function FeaturedWorksCarousel() {
                     style={{
                       background: 'rgba(255,255,255,0.92)',
                       backdropFilter: 'blur(8px)',
-                      fontSize: '10px',
+                      fontSize: '12px',
                       color: '#664077',
                       fontWeight: 500,
                       letterSpacing: '0.06em',
