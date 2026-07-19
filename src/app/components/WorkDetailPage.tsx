@@ -28,7 +28,7 @@ export function WorkDetailPage() {
           style={{ color: '#B07BB3', textDecoration: 'none', fontSize: '14px' }}
         >
           <ArrowLeft size={14} />
-          回到作品集
+          返回作品集
         </Link>
       </div>
     );
@@ -36,26 +36,12 @@ export function WorkDetailPage() {
 
   return (
     <div style={{ fontFamily: "'Noto Sans TC', sans-serif" }} className="pt-24">
-      {/* Back */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6">
-        <Link
-          to="/portfolio"
-          className="inline-flex items-center gap-2 transition-colors duration-200"
-          style={{ textDecoration: 'none', color: '#8B7A8B', fontSize: '14px' }}
-          onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.color = '#B07BB3'; }}
-          onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.color = '#8B7A8B'; }}
-        >
-          <ArrowLeft size={14} />
-          回到作品集
-        </Link>
-      </div>
-
       {/* Hero Image */}
       <section className="max-w-6xl mx-auto px-6 lg:px-10 mb-12">
         <ScrollReveal>
           <div
             className="relative rounded-3xl overflow-hidden mx-auto"
-            style={{ aspectRatio: '4/3', maxWidth: '1200px', maxHeight: '720px', boxShadow: '0 32px 80px rgba(102,64,119,0.18)' }}
+            style={{ maxWidth: '1200px', maxHeight: '720px', boxShadow: '0 32px 80px rgba(102,64,119,0.18)' }}
           >
             <img
               src={work.coverImage}
@@ -433,7 +419,7 @@ export function WorkDetailPage() {
                 whiteSpace: 'nowrap',
               }}
             >
-              所有作品
+              返回作品集
             </Link>
 
             {nextWork ? (
