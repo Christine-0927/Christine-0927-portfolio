@@ -11,7 +11,6 @@ export function WorkDetailPage() {
   const [showVideo, setShowVideo] = useState(false);
   const idx = works.findIndex(w => w.id === id);
   const work = works[idx];
-  const tools = work.tools || [];
   const hasGallery =
     work.images &&
     work.images.length > 1;
@@ -102,31 +101,12 @@ export function WorkDetailPage() {
                 color: '#474747',
                 lineHeight: 2,
                 marginBottom: '28px',
+                whiteSpace: 'pre-line',
               }}
             >
               {work.description}
             </p>
-
-            {tools.length > 0 && (
-              <div className="flex flex-wrap justify-center gap-2 mt-8">
-                {tools.map(tool => (
-                  <span
-                    key={tool}
-                    style={{
-                      fontSize: '12px',
-                      padding: '6px 12px',
-                      borderRadius: '999px',
-                      background: 'rgba(176,123,179,0.1)',
-                      color: '#664077',
-                      border: '1px solid rgba(176,123,179,0.15)',
-                    }}
-                  >
-                    {tool}
-                  </span>
-                ))}
-              </div>
-            )}
-          </ScrollReveal>
+            </ScrollReveal>
         </div>
       </section>
 

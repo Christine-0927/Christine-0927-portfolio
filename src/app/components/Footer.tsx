@@ -4,7 +4,7 @@ import { Mail, ExternalLink } from 'lucide-react';
 export function Footer() {
   return (
     <footer
-      className="mt-28"
+      className="mt-0"
       style={{ borderTop: '1px solid rgba(176,123,179,0.15)' }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-14">
